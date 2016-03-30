@@ -4,10 +4,10 @@ header('Access-Control-Allow-Origin: *');
 $header = getallheaders();
 $url = rtrim($_SERVER['REQUEST_URI'], '/');
 $RequestURI = parse_url($url);
-$BaseURL = 'http://nephy.jp';
+$BaseURL = 'http://ebxpj6bp.azurewebsites.net/';
 $RequestPath = explode("/",$RequestURI['path']);
 $fullurl = $BaseURL . $_SERVER['REQUEST_URI'];
-$docroot = '/my/www/nephy.jp';
+$docroot = '/my/www/';
 
 function Return404(){
 	$title = "404 - File Not Found | Nephy Project";
