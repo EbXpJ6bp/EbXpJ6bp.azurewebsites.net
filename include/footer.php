@@ -5,6 +5,7 @@
 			<br/>Copyright &copy; 2016 Nephy Project Team All Rights Reserved.
 		</small>
 	</footer>
+
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="http://nephy.jp/assets/js/bootstrap.min.js"></script>
 	<script src="http://nephy.jp/assets/js/jquery.pjax.min.js"></script>
