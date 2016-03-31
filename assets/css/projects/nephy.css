@@ -30,7 +30,7 @@ a {
 		display: block;
 		width: 340px;
 		margin: 0 auto;
-		box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .8);
+		box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
 	}
 
 .right-content {
@@ -88,6 +88,12 @@ a {
 	margin-bottom: 8px;
 }
 */
+
+@media screen and (min-width: 1250px) {
+	.left-content {
+		width: 0;
+	}
+}
 
 @media screen and (max-width: 910px) {
 	.left {
