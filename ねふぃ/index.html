@@ -113,8 +113,8 @@
 							<h3>Github</h3>
 							<div class="latest-commit">
 								<div v-for="record in commits">
-									<h4>Latest Commit</h4>
-									<p><a :href="record.html_url" target="_blank" class="commit">{{record.sha.slice(0, 7)}}</a> -<span class="message">{{record.commit.message | truncate}}</span></p>
+									<h4>Latest Commit:</h4>
+									<p><a :href="record.html_url" target="_blank" class="commit">{{record.sha.slice(0, 7)}}</a> - <span class="message">{{record.commit.message | truncate}}</span></p>
 									<p>by <span class="author">{{record.commit.author.name}}</span> at <span class="date">{{record.commit.author.date | formatDate}}</span></p>
 								</div>
 							</div>

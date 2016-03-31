@@ -47,7 +47,7 @@ a {
 }
 
 .right-content-info h4 {
-	font-size: 25px;
+	font-size: 23px;
 }
 
 .right-content-info ul {
@@ -64,6 +64,16 @@ a {
 	margin-top: 8px;
 }
 
+.right-content-info#github div.latest-commit {
+	margin-top: 14px;
+	margin-bottom: 18px;
+}
+
+	.right-content-info#github div.latest-commit p {
+		font-size: 16px;
+	}
+
+
 .right-content-info#github a {
 	font-weight: 500;
 }
@@ -73,15 +83,10 @@ a {
 		font-weight: 600;
 	}
 
+
 .right-content-info#link ul {
 	list-style: disc;
 }
-
-.right-content-info#github div.latest-commit {
-	margin-top: 14px;
-	margin-bottom: 18px;
-}
-
 
 /*
 .right-content-info#github ul {
