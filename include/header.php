@@ -4,10 +4,8 @@
 
 	<!-- Basic Page Needs
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta charset="utf-8" />
 	<title><?php echo $title; ?></title>
-	<meta charset="UTF-8">
 	<meta content="<?php echo $desc; ?>" name="description">
 	<meta name="application-name" content="Nephy Project">
 
