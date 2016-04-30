@@ -1,0 +1,20 @@
+{
+  "name": "mkg-sidebar",
+  "version": "0.1.1",
+  "description": "",
+  "main": [
+    "dist/mkg-sidebar.css",
+    "dist/mkg-sidebar.js"
+  ],
+  "authors": [
+    "mkg <mehmetkamilgulen@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

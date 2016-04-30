@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>mkg-sidebar Demo</title>
+        <script src="dist/mkg-sidebar.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="dist/mkg-sidebar.css" media="screen" charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <style media="screen">
+            html{font:14px 'Open Sans';}
+            body{background-color:#e2e4e2;font-size:1em;}
+            #content{background:#f4f5fa;margin: 20px 40px 20px 40px;min-height: calc(100vh - 40px);padding:40px;box-sizing: border-box;}
+
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <div id="menu">
+                <a href="link1">text1</a>
+                <a href="link2" title="custom title">text2</a>
+                <a href="link3" rel="nofollow">text3</a>
+                <a href="link4">text4</a>
+            </div>
+        <span class="deneme">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo excepturi omnis expedita accusantium, maxime.!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quis est, ipsa temporibus quia magni, animi consequatur hic quo sit, repellendus consequuntur ullam unde nemo repudiandae vitae cum atque iure!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quis est, ipsa temporibus quia magni, animi consequatur hic quo sit, repellendus consequuntur ullam unde nemo repudiandae vitae cum atque iure!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quis est, ipsa temporibus quia magni, animi consequatur hic quo sit, repellendus consequuntur ullam unde nemo repudiandae vitae cum atque iure!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quis est, ipsa temporibus quia magni, animi consequatur hic quo sit, repellendus consequuntur ullam unde nemo repudiandae vitae cum atque iure!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quis est, ipsa temporibus quia magni, animi consequatur hic quo sit, repellendus consequuntur ullam unde nemo repudiandae vitae cum atque iure!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quis est, ipsa temporibus quia magni, animi consequatur hic quo sit, repellendus consequuntur ullam unde nemo repudiandae vitae cum atque iure!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quis est, ipsa temporibus quia magni, animi consequatur hic quo sit, repellendus consequuntur ullam unde nemo repudiandae vitae cum atque iure!</p>
+        </span>
+        <button onclick="mSidebar.menu.open();">X X X</button>
+        <script>
+        var items = [
+            {
+                text:'Main Page',
+                link:'linkaasd'
+            },
+            {
+                text:'Ürünler',
+                link:'/Products.html',
+                items:[
+                    {
+                        text:'Product1',
+                        link:'/prod/1',
+                        items:[
+                        {
+                            text:'Example',
+                            link:'/e.html'
+                        }
+                        ]
+                    },
+                    {
+                        text:'Product2',
+                        link:'/prod/2'
+                    }
+
+                ]
+            },
+            {
+                text:'Contact',
+                link:'http://google.com/',
+                follow:false
+            }
+        ]
+        new mSidebar('menu',items,{position:'left'}).toggle();
+        </script>
+    </div>
+    </body>
+</html>

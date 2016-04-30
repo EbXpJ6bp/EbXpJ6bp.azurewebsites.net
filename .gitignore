@@ -1,2 +1,2 @@
-.settings/
-.project
+/node_modules
+Thumbs.db
