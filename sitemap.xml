@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/tools/yocode.html</loc>
+    
+    <lastmod>2017-02-20T11:39:38.300Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/tools/samples.html</loc>
+    
+    <lastmod>2017-02-20T11:35:09.139Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/index.html</loc>
     
     <lastmod>2017-02-20T07:16:03.000Z</lastmod>
@@ -23,14 +37,14 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/setup-overview.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/requirements.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/errors.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/updates/index.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
@@ -44,7 +58,21 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/requirements.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/errors.html</loc>
+    
+    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/setup-overview.html</loc>
+    
+    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/additional-components.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
@@ -58,7 +86,7 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/updates/index.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/updates/v1_9.html</loc>
     
     <lastmod>2017-02-19T23:44:13.482Z</lastmod>
     
@@ -303,23 +331,9 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/tools/yocode.html</loc>
-    
-    <lastmod>2017-02-03T07:14:16.435Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/tools/vscecli.html</loc>
     
     <lastmod>2017-02-03T07:14:16.429Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/tools/samples.html</loc>
-    
-    <lastmod>2017-02-03T07:14:16.411Z</lastmod>
     
   </url>
   
@@ -334,13 +348,6 @@
     <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/linux.html</loc>
     
     <lastmod>2017-02-03T07:14:16.387Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/additional-components.html</loc>
-    
-    <lastmod>2017-02-03T07:14:16.383Z</lastmod>
     
   </url>
   
