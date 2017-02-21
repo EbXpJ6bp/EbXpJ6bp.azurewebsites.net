@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/languages/overview.html</loc>
+    
+    <lastmod>2017-02-21T01:30:37.030Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/accessibility.html</loc>
+    
+    <lastmod>2017-02-21T00:51:54.695Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/overview.html</loc>
+    
+    <lastmod>2017-02-21T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/locales.html</loc>
+    
+    <lastmod>2017-02-21T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/tools/yocode.html</loc>
     
     <lastmod>2017-02-20T11:39:38.300Z</lastmod>
@@ -37,14 +65,7 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/requirements.html</loc>
-    
-    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/updates/index.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/additional-components.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
@@ -58,7 +79,7 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/errors.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/requirements.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
@@ -72,7 +93,14 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/additional-components.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/errors.html</loc>
+    
+    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/updates/index.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
@@ -201,13 +229,6 @@
     <loc>http://ebxpj6bp.azurewebsites.net/docs/languages/php.html</loc>
     
     <lastmod>2017-02-15T07:41:40.718Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/languages/overview.html</loc>
-    
-    <lastmod>2017-02-15T07:41:40.715Z</lastmod>
     
   </url>
   
@@ -523,27 +544,6 @@
     <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/editingevolved.html</loc>
     
     <lastmod>2017-02-03T07:14:15.854Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/accessibility.html</loc>
-    
-    <lastmod>2017-02-03T07:14:15.841Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/overview.html</loc>
-    
-    <lastmod>2017-02-03T07:14:15.787Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/locales.html</loc>
-    
-    <lastmod>2017-02-03T07:14:15.784Z</lastmod>
     
   </url>
   
