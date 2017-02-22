@@ -2,9 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/intellisense.html</loc>
+    
+    <lastmod>2017-02-22T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/faq.html</loc>
+    
+    <lastmod>2017-02-22T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/languages/overview.html</loc>
     
-    <lastmod>2017-02-21T01:30:37.030Z</lastmod>
+    <lastmod>2017-02-21T22:56:30.613Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/index.html</loc>
+    
+    <lastmod>2017-02-21T11:26:55.075Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/news/2016/02/28/hexo-3-2-released/</loc>
+    
+    <lastmod>2017-02-21T10:20:49.340Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/integrated-terminal.html</loc>
+    
+    <lastmod>2017-02-21T07:33:23.978Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/languages/html.html</loc>
+    
+    <lastmod>2017-02-21T07:16:26.774Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/languages/markdown.html</loc>
+    
+    <lastmod>2017-02-21T07:12:17.453Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/codebasics.html</loc>
+    
+    <lastmod>2017-02-21T07:04:05.228Z</lastmod>
     
   </url>
   
@@ -16,14 +72,14 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/overview.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/locales.html</loc>
     
     <lastmod>2017-02-21T00:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/locales.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/overview.html</loc>
     
     <lastmod>2017-02-21T00:00:00.000Z</lastmod>
     
@@ -44,13 +100,6 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/index.html</loc>
-    
-    <lastmod>2017-02-20T07:16:03.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/whyvscode.html</loc>
     
     <lastmod>2017-02-20T04:08:23.994Z</lastmod>
@@ -61,6 +110,13 @@
     <loc>http://ebxpj6bp.azurewebsites.net/404.html</loc>
     
     <lastmod>2017-02-20T00:36:06.523Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/requirements.html</loc>
+    
+    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
   </url>
   
@@ -79,14 +135,14 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/requirements.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/updates/index.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/setup-overview.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/index.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
@@ -100,14 +156,7 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/updates/index.html</loc>
-    
-    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/index.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/setup-overview.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
@@ -159,13 +208,6 @@
     <loc>http://ebxpj6bp.azurewebsites.net/updates/v1_7.html</loc>
     
     <lastmod>2017-02-19T07:46:16.334Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/news/2016/02/28/hexo-3-2-released/</loc>
-    
-    <lastmod>2017-02-19T02:22:23.932Z</lastmod>
     
   </url>
   
@@ -233,23 +275,9 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/languages/markdown.html</loc>
-    
-    <lastmod>2017-02-15T07:41:40.711Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/languages/jsconfig.html</loc>
     
     <lastmod>2017-02-15T07:41:40.702Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/languages/html.html</loc>
-    
-    <lastmod>2017-02-15T07:41:40.631Z</lastmod>
     
   </url>
   
@@ -317,13 +345,6 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/codebasics.html</loc>
-    
-    <lastmod>2017-02-15T07:41:40.544Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/userdefinedsnippets.html</loc>
     
     <lastmod>2017-02-15T07:41:40.522Z</lastmod>
@@ -355,13 +376,6 @@
     <loc>http://ebxpj6bp.azurewebsites.net/docs/tools/vscecli.html</loc>
     
     <lastmod>2017-02-03T07:14:16.429Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/faq.html</loc>
-    
-    <lastmod>2017-02-03T07:14:16.404Z</lastmod>
     
   </url>
   
@@ -516,20 +530,6 @@
     <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/tabs.html</loc>
     
     <lastmod>2017-02-03T07:14:15.907Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/intellisense.html</loc>
-    
-    <lastmod>2017-02-03T07:14:15.898Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/integrated-terminal.html</loc>
-    
-    <lastmod>2017-02-03T07:14:15.891Z</lastmod>
     
   </url>
   
