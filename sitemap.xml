@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/intellisense.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/userandworkspace.html</loc>
     
-    <lastmod>2017-02-22T00:00:00.000Z</lastmod>
+    <lastmod>2017-02-23T11:44:02.820Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/faq.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/languages/overview.html</loc>
     
-    <lastmod>2017-02-22T00:00:00.000Z</lastmod>
+    <lastmod>2017-02-23T10:23:37.427Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/extension-gallery.html</loc>
+    
+    <lastmod>2017-02-22T12:35:20.599Z</lastmod>
     
   </url>
   
@@ -23,9 +30,16 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/languages/overview.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/intellisense.html</loc>
     
-    <lastmod>2017-02-21T22:56:30.613Z</lastmod>
+    <lastmod>2017-02-22T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/faq.html</loc>
+    
+    <lastmod>2017-02-22T00:00:00.000Z</lastmod>
     
   </url>
   
@@ -114,6 +128,27 @@
   </url>
   
   <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/errors.html</loc>
+    
+    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/setup-overview.html</loc>
+    
+    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/windows.html</loc>
+    
+    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/index.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
@@ -128,27 +163,6 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/setup-overview.html</loc>
-    
-    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/requirements.html</loc>
-    
-    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/errors.html</loc>
-    
-    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/updates/index.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
@@ -156,7 +170,7 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/windows.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/requirements.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
@@ -352,13 +366,6 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/userandworkspace.html</loc>
-    
-    <lastmod>2017-02-15T07:41:40.517Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/themes.html</loc>
     
     <lastmod>2017-02-15T07:41:40.509Z</lastmod>
@@ -530,13 +537,6 @@
     <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/tabs.html</loc>
     
     <lastmod>2017-02-03T07:14:15.907Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/extension-gallery.html</loc>
-    
-    <lastmod>2017-02-03T07:14:15.857Z</lastmod>
     
   </url>
   
