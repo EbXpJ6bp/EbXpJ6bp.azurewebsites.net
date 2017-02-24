@@ -56,7 +56,7 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name">November 2016 (version 1.8)</h1>
-                <a href="ABCupdates/v1_8.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/updates/v1_8.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-19T23:44:06.410Z" itemprop="dateModified">Last updated: 2017-02-19</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
@@ -103,18 +103,18 @@
 <p>Hot Exit 後に VS Code を次に起動すると、バックアップされたすべてのワークスペースおよびファイルがリストアされます。 Hot Exitの有効/無効 (<code>files.hotExit</code> 設定) に関係なく、VS Code がクラッシュした場合にファイルを復元する機能もあります。Hot Exit の実装や背景および将来の予定などについては、<a href="http://code.visualstudio.com/blogs/2016/11/30/hot-exit-in-insiders" target="_blank" rel="external">ブログの記事</a>を参照してください。</p>
 <h3 id="ビューピッカー-View-Picker" class="article-heading"><a href="#ビューピッカー-View-Picker" class="headerlink" title="ビューピッカー (View Picker)"></a>ビューピッカー (View Picker)<a class="article-anchor" href="#ビューピッカー-View-Picker" aria-hidden="true"></a></h3><p>ビュー、パネル、出力チャンネル、及びターミナルを表示する新しいピッカーが追加され、隠れているビューを簡単に開くことができるようになりました。 <strong>Open View</strong> コマンドを使用するか、 <strong>Quick Open</strong> 上で <code>view</code> を入力したあとに <code>space</code> (半角スペース)を入力することで開くことができます。</p>
 <p><img src="https://code.visualstudio.com/images/1_8_view-picker.png" alt="View Picker"></p>
-<p>ピッカーを開き、 <code>kbstyle(Ctrl)</code>を保持したまま<code>kbstyle(Q)</code>を押すことで項目を選択できます。キーを離したときに選択したビューが開きます。</p>
-<p>Windows と Mac では、<code>kbstyle(Ctrl+Q)</code> を押すとピッカーを表示します。 Linux は標準でこのコマンドを、アプリケーション終了に割り当てているため、必要に応じて変更をする必要があります。</p>
+<p>ピッカーを開き、 <span class="keybinding">Ctrl</span>を保持したまま<span class="keybinding">Q</span>を押すことで項目を選択できます。キーを離したときに選択したビューが開きます。</p>
+<p>Windows と Mac では、<span class="keybinding">Ctrl+Q</span> を押すとピッカーを表示します。 Linux は標準でこのコマンドを、アプリケーション終了に割り当てているため、必要に応じて変更をする必要があります。</p>
 <h3 id="統合ターミナルの改善-Terminal-improvements" class="article-heading"><a href="#統合ターミナルの改善-Terminal-improvements" class="headerlink" title="統合ターミナルの改善 (Terminal improvements)"></a>統合ターミナルの改善 (Terminal improvements)<a class="article-anchor" href="#統合ターミナルの改善-Terminal-improvements" aria-hidden="true"></a></h3><p>統合ターミナルにいくつかの改良を行いました:</p>
 <ul>
-<li>Windows におけるターミナル上でのコピーと貼り付けのキーバインディングは、それぞれ <code>kbstyle(Ctrl+C)</code>（テキストを選択している場合） <code>kbstyle(Ctrl+V)</code> に変更されました</li>
+<li>Windows におけるターミナル上でのコピーと貼り付けのキーバインディングは、それぞれ <span class="keybinding">Ctrl+C</span>（テキストを選択している場合） <span class="keybinding">Ctrl+V</span> に変更されました</li>
 <li>スクロールアップさせている際、ターミナルが出力を受け取っても最下部にスクロールしなくなりました</li>
-<li>ターミナルがフォーカスを持っている場合、<code>kbstyle(Cmd+K)</code> によりターミナルをクリアできるようになりました</li>
+<li>ターミナルがフォーカスを持っている場合、<span class="keybinding">Cmd+K</span> によりターミナルをクリアできるようになりました</li>
 <li>新しい <code>terminal.integrated.scrollback</code> 設定により、ターミナル上でスクロールバックを行える行数を設定できるようになりました</li>
 </ul>
 <h3 id="Mac-タイトルバーにもテーマを反映-Mac-Custom-themed-title" class="article-heading"><a href="#Mac-タイトルバーにもテーマを反映-Mac-Custom-themed-title" class="headerlink" title="Mac: タイトルバーにもテーマを反映 (Mac: Custom themed title)"></a>Mac: タイトルバーにもテーマを反映 (Mac: Custom themed title)<a class="article-anchor" href="#Mac-タイトルバーにもテーマを反映-Mac-Custom-themed-title" aria-hidden="true"></a></h3><p>macOS 版の VS Code ではテーマのカラーをタイトルバーにも反映できるように、独自のカスタムタイトルバーを内部的に生成するようになりました。この動作は新しい <code>window.titleBarStyle</code> 設定で変更することができます。デフォルトは <code>custom</code> が設定されていますが、値を <code>native</code> に設定し再起動することで従来と同じタイトルバーに変更することができます。</p>
 <h2 id="コードに集中するための機能-Focus-on-your-code" class="article-heading"><a href="#コードに集中するための機能-Focus-on-your-code" class="headerlink" title="コードに集中するための機能 (Focus on your code)"></a>コードに集中するための機能 (Focus on your code)<a class="article-anchor" href="#コードに集中するための機能-Focus-on-your-code" aria-hidden="true"></a></h2><p>今回のリリースで、コーディングへ集中するために役立つ機能を追加しました。</p>
-<h3 id="禅モード-Zen-Mode" class="article-heading"><a href="#禅モード-Zen-Mode" class="headerlink" title="禅モード (Zen Mode)"></a>禅モード (Zen Mode)<a class="article-anchor" href="#禅モード-Zen-Mode" aria-hidden="true"></a></h3><p>ある<a href="https://github.com/Microsoft/vscode/issues/12940" target="_blank" rel="external">ユーザーからのリクエスト</a>により、VS Code に <code>禅 (Zen) モード</code> を追加しました。 Zen モードでは、エディタ以外のすべての UI (アクティビティバー、ステータスバー、サイドバー、パネル)を隠し、フルスクリーン表示にすることでコーディングに集中することができます。<br>Zen モード切り替えは、<strong>[表示(V)]</strong> -&gt; <strong>コマンド パレット(C)</strong>、 <code>kbstyle(Ctrl+K Z)</code>で行います。 Zen モード終了は <code>kbstyle(Escape)</code>を2回押します。 Zen モードそのものを無効化したい場合 <code>workbench.action.toggleZenMode</code> 設定で変更することができます。</p>
+<h3 id="禅モード-Zen-Mode" class="article-heading"><a href="#禅モード-Zen-Mode" class="headerlink" title="禅モード (Zen Mode)"></a>禅モード (Zen Mode)<a class="article-anchor" href="#禅モード-Zen-Mode" aria-hidden="true"></a></h3><p>ある<a href="https://github.com/Microsoft/vscode/issues/12940" target="_blank" rel="external">ユーザーからのリクエスト</a>により、VS Code に <code>禅 (Zen) モード</code> を追加しました。 Zen モードでは、エディタ以外のすべての UI (アクティビティバー、ステータスバー、サイドバー、パネル)を隠し、フルスクリーン表示にすることでコーディングに集中することができます。<br>Zen モード切り替えは、<strong>[表示(V)]</strong> -&gt; <strong>コマンド パレット(C)</strong>、 <span class="keybinding">Ctrl+K Z</span>で行います。 Zen モード終了は <span class="keybinding">Escape</span>を2回押します。 Zen モードそのものを無効化したい場合 <code>workbench.action.toggleZenMode</code> 設定で変更することができます。</p>
 <h3 id="設定可能なアクティビティバー-Configurable-Activity-Bar" class="article-heading"><a href="#設定可能なアクティビティバー-Configurable-Activity-Bar" class="headerlink" title="設定可能なアクティビティバー (Configurable Activity Bar)"></a>設定可能なアクティビティバー (Configurable Activity Bar)<a class="article-anchor" href="#設定可能なアクティビティバー-Configurable-Activity-Bar" aria-hidden="true"></a></h3><!-- 英文があまりに回りくどかったので 少し適当 -->
 <p>アクティビティバーには、ファイルエクスプローラ、検索、デバッグなどにアクセスするためのホームがあります。多くの人は、ビューを素早く切り替えたり、ビューに関する情報(例えばGitアイコンではpush時のコミット数を示すバッジ)を表示したりするために使用します。</p>
 <p>今回のリリースでは、新機能を追加してアクティビティバーを改善し、アプリケーションドックのような動作をするようになりました。また、これらの設定は VS Code再起動後も保持されます。</p>
@@ -137,9 +137,9 @@
 <h3 id="設定エディタのグループ化-One-Side-by-Side-Settings-editor" class="article-heading"><a href="#設定エディタのグループ化-One-Side-by-Side-Settings-editor" class="headerlink" title="設定エディタのグループ化 (One Side by Side Settings editor)"></a>設定エディタのグループ化 (One Side by Side Settings editor)<a class="article-anchor" href="#設定エディタのグループ化-One-Side-by-Side-Settings-editor" aria-hidden="true"></a></h3><p>紹介が最後になりましたが、これも重要な改善になります。 <strong>Default Settings</strong> と <code>settings.json</code> エディタをサイドエディタでグループ化することにより、2つの設定用エディタを個別に管理しなければならなかった問題に対処しました。</p>
 <p>エディタには様々な改善が続けられて行きます…次のリリース計画に注目してくださいね</p>
 <h2 id="キーボードショートカット-Keyboard-shortcuts" class="article-heading"><a href="#キーボードショートカット-Keyboard-shortcuts" class="headerlink" title="キーボードショートカット (Keyboard shortcuts)"></a>キーボードショートカット (Keyboard shortcuts)<a class="article-anchor" href="#キーボードショートカット-Keyboard-shortcuts" aria-hidden="true"></a></h2><h3 id="キーバインディングコマンドの引数-Key-binding-command-arguments" class="article-heading"><a href="#キーバインディングコマンドの引数-Key-binding-command-arguments" class="headerlink" title="キーバインディングコマンドの引数 (Key binding command arguments)"></a>キーバインディングコマンドの引数 (Key binding command arguments)<a class="article-anchor" href="#キーバインディングコマンドの引数-Key-binding-command-arguments" aria-hidden="true"></a></h3><p><code>keybindings.json</code> 設定ファイルにて、引数を持つコマンドを呼び出すためのサポートが追加されました。これは、特定のファイルやフォルダに対して同じ操作を繰り返し実行する場合などに便利な機能となります。カスタムキーボードショートカットを追加するだけで、必要な操作を正確に実行できます。</p>
-<p>以下は、<code>kbstyle(Enter)</code> の入力によりテキスト <code>Hello World</code> を表示するように、既存の <code>kbstyle(Enter)</code> キーを上書きする例です：</p>
+<p>以下は、<span class="keybinding">Enter</span> の入力によりテキスト <code>Hello World</code> を表示するように、既存の <span class="keybinding">Enter</span> キーを上書きする例です：</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123; <span class="attr">"key"</span>: <span class="string">"enter"</span>, <span class="attr">"command"</span>: <span class="string">"type"</span>,</div><div class="line">                  <span class="attr">"args"</span>: &#123; <span class="attr">"text"</span>: <span class="string">"Hello World"</span> &#125;,</div><div class="line">                  <span class="attr">"when"</span>: <span class="string">"editorTextFocus"</span> &#125;</div></pre></td></tr></table></figure>
-<p><code>&quot;command&quot;: &quot;type&quot;</code> により、<code>kbstyle(Enter)</code> キーが入力されると <code>{&quot;text&quot;： &quot;Hello World&quot;}</code> を最初の引数として受け取り、”Hello World” をエディタに出力する動作となります。</p>
+<p><code>&quot;command&quot;: &quot;type&quot;</code> により、<span class="keybinding">Enter</span> キーが入力されると <code>{&quot;text&quot;： &quot;Hello World&quot;}</code> を最初の引数として受け取り、”Hello World” をエディタに出力する動作となります。</p>
 <h3 id="推奨されるキーマップ拡張-Recommended-keymap-extensions" class="article-heading"><a href="#推奨されるキーマップ拡張-Recommended-keymap-extensions" class="headerlink" title="推奨されるキーマップ拡張 (Recommended keymap extensions)"></a>推奨されるキーマップ拡張 (Recommended keymap extensions)<a class="article-anchor" href="#推奨されるキーマップ拡張-Recommended-keymap-extensions" aria-hidden="true"></a></h3><p>一般的なエディタや IDE で採用されているフルセットのキーバインディングを VS Code でも利用可能になるキーマップ拡張機能リストを表示するコマンドを追加しました。</p>
 <p>リストを表示するには、<strong>[ファイル(F)]</strong> &gt; <strong>基本設定(P)</strong> &gt; <strong>キーマップ拡張機能(K)</strong> を使用します。</p>
 <p><img src="https://code.visualstudio.com/images/1_8_recommended-keymap-extensions.png" alt="Recommended keymap extensions"></p>
@@ -207,7 +207,7 @@
 <li><code>markdown.preview.fontSize</code></li>
 <li><code>markdown.preview.lineHeight</code></li>
 </ul>
-<h3 id="リンター拡張機能-Linter-Extensions" class="article-heading"><a href="#リンター拡張機能-Linter-Extensions" class="headerlink" title="リンター拡張機能 (Linter Extensions)"></a>リンター拡張機能 (Linter Extensions)<a class="article-anchor" href="#リンター拡張機能-Linter-Extensions" aria-hidden="true"></a></h3><h4 id="vscode-tslint" class="article-heading"><a href="#vscode-tslint" class="headerlink" title="vscode-tslint"></a>vscode-tslint<a class="article-anchor" href="#vscode-tslint" aria-hidden="true"></a></h4><p>vscode-tslint 拡張機能が <a href="https://palantir.github.io/tslint/2016/11/17/new-for-4.0.html" target="_blank" rel="external">TSLint 4.0</a> をサポートしました。TSLint 4.0 では、警告関するクイックフィックスや JavaScript ファイルのリンティングのサポートが追加されています。さらに、<code>vscode-tslint</code> では、次の行の TSLint ルールを無効にするためのクイックフィックスを追加します。 TSLint のアップデート詳細については <a href="https://github.com/Microsoft/vscode-tslint/blob/master/tslint/CHANGELOG.html" target="_blank" rel="external">CHANGELOG</a> を参照してください。</p>
+<h3 id="リンター拡張機能-Linter-Extensions" class="article-heading"><a href="#リンター拡張機能-Linter-Extensions" class="headerlink" title="リンター拡張機能 (Linter Extensions)"></a>リンター拡張機能 (Linter Extensions)<a class="article-anchor" href="#リンター拡張機能-Linter-Extensions" aria-hidden="true"></a></h3><h4 id="vscode-tslint" class="article-heading"><a href="#vscode-tslint" class="headerlink" title="vscode-tslint"></a>vscode-tslint<a class="article-anchor" href="#vscode-tslint" aria-hidden="true"></a></h4><p>vscode-tslint 拡張機能が <a href="https://palantir.github.io/tslint/2016/11/17/new-for-4.0.html" target="_blank" rel="external">TSLint 4.0</a> をサポートしました。TSLint 4.0 では、警告関するクイックフィックスや JavaScript ファイルのリンティングのサポートが追加されています。さらに、<code>vscode-tslint</code> では、次の行の TSLint ルールを無効にするためのクイックフィックスを追加します。 TSLint のアップデート詳細については <a href="https://github.com/Microsoft/vscode-tslint/blob/master/tslint/CHANGELOG.md" target="_blank" rel="external">CHANGELOG</a> を参照してください。</p>
 <h4 id="vscode-eslint" class="article-heading"><a href="#vscode-eslint" class="headerlink" title="vscode-eslint"></a>vscode-eslint<a class="article-anchor" href="#vscode-eslint" aria-hidden="true"></a></h4><p><code>vscode-eslint</code> 拡張機能は、JavaScript 以外のファイルタイプの検証をサポートしました。この機能を有効にするには、次の操作が必要です</p>
 <ul>
 <li>検証を有効にするには、追加のプラグインを使用して ESLint を設定する必要があります。たとえば、HTML ファイルを検証するには、まず、<code>npm install eslint-plugin-html</code> を実行し、<code>eslint-plugin-html</code> インストールします。その後、eslint 設定ファイル (.eslintrc.jsonファイル) に <code>&quot;plugin&quot;: [ &quot;html&quot; ]</code> を追加します</li>
@@ -293,67 +293,67 @@
 </thead>
 <tbody>
 <tr>
-<td><code>kb(workbench.action.quickOpenView)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌃Q" data-win="Ctrl+Q"><span class="keybinding">⌃Q</span> (Windows <span class="keybinding">Ctrl+Q</span>, Linux <span class="keybinding"></span>)</span></td>
 <td>Quick Open ビュー (Quick Open View)</td>
 <td><code>workbench.action.quickOpenView</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.nextEditorInGroup)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>グループ内で次のエディタを開く (Open Next Editor in Group)</td>
 <td><code>workbench.action.nextEditorInGroup</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.previousEditorInGroup)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>グループ内で前のエディタを開く (Open Previous Editor in Group)</td>
 <td><code>workbench.action.previousEditorInGroup</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.toggleZenMode)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌘K Z" data-win="Ctrl+K Z" data-linux="Ctrl+K Z"><span class="keybinding">⌘K Z</span> (Windows, Linux <span class="keybinding">Ctrl+K Z</span>)</span></td>
 <td>Zen Mode の切り替え (Enable Zen Mode)</td>
 <td><code>workbench.action.toggleZenMode</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.exitZenMode)</code></td>
+<td><span class="dynamic-keybinding" data-osx="Escape Escape" data-win="Escape Escape" data-linux="Escape Escape"><span class="keybinding">Escape Escape</span></span></td>
 <td>Leave Zen Mode</td>
 <td><code>workbench.action.exitZenMode</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.closePanel)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>Close active Panel</td>
 <td><code>workbench.action.closePanel</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.git.clone)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>Clone from a Git URL</td>
 <td><code>workbench.action.git.clone</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.toggleActivityBarVisibility)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>Toggle Visibility of Activity Bar</td>
 <td><code>workbench.action.toggleActivityBarVisibility</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.quit)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌘Q" data-linux="Ctrl+Q"><span class="keybinding">⌘Q</span> (Windows <span class="keybinding"></span>, Linux <span class="keybinding">Ctrl+Q</span>)</span></td>
 <td>Quit VS Code</td>
 <td><code>workbench.action.quit</code></td>
 </tr>
 <tr>
-<td><code>kb(editor.action.joinLines)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌃J"><span class="keybinding">⌃J</span> (Windows, Linux <span class="keybinding"></span>)</span></td>
 <td>Join Lines</td>
 <td><code>editor.action.joinLines</code></td>
 </tr>
 <tr>
-<td><code>kb(editor.action.transpose)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>Transpose characters around the cursor</td>
 <td><code>editor.action.transpose</code></td>
 </tr>
 <tr>
-<td><code>kb(editor.action.transformToUppercase)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>Transform to Uppercase</td>
 <td><code>editor.action.transformToUppercase</code></td>
 </tr>
 <tr>
-<td><code>kb(editor.action.transformToLowercase)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>Transform to Lowercase</td>
 <td><code>editor.action.transformToLowercase</code></td>
 </tr>
@@ -499,10 +499,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

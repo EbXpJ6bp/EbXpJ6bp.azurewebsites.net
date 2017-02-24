@@ -56,11 +56,11 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name"></h1>
-                <a href="ABCdocs/runtimes/unity.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/runtimes/unity.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2016-12-20T11:44:04.453Z" itemprop="dateModified">Last updated: 2016-12-20</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <h1 id="Unity-Development-with-VS-Code" class="article-heading"><a href="#Unity-Development-with-VS-Code" class="headerlink" title="Unity Development with VS Code"></a>Unity Development with VS Code<a class="article-anchor" href="#Unity-Development-with-VS-Code" aria-hidden="true"></a></h1><p>Visual Studio Code can be a great companion to Unity for editing and debugging C# files.  All of the <a href="/docs/languages/csharp.html">C#</a> features are supported and more.  In the screen below you can see code colorization, bracket matching, IntelliSense, CodeLens and that’s just the start.</p>
+                <h1 id="Unity-Development-with-VS-Code" class="article-heading"><a href="#Unity-Development-with-VS-Code" class="headerlink" title="Unity Development with VS Code"></a>Unity Development with VS Code<a class="article-anchor" href="#Unity-Development-with-VS-Code" aria-hidden="true"></a></h1><p>Visual Studio Code can be a great companion to Unity for editing and debugging C# files.  All of the <a href="/docs/languages/csharp">C#</a> features are supported and more.  In the screen below you can see code colorization, bracket matching, IntelliSense, CodeLens and that’s just the start.</p>
 <p><img src="images/unity/wow.gif" alt="Unity Example"></p>
 <p>Read on to find out how to configure Unity and your project to get the best possible experience.</p>
 <h2 id="Connecting-Unity-and-VS-Code" class="article-heading"><a href="#Connecting-Unity-and-VS-Code" class="headerlink" title="Connecting Unity and VS Code"></a>Connecting Unity and VS Code<a class="article-anchor" href="#Connecting-Unity-and-VS-Code" aria-hidden="true"></a></h2><p>The easiest way to get going is to leverage a <a href="https://github.com/dotBunny/VSCode/" target="_blank" rel="external">Unity plug-in</a> maintained by <a href="https://twitter.com/reapazor" target="_blank" rel="external">@Reapazor</a>.  This plug-in streamlines the integration process significantly by performing the following tasks:</p>
@@ -100,7 +100,7 @@
 <li>Go to symbol</li>
 <li>Hover</li>
 </ul>
-<p>Two topics that will help you are <a href="/docs/editor/editingevolved.html">Editing Evolved</a> and <a href="/docs/languages/csharp.html">C#</a>.  In the image below, you can see VS Code showing hover context, peeking references and more.</p>
+<p>Two topics that will help you are <a href="/docs/editor/editingevolved">Editing Evolved</a> and <a href="/docs/languages/csharp">C#</a>.  In the image below, you can see VS Code showing hover context, peeking references and more.</p>
 <p><img src="images/unity/peekreferences.png" alt="editing evolved example"></p>
 <h2 id="Unity-Extensions" class="article-heading"><a href="#Unity-Extensions" class="headerlink" title="Unity Extensions"></a>Unity Extensions<a class="article-anchor" href="#Unity-Extensions" aria-hidden="true"></a></h2><p>The community is continually developing more and more valuable extensions for Unity. Here are some popular extensions that you might find useful. You can find more extensions in the VS Code <a href="https://marketplace.visualstudio.com/VSCode" target="_blank" rel="external">Extension Marketplace</a>.</p>
 <div class="marketplace-extensions-unity"></div>
@@ -110,9 +110,9 @@
 </blockquote>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>Read on to learn more about:</p>
 <ul>
-<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - find out more about the evolved editing features</li>
-<li><a href="/docs/editor/debugging.html">Debugging</a> - how to use the debugger with your project</li>
-<li><a href="/docs/languages/csharp.html">C#</a> - learn about the C# support in VS Code</li>
+<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - find out more about the evolved editing features</li>
+<li><a href="/docs/editor/debugging">Debugging</a> - how to use the debugger with your project</li>
+<li><a href="/docs/languages/csharp">C#</a> - learn about the C# support in VS Code</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: I don’t have IntelliSense.</strong></p>
 <p><strong>A:</strong> You need to ensure that your solution is open in VS Code (not just a single file).  Open the folder with your solution and you usually will not need to do anything else.  If for some reason VS Code has not selected the right solution context, you can change the selected project by clicking on the OmniSharp flame icon on the status bar.</p>
@@ -132,7 +132,7 @@
 <p>To configure Unity to pass this data to VS Code, set the Editor Args to be <code>. -g &quot;$(File):$(Line)&quot;</code>.  You can see this step completed in the image above.</p>
 <p><strong>Q: How can I change the file exclusions?</strong></p>
 <p><strong>A:</strong> Unity creates a number of additional files that can clutter your workspace in VS Code.  You can easily hide these so that you can focus on the files you actually want to edit.</p>
-<p>To do this, add the following JSON to your <a href="/docs/customization/userandworkspace.html">workspace settings</a>.</p>
+<p>To do this, add the following JSON to your <a href="/docs/customization/userandworkspace">workspace settings</a>.</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">// Configure glob patterns for excluding files and folders.</div><div class="line">"files.exclude": &#123;</div><div class="line">    "**/.git": true,</div><div class="line">    "**/.DS_Store": true,</div><div class="line">    "**/*.meta": true,</div><div class="line">    "**/*.*.meta": true,</div><div class="line">    "**/*.unity": true,</div><div class="line">    "**/*.unityproj": true,</div><div class="line">    "**/*.mat": true,</div><div class="line">    "**/*.fbx": true,</div><div class="line">    "**/*.FBX": true,</div><div class="line">    "**/*.tga": true,</div><div class="line">    "**/*.cubemap": true,</div><div class="line">    "**/**.prefab": true,</div><div class="line">    "**/Library": true,</div><div class="line">    "**/ProjectSettings": true,</div><div class="line">    "**/Temp": true</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>As you can see below this will clean things up a lot…</p>
 <table>
@@ -194,10 +194,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

@@ -56,13 +56,13 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name">Visual Studio Code のカスタマイズ</h1>
-                <a href="ABCdocs/customization/overview.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/customization/overview.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-21T00:00:00.000Z" itemprop="dateModified">Last updated: 2017-02-21</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
                 <p>VS Code はカスタマイズしてあなたの思い通りに動かすことが可能です。このページでは VS Code を設定する最も簡単な方法を紹介しています。次の表で関連するセクションに移動して詳細を確認してください。</p>
 <blockquote>
-<p><strong>Tip:</strong>  <a href="/docs/editor/extension-gallery.html">Extension Marketplace</a> で VS Code のカスタマイズ (Themes, Snippets, Language Support) をシェアできます。ですから、初めにそこを見ることはいい方法と言えます。</p>
+<p><strong>Tip:</strong>  <a href="/docs/editor/extension-gallery">Extension Marketplace</a> で VS Code のカスタマイズ (Themes, Snippets, Language Support) をシェアできます。ですから、初めにそこを見ることはいい方法と言えます。</p>
 </blockquote>
 <h2 id="Customization-Topics" class="article-heading"><a href="#Customization-Topics" class="headerlink" title="Customization Topics"></a>Customization Topics<a class="article-anchor" href="#Customization-Topics" aria-hidden="true"></a></h2><table>
 <thead>
@@ -74,37 +74,37 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="/docs/customization/userandworkspace.html">User and Workspace settings</a></td>
+<td><a href="/docs/customization/userandworkspace">User and Workspace settings</a></td>
 <td>ワークスペースの設定を構成 (文字改行や lint 設定またその他など)</td>
 <td>No</td>
 </tr>
 <tr>
-<td><a href="/docs/customization/keybindings.html">Key Bindings</a></td>
+<td><a href="/docs/customization/keybindings">Key Bindings</a></td>
 <td>キーバインドを確認して変更</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td><a href="/docs/editor/tasks.html">Tasks</a></td>
+<td><a href="/docs/editor/tasks">Tasks</a></td>
 <td>開発ワークフロー と VS Code を結びつける</td>
 <td>No</td>
 </tr>
 <tr>
-<td><a href="/docs/customization/themes.html">Themes</a></td>
+<td><a href="/docs/customization/themes">Themes</a></td>
 <td>VS Code にオリジナルの配色テーマを追加</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td><a href="/docs/customization/colorizer.html">Basic Language Support</a></td>
+<td><a href="/docs/customization/colorizer">Basic Language Support</a></td>
 <td>TextMate バンドルを介して VS Code に言語サポート (colorization, bracket matching) 、既存の言語でファイル拡張子の関連付けを追加</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td><a href="/docs/customization/userdefinedsnippets.html">Snippets</a></td>
+<td><a href="/docs/customization/userdefinedsnippets">Snippets</a></td>
 <td>お気に入りの言語スニペットを追加</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td><a href="/docs/customization/locales.html">Language</a></td>
+<td><a href="/docs/customization/locales">Language</a></td>
 <td>表示言語を構成</td>
 <td>No</td>
 </tr>
@@ -112,18 +112,18 @@
 </table>
 <h2 id="次のステップ" class="article-heading"><a href="#次のステップ" class="headerlink" title="次のステップ"></a>次のステップ<a class="article-anchor" href="#次のステップ" aria-hidden="true"></a></h2><p>あなたの道を手伝うヒントをここに紹介します。</p>
 <ul>
-<li><a href="/docs/editor/extension-gallery.html">Extension Marketplace</a> - 他のユーザーが共有している拡張機能を閲覧</li>
-<li><a href="/docs/tools/yocode.html">Yo Code</a> -  ローカルにインストールして、カスタマイズを構成</li>
-<li><a href="/docs/tools/vscecli.html">Publishing Tool</a> - <code>vsce</code> publishing tool でカスタマイズを他のユーザーと共有</li>
+<li><a href="/docs/editor/extension-gallery">Extension Marketplace</a> - 他のユーザーが共有している拡張機能を閲覧</li>
+<li><a href="/docs/tools/yocode">Yo Code</a> -  ローカルにインストールして、カスタマイズを構成</li>
+<li><a href="/docs/tools/vscecli">Publishing Tool</a> - <code>vsce</code> publishing tool でカスタマイズを他のユーザーと共有</li>
 </ul>
 <h2 id="よくある質問" class="article-heading"><a href="#よくある質問" class="headerlink" title="よくある質問"></a>よくある質問<a class="article-anchor" href="#よくある質問" aria-hidden="true"></a></h2><p><strong>Q: 起動時にカスタマイズを読み込ませるにはどうすればいいですか?</strong></p>
 <p><strong>A:</strong> <code>.vscode/extensions</code> フォルダーに放り込むと VS Code 起動時に読み込まれます。</p>
 <p><strong>Q: <code>package.json</code> で拡張要素の記述方法は何ですか?</strong></p>
-<p>私たちは、カスタマイズと拡張機能を読み込み/配布するのに必要な要素を書き込むために<code>package.json</code>を拡張しました。<a href="/docs/extensionAPI/extension-manifest.html">拡張機能マニフェスト</a> を参照して入力事項の概要を確認してください。</p>
+<p>私たちは、カスタマイズと拡張機能を読み込み/配布するのに必要な要素を書き込むために<code>package.json</code>を拡張しました。<a href="/docs/extensionAPI/extension-manifest">拡張機能マニフェスト</a> を参照して入力事項の概要を確認してください。</p>
 <p>**Q: <code>package.json</code> に複数の <code>contributes</code> 属性を設定できますか?</p>
 <p><strong>A:</strong> はい jsonで書かれた <code>contributes</code> はカンマ区切りで構成できます。ですから例えば  <code>&quot;themes&quot;: [ ]</code> のような書き方ができます。</p>
 <p><strong>Q: VS Code で作成したカスタマイズが表示されませんか?</strong></p>
-<p><strong>A:</strong> ジェネレーターの出力ファイルをすべて <a href="/docs/extensions/install-extension.html#your-extensions-folder"><code>.vscode/extensions</code></a> の新しいフォルダーにコピーしてください(例えば “.vscode/extensions/cooltheme”です)。そうして VS Code を再起動してみてください。</p>
+<p><strong>A:</strong> ジェネレーターの出力ファイルをすべて <a href="/docs/extensions/install-extension.md#your-extensions-folder"><code>.vscode/extensions</code></a> の新しいフォルダーにコピーしてください(例えば “.vscode/extensions/cooltheme”です)。そうして VS Code を再起動してみてください。</p>
 <p>起動時にカスタマイズの問題を検出すると VS Code がデバッグに役立つエラーメッセージを表示します。</p>
 <p><img src="images/overview/error.png" alt="customization error"></p>
 
@@ -167,10 +167,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

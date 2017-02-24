@@ -56,7 +56,7 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name">July 2016 (version 1.4)</h1>
-                <a href="ABCupdates/v1_4.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/updates/v1_4.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-19T07:46:59.960Z" itemprop="dateModified">Last updated: 2017-02-19</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
@@ -87,7 +87,7 @@
 <h3 id="Git-commit-message-template" class="article-heading"><a href="#Git-commit-message-template" class="headerlink" title="Git commit message template"></a>Git commit message template<a class="article-anchor" href="#Git-commit-message-template" aria-hidden="true"></a></h3><p>git で構成されているメッセージテンプレートを、VS Code の Git ビューで利用できるようにしました。デフォルトでコミット時のメッセージボックスに構成済みのメッセージテンプレートを表示します。</p>
 <p>この機能に貢献してくれた <a href="https://github.com/bill-mybiz" target="_blank" rel="external">William Raiford</a> に感謝します。</p>
 <h3 id="Faster-Quick-Open" class="article-heading"><a href="#Faster-Quick-Open" class="headerlink" title="Faster Quick Open"></a>Faster Quick Open<a class="article-anchor" href="#Faster-Quick-Open" aria-hidden="true"></a></h3><p>Chromium などの大規模なワークスペースのためのクイックオープンのパフォーマンスを大幅に改善する上での最初のステップを作りました。</p>
-<p>Mac OS (<code>kbstyle(⌘+P)</code>) および Linux (<code>kbstyle(Ctrl+P)</code>) では、Chromium ワークスペースの <code>Quick Open</code> は、以前のリリースに比べ約半分の時間で開くことができるようになりました。<br>Windows (<code>kbstyle(Ctrl+P)</code>) では、Mac OS に比べ倍ほど遅かった動作が、今では高速に動作するするようになりました。</p>
+<p>Mac OS (<span class="keybinding">⌘+P</span>) および Linux (<span class="keybinding">Ctrl+P</span>) では、Chromium ワークスペースの <code>Quick Open</code> は、以前のリリースに比べ約半分の時間で開くことができるようになりました。<br>Windows (<span class="keybinding">Ctrl+P</span>) では、Mac OS に比べ倍ほど遅かった動作が、今では高速に動作するするようになりました。</p>
 <p>そして、それはまだ終わっていません。次の Iteration では、より高速に動作するよう計画しています。</p>
 <h3 id="Integrated-Terminal" class="article-heading"><a href="#Integrated-Terminal" class="headerlink" title="Integrated Terminal"></a>Integrated Terminal<a class="article-anchor" href="#Integrated-Terminal" aria-hidden="true"></a></h3><p>このリリースでは、統合ターミナル機能の完成を目指すための改善と互換性に関する改善を行っています：</p>
 <ul>
@@ -113,7 +113,7 @@
 <p>デバッグ拡張機能でこれを利用するための詳細な方法については、セクション “Debug Protocol Changes” を参照してください。</p>
 <h3 id="Double-Click-Debug-Toolbar-Centers" class="article-heading"><a href="#Double-Click-Debug-Toolbar-Centers" class="headerlink" title="Double Click Debug Toolbar Centers"></a>Double Click Debug Toolbar Centers<a class="article-anchor" href="#Double-Click-Debug-Toolbar-Centers" aria-hidden="true"></a></h3><p>デバッグツールバーのドラッグ・アイコンをダブルクリックすることで、デバッグツールバーを中心に配置し直します。これは、簡単にデフォルト状態を復元することができます。</p>
 <h2 id="Extension-Authoring" class="article-heading"><a href="#Extension-Authoring" class="headerlink" title="Extension Authoring"></a>Extension Authoring<a class="article-anchor" href="#Extension-Authoring" aria-hidden="true"></a></h2><h3 id="New-settings-to-replace-deprecated-characterPairSupport-and-electricCharacterSupport" class="article-heading"><a href="#New-settings-to-replace-deprecated-characterPairSupport-and-electricCharacterSupport" class="headerlink" title="New settings to replace deprecated characterPairSupport and electricCharacterSupport."></a>New settings to replace deprecated <strong>characterPairSupport and </strong>electricCharacterSupport.<a class="article-anchor" href="#New-settings-to-replace-deprecated-characterPairSupport-and-electricCharacterSupport" aria-hidden="true"></a></h3><p>‘<strong>characterPairSupport’ と ‘</strong>electricCharacterSupport’ 両方の設定が非推奨となり、拡張機能に含まれる language-configuration.json ファイルの <code>autoClosingPairs</code> 設定に置きかえられました。<br>詳細な手順については、<a href="https://github.com/Microsoft/vscode/issues/9281" target="_blank" rel="external">#9281</a> を参照してください。</p>
-<h3 id="Editor-Commands" class="article-heading"><a href="#Editor-Commands" class="headerlink" title="Editor Commands"></a>Editor Commands<a class="article-anchor" href="#Editor-Commands" aria-hidden="true"></a></h3><p><a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim" target="_blank" rel="external">VIM 拡張機能</a> の <a href="https://github.com/VSCodeVim/Vim/blob/master/ROADMAP.html" target="_blank" rel="external">ロードマップ</a>を実現するために、<a href="https://github.com/VSCodeVim/Vim/blob/master/ROADMAP.html#up-down-motions" target="_blank" rel="external">上下移動コマンド</a> および<a href="https://github.com/VSCodeVim/Vim/blob/master/ROADMAP.html#tabs" target="_blank" rel="external">タブ関連のコマンド</a>に関する、下記の Editor API を追加しました。</p>
+<h3 id="Editor-Commands" class="article-heading"><a href="#Editor-Commands" class="headerlink" title="Editor Commands"></a>Editor Commands<a class="article-anchor" href="#Editor-Commands" aria-hidden="true"></a></h3><p><a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim" target="_blank" rel="external">VIM 拡張機能</a> の <a href="https://github.com/VSCodeVim/Vim/blob/master/ROADMAP.md" target="_blank" rel="external">ロードマップ</a>を実現するために、<a href="https://github.com/VSCodeVim/Vim/blob/master/ROADMAP.md#up-down-motions" target="_blank" rel="external">上下移動コマンド</a> および<a href="https://github.com/VSCodeVim/Vim/blob/master/ROADMAP.md#tabs" target="_blank" rel="external">タブ関連のコマンド</a>に関する、下記の Editor API を追加しました。</p>
 <ul>
 <li><p><strong>Move cursor:</strong> エディタ内の異なる論理位置にカーソルを移動することを可能にする新しいコマンドが追加されました - <a href="https://github.com/Microsoft/vscode/issues/9143" target="_blank" rel="external">9143</a></p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line">commands.executeCommand(<span class="string">'cursorMove'</span>, &#123;<span class="attr">to</span>: <span class="string">'up'</span>, <span class="attr">by</span>: <span class="string">'wrappedLine'</span>, <span class="attr">value</span>: <span class="string">'2'</span>&#125;)</div></pre></td></tr></table></figure>
@@ -223,10 +223,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

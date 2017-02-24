@@ -56,7 +56,7 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name">October 2016 (version 1.7)</h1>
-                <a href="ABCupdates/v1_7.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/updates/v1_7.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-19T07:46:16.334Z" itemprop="dateModified">Last updated: 2017-02-19</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
@@ -82,7 +82,7 @@
 <li><strong><a href="#languages">Languages</a></strong> - JavaScript と CSS の改善</li>
 <li><strong><a href="#extensions">Extensions</a></strong> - マーケットプレイスに <code>Keymaps</code> と <code>Formatters</code> のための新しいカテゴリを追加</li>
 <li><strong><a href="#node-debugging">Node.js Debugging</a></strong> - マルチターゲットデバッグのサポート、新しいデバッグ設定の追加</li>
-<li><strong><a href="#extension-authoring">Extension Authoring</a></strong> - 拡張機能の変更履歴を扱う CHANGELOG.html ファイルのサポート、エディタタブのコンテキストメニューへ項目の追加が可能に</li>
+<li><strong><a href="#extension-authoring">Extension Authoring</a></strong> - 拡張機能の変更履歴を扱う CHANGELOG.md ファイルのサポート、エディタタブのコンテキストメニューへ項目の追加が可能に</li>
 </ul>
 <h2 id="Workbench" class="article-heading"><a href="#Workbench" class="headerlink" title="Workbench"></a>Workbench<a class="article-anchor" href="#Workbench" aria-hidden="true"></a></h2><h3 id="Horizontal-layout" class="article-heading"><a href="#Horizontal-layout" class="headerlink" title="Horizontal layout"></a>Horizontal layout<a class="article-anchor" href="#Horizontal-layout" aria-hidden="true"></a></h3><p>エディタグループのレイアウトを縦または横のいずれかに変更することが可能になりました。どちらのレイアウトもエディタの移動やリサイズ、エディタ・グループの変更など以前と同じように動作を適用できます。</p>
 <p><img src="http://code.visualstudio.com/images/1_7_horizontal.png" alt="Horizontal"></p>
@@ -115,7 +115,7 @@
 <blockquote>
 <p><strong>Note:</strong> また、code.visualstudio.com に掲載される<a href="http://code.visualstudio.com/docs/introvideos/overview" target="_blank" rel="external">入門ビデオ</a>をブラウザから参照するためのメニューコマンドを追加しました。(<strong>Help</strong> &gt; <strong>Introductory Videos</strong>)</p>
 </blockquote>
-<h3 id="Format-Document-Format-Selection" class="article-heading"><a href="#Format-Document-Format-Selection" class="headerlink" title="Format Document / Format Selection"></a>Format Document / Format Selection<a class="article-anchor" href="#Format-Document-Format-Selection" aria-hidden="true"></a></h3><p>エディタは現在、<strong>Format Document</strong> (<code>kb(editor.action.formatDocument)</code>) と <strong>Format Selection</strong> (<code>kb(editor.action.formatSelection)</code>) の 2 つの明示的なフォーマットアクションを提供します。</p>
+<h3 id="Format-Document-Format-Selection" class="article-heading"><a href="#Format-Document-Format-Selection" class="headerlink" title="Format Document / Format Selection"></a>Format Document / Format Selection<a class="article-anchor" href="#Format-Document-Format-Selection" aria-hidden="true"></a></h3><p>エディタは現在、<strong>Format Document</strong> (<span class="dynamic-keybinding" data-osx="⇧⌥F" data-win="Shift+Alt+F" data-linux="Ctrl+Shift+I"><span class="keybinding">⇧⌥F</span> (Windows <span class="keybinding">Shift+Alt+F</span>, Linux <span class="keybinding">Ctrl+Shift+I</span>)</span>) と <strong>Format Selection</strong> (<span class="dynamic-keybinding" data-osx="⌘K ⌘F" data-win="Ctrl+K Ctrl+F" data-linux="Ctrl+K Ctrl+F"><span class="keybinding">⌘K ⌘F</span> (Windows, Linux <span class="keybinding">Ctrl+K Ctrl+F</span>)</span>) の 2 つの明示的なフォーマットアクションを提供します。</p>
 <p><img src="http://code.visualstudio.com/images/1_7_format-context-menu.png" alt="format on context menu"></p>
 <p>また、JavaScript、TypeScript、JSON、および HTML のデフォルトのフォーマッターを有効/無効にする、新しい構成オプションを追加しました。同じ言語の別な書式設定拡張機能がインストールされ、それを利用したい場合に、このオプションを使用します。</p>
 <p>ソースコードの<a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Formatters&amp;sortBy=Downloads" target="_blank" rel="external">書式設定の拡張機能</a>を簡単に検索し見つけることができるように、マーケットプレイスに新しい <code>Formatters</code> <a href="#formatters-category">カテゴリ</a>を追加しました。</p>
@@ -203,8 +203,8 @@
 <li><code>debug.openExplorerOnEnd</code> - デバッグセッション終了時にエクスプローラを自動的に開くよう制御します</li>
 </ul>
 <h2 id="Extension-Authoring" class="article-heading"><a href="#Extension-Authoring" class="headerlink" title="Extension Authoring"></a>Extension Authoring<a class="article-anchor" href="#Extension-Authoring" aria-hidden="true"></a></h2><h3 id="Breaking-Change-MarkedString-semantics" class="article-heading"><a href="#Breaking-Change-MarkedString-semantics" class="headerlink" title="Breaking Change: MarkedString[] semantics"></a>Breaking Change: <code>MarkedString[]</code> semantics<a class="article-anchor" href="#Breaking-Change-MarkedString-semantics" aria-hidden="true"></a></h3><p><code>MarkedString | MarkedString[]</code> を返す API 関連実装のセマンティクスを変更しました。各 <code>MarkedString</code> は、視覚的に水平線により他から分離されます。<code>HoverProvider</code> と <code>Decoration</code> API のどちらも、この影響を受けています。</p>
-<h3 id="Changelogs" class="article-heading"><a href="#Changelogs" class="headerlink" title="Changelogs"></a>Changelogs<a class="article-anchor" href="#Changelogs" aria-hidden="true"></a></h3><p>VS Code の拡張機能詳細ビューから、拡張機能の CHANGELOG.html を直接表示することが可能になりました。</p>
-<p>拡張機能の作者は、拡張機能の README.html に記載されていた既存の変更履歴を、個別の CHANGELOG.html ファイルへ移動することを推奨します。<br>CHANGELOG.htmlは、拡張機能のワークスペースのルートに配置された場合、README.html と同様に <code>vsce</code> パブリッシングツールにより自動的に含まれます。</p>
+<h3 id="Changelogs" class="article-heading"><a href="#Changelogs" class="headerlink" title="Changelogs"></a>Changelogs<a class="article-anchor" href="#Changelogs" aria-hidden="true"></a></h3><p>VS Code の拡張機能詳細ビューから、拡張機能の CHANGELOG.md を直接表示することが可能になりました。</p>
+<p>拡張機能の作者は、拡張機能の README.md に記載されていた既存の変更履歴を、個別の CHANGELOG.md ファイルへ移動することを推奨します。<br>CHANGELOG.mdは、拡張機能のワークスペースのルートに配置された場合、README.md と同様に <code>vsce</code> パブリッシングツールにより自動的に含まれます。</p>
 <h3 id="Provide-menu-entries-for-the-editor-tab-context-menu" class="article-heading"><a href="#Provide-menu-entries-for-the-editor-tab-context-menu" class="headerlink" title="Provide menu entries for the editor tab context menu"></a>Provide menu entries for the editor tab context menu<a class="article-anchor" href="#Provide-menu-entries-for-the-editor-tab-context-menu" aria-hidden="true"></a></h3><p>拡張機能のメニューエントリをエディタ・タブのコンテキストメニューに追加することが可能になりました(タブ機能が無効になっていても、これは動作します)。追加に必要なコントリビュートの関連するメニューパスは、<code>editor/title/context</code> です。</p>
 <p>例:</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">"commands": [&#123;</div><div class="line">    "command": "doSomething",</div><div class="line">    "title": "Do Something"</div><div class="line">&#125;],</div><div class="line">"menus": &#123;</div><div class="line">    "editor/title/context": [</div><div class="line">        &#123;</div><div class="line">            "command": "doSomething"</div><div class="line">        &#125;</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -224,7 +224,7 @@
 </thead>
 <tbody>
 <tr>
-<td><code>kb(workbench.action.toggleEditorGroupLayout)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌥⌘1" data-win="Shift+Alt+1" data-linux="Shift+Alt+1"><span class="keybinding">⌥⌘1</span> (Windows, Linux <span class="keybinding">Shift+Alt+1</span>)</span></td>
 <td>エディターグループの縦/横レイアウトを切り替える (Toggle editor group layout)</td>
 <td><code>workbench.action.toggleEditorGroupLayout</code></td>
 </tr>
@@ -239,12 +239,12 @@
 <td></td>
 </tr>
 <tr>
-<td><code>kb(editor.action.formatDocument)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⇧⌥F" data-win="Shift+Alt+F" data-linux="Ctrl+Shift+I"><span class="keybinding">⇧⌥F</span> (Windows <span class="keybinding">Shift+Alt+F</span>, Linux <span class="keybinding">Ctrl+Shift+I</span>)</span></td>
 <td>ドキュメントのフォーマット (Format document)</td>
 <td><code>editor.action.formatDocument</code></td>
 </tr>
 <tr>
-<td><code>kb(editor.action.formatSelection)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌘K ⌘F" data-win="Ctrl+K Ctrl+F" data-linux="Ctrl+K Ctrl+F"><span class="keybinding">⌘K ⌘F</span> (Windows, Linux <span class="keybinding">Ctrl+K Ctrl+F</span>)</span></td>
 <td>選択範囲のフォーマット (Format selection)</td>
 <td><code>editor.action.formatSelection</code></td>
 </tr>
@@ -254,12 +254,12 @@
 <td></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.terminal.scrollToTop)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌘Home" data-win="Ctrl+Home" data-linux="Shift+Home"><span class="keybinding">⌘Home</span> (Windows <span class="keybinding">Ctrl+Home</span>, Linux <span class="keybinding">Shift+Home</span>)</span></td>
 <td>一番上にスクロール (Scroll to top)</td>
 <td><code>workbench.action.terminal.scrollToTop</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.terminal.scrollToBottom)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌘End" data-win="Ctrl+End" data-linux="Shift+End"><span class="keybinding">⌘End</span> (Windows <span class="keybinding">Ctrl+End</span>, Linux <span class="keybinding">Shift+End</span>)</span></td>
 <td>一番下にスクロール (Scroll to bottom)</td>
 <td><code>workbench.action.terminal.scrollToBottom</code></td>
 </tr>
@@ -396,10 +396,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

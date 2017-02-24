@@ -56,14 +56,14 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name"></h1>
-                <a href="ABCdocs/runtimes/office.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/runtimes/office.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-15T07:41:40.737Z" itemprop="dateModified">Last updated: 2017-02-15</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
                 <h1 id="Office-Add-ins-with-VS-Code" class="article-heading"><a href="#Office-Add-ins-with-VS-Code" class="headerlink" title="Office Add-ins with VS Code"></a>Office Add-ins with VS Code<a class="article-anchor" href="#Office-Add-ins-with-VS-Code" aria-hidden="true"></a></h1><p><a href="https://dev.office.com/getting-started/addins" target="_blank" rel="external">Office Add-ins</a> run inside an Office application and can interact with the contents of the Office document using the rich JavaScript API.</p>
 <p><img src="images/office/officeaddinoverview.png" alt="Office Add-in overview"></p>
 <p>Under the hood, an Office Add-in is simply a web app that you can host anywhere. Using a <code>manifest.xml</code> file, you tell the Office application where your web app is located and how you want it to appear. The Office application takes care of hosting it within Office.</p>
-<h2 id="Step-1-Get-set-up" class="article-heading"><a href="#Step-1-Get-set-up" class="headerlink" title="Step 1: Get set up"></a>Step 1: Get set up<a class="article-anchor" href="#Step-1-Get-set-up" aria-hidden="true"></a></h2><p>Follow the instructions to <a href="https://github.com/OfficeDev/office-js-docs/blob/master/docs/get-started/create-an-office-add-in-using-any-editor.html" target="_blank" rel="external">Create an Office Add-in using any editor</a> to install the necessary prerequisites, and use Yo Office to create a new add-in project. The following table lists the project attributes to select in the Yeoman generator.</p>
+<h2 id="Step-1-Get-set-up" class="article-heading"><a href="#Step-1-Get-set-up" class="headerlink" title="Step 1: Get set up"></a>Step 1: Get set up<a class="article-anchor" href="#Step-1-Get-set-up" aria-hidden="true"></a></h2><p>Follow the instructions to <a href="https://github.com/OfficeDev/office-js-docs/blob/master/docs/get-started/create-an-office-add-in-using-any-editor.md" target="_blank" rel="external">Create an Office Add-in using any editor</a> to install the necessary prerequisites, and use Yo Office to create a new add-in project. The following table lists the project attributes to select in the Yeoman generator.</p>
 <table>
 <thead>
 <tr>
@@ -107,7 +107,7 @@
 <p><strong>Tip:</strong> If you are using an Azure Web App as the host, the URL will look something like <code>https://[name-of-your-web-app].azurewebsites.net/[path-to-add-in]</code>. If you are using the self-hosted option listed above, it will be <code>https://localhost:3000/[path-to-add-in]</code>.</p>
 </blockquote>
 <h3 id="Debugging-your-Office-Add-in" class="article-heading"><a href="#Debugging-your-Office-Add-in" class="headerlink" title="Debugging your Office Add-in"></a>Debugging your Office Add-in<a class="article-anchor" href="#Debugging-your-Office-Add-in" aria-hidden="true"></a></h3><p>VS Code does not currently support client-side debugging. To debug your client-side Add-in, you can use the Office web clients and open the browser’s developer tools and debug the Add-in just like any other client-side JavaScript application.</p>
-<p>If you are using Node.js or ASP.NET Core for server-side logic that supports your Office Add-in, refer to the <a href="/docs/editor/debugging.html">Debugging</a> page to configure VS Code for debugging either of these runtimes.</p>
+<p>If you are using Node.js or ASP.NET Core for server-side logic that supports your Office Add-in, refer to the <a href="/docs/editor/debugging">Debugging</a> page to configure VS Code for debugging either of these runtimes.</p>
 <h2 id="Install-the-Add-in" class="article-heading"><a href="#Install-the-Add-in" class="headerlink" title="Install the Add-in"></a>Install the Add-in<a class="article-anchor" href="#Install-the-Add-in" aria-hidden="true"></a></h2><p>Office Add-ins must be installed, or registered, with the Office application in order to load. This is done using the <code>manifest.xml</code> file you modified earlier.</p>
 <h3 id="Side-Loading-Mail-Add-ins" class="article-heading"><a href="#Side-Loading-Mail-Add-ins" class="headerlink" title="Side Loading Mail Add-ins"></a>Side Loading Mail Add-ins<a class="article-anchor" href="#Side-Loading-Mail-Add-ins" aria-hidden="true"></a></h3><p>Mail Add-ins can be installed within the Outlook Web App. Browse to your Outlook Web App (<a href="https://mail.office365.com" target="_blank" rel="external">https://mail.office365.com</a>) and login. Once logged in, click the gear icon in the top-right section and select <strong>Manage add-ins</strong>:</p>
 <p><img src="images/office/owamanageaddins.png" alt="Manage Add-ins"></p>
@@ -130,15 +130,15 @@
 <p>Using the Office Add-ins dialog you can select Add-ins you’ve uploaded to your Office 365 tenancy’s App Catalog (<em>listed under My Organization</em>) or acquire Add-ins from the Office Store.</p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>Check out the other pages on the VS Code site to find out how you can leverage more capabilities of the editor when creating custom Office Add-ins:</p>
 <ul>
-<li><a href="/docs/languages/overview.html">Language Overview</a> - You can write Office Add-ins in many languages. Find out what VS Code has to offer.</li>
-<li><a href="/docs/editor/codebasics.html">The Basics</a> - Just starting out with VS Code? This is worth reviewing.</li>
-<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - Review all the ways VS Code can help you in editing.</li>
-<li><a href="/docs/Runtimes/nodejs.html">Node.js</a> - Find out more about our Node.js support.</li>
+<li><a href="/docs/languages/overview">Language Overview</a> - You can write Office Add-ins in many languages. Find out what VS Code has to offer.</li>
+<li><a href="/docs/editor/codebasics">The Basics</a> - Just starting out with VS Code? This is worth reviewing.</li>
+<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - Review all the ways VS Code can help you in editing.</li>
+<li><a href="/docs/Runtimes/nodejs">Node.js</a> - Find out more about our Node.js support.</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: Can I create an Office Add-in with the generator and use VS Code regardless of the language or client-side framework?</strong></p>
 <p><strong>A:</strong> Yes, you can. You can use pure HTML, Angular, Ember, React, Aurelia… anything you like!</p>
 <p><strong>Q: Can I use TypeScript to create my Office Add-in?</strong></p>
-<p><strong>A:</strong> Absolutely and VS Code has great support for <a href="/docs/languages/typescript.html">TypeScript</a>!</p>
+<p><strong>A:</strong> Absolutely and VS Code has great support for <a href="/docs/languages/typescript">TypeScript</a>!</p>
 
               </div>
               <footer class="article-footer">
@@ -180,10 +180,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

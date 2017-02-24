@@ -56,7 +56,7 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name"></h1>
-                <a href="ABCdocs/setup/linux.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/setup/linux.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-03T07:14:16.387Z" itemprop="dateModified">Last updated: 2017-02-03</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
@@ -72,18 +72,18 @@
 <p><strong>Tip:</strong> Run <code>code .</code> in any folder to start editing files in that folder.</p>
 </blockquote>
 <h2 id="Updates" class="article-heading"><a href="#Updates" class="headerlink" title="Updates"></a>Updates<a class="article-anchor" href="#Updates" aria-hidden="true"></a></h2><p>VS Code ships monthly and you can see when a new release is available by checking <a href="/updates">Updates</a>.  Unfortunately, VS Code does not yet support auto-update on Linux, so you will need to manually install each new release.</p>
-<h2 id="Node-js" class="article-heading"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js<a class="article-anchor" href="#Node-js" aria-hidden="true"></a></h2><p>Node.js is a popular platform and runtime for easily building and running JavaScript applications. It also includes <a href="https://www.npmjs.com/" target="_blank" rel="external">NPM</a>, a Package Manager for Node.js modules. You’ll see Node.js and NPM mentioned frequently in our documentation and some optional VS Code tooling requires Node.js (ex. the VS Code <a href="/docs/tools/yocode.html">extension generator</a>).</p>
+<h2 id="Node-js" class="article-heading"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js<a class="article-anchor" href="#Node-js" aria-hidden="true"></a></h2><p>Node.js is a popular platform and runtime for easily building and running JavaScript applications. It also includes <a href="https://www.npmjs.com/" target="_blank" rel="external">NPM</a>, a Package Manager for Node.js modules. You’ll see Node.js and NPM mentioned frequently in our documentation and some optional VS Code tooling requires Node.js (ex. the VS Code <a href="/docs/tools/yocode">extension generator</a>).</p>
 <p>If you’d like to install Node.js on Linux, see <a href="https://nodejs.org/en/download/package-manager" target="_blank" rel="external">Installing Node.js via package manager</a> to find the Node.js package and installation instructions tailored to your Linux distribution.</p>
-<p>To learn more about JavaScript and Node.js, see our <a href="/docs/runtimes/nodejs.html">Node.js walkthrough</a> where you’ll learn about running and debugging Node.js applications with VS Code.</p>
+<p>To learn more about JavaScript and Node.js, see our <a href="/docs/runtimes/nodejs">Node.js walkthrough</a> where you’ll learn about running and debugging Node.js applications with VS Code.</p>
 <h2 id="Setting-VS-Code-as-the-default-text-editor" class="article-heading"><a href="#Setting-VS-Code-as-the-default-text-editor" class="headerlink" title="Setting VS Code as the default text editor"></a>Setting VS Code as the default text editor<a class="article-anchor" href="#Setting-VS-Code-as-the-default-text-editor" aria-hidden="true"></a></h2><h3 id="xdg-open" class="article-heading"><a href="#xdg-open" class="headerlink" title="xdg-open"></a>xdg-open<a class="article-anchor" href="#xdg-open" aria-hidden="true"></a></h3><p>You can set the default text editor for text files (<code>text/plain</code>) that is used by <code>xdg-open</code> with the following command:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">xdg-mime default code.desktop text/plain</div></pre></td></tr></table></figure>
 <h3 id="Debian-alternatives-system" class="article-heading"><a href="#Debian-alternatives-system" class="headerlink" title="Debian alternatives system"></a>Debian alternatives system<a class="article-anchor" href="#Debian-alternatives-system" aria-hidden="true"></a></h3><p>Debian-based distributions allow setting a default <em>editor</em> using the <a href="https://wiki.debian.org/DebianAlternatives" target="_blank" rel="external">alternatives system</a>, without concern for the mime type. You can set this by running the following and selecting code.</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">sudo update-alternatives --set editor /usr/bin/code</div></pre></td></tr></table></figure>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>Once you have installed VS Code, these topics will help you learn more about VS Code:</p>
 <ul>
-<li><a href="/docs/setup/additional-components.html">Additional Components</a> - Learn how to install Git, Node.js, TypeScript and tools like Yeoman.</li>
-<li><a href="/docs/editor/codebasics.html">The Basics</a> - A quick orientation around VS Code.</li>
-<li><a href="/docs/customization/userandworkspace.html">User/Workspace Settings</a> - Learn how to configure VS Code to your preferences through settings.</li>
+<li><a href="/docs/setup/additional-components">Additional Components</a> - Learn how to install Git, Node.js, TypeScript and tools like Yeoman.</li>
+<li><a href="/docs/editor/codebasics">The Basics</a> - A quick orientation around VS Code.</li>
+<li><a href="/docs/customization/userandworkspace">User/Workspace Settings</a> - Learn how to configure VS Code to your preferences through settings.</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><h3 id="Azure-VM-Issues" class="article-heading"><a href="#Azure-VM-Issues" class="headerlink" title="Azure VM Issues"></a>Azure VM Issues<a class="article-anchor" href="#Azure-VM-Issues" aria-hidden="true"></a></h3><p>I’m getting a “Running without the SUID sandbox” error?</p>
 <p>You can safely ignore this error.</p>
@@ -144,10 +144,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

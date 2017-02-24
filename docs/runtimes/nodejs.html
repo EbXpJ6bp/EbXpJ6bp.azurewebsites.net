@@ -56,7 +56,7 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name"></h1>
-                <a href="ABCdocs/runtimes/nodejs.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/runtimes/nodejs.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-03T07:14:16.380Z" itemprop="dateModified">Last updated: 2017-02-03</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
@@ -80,26 +80,26 @@
 <p>By using the <code>.js</code> file extension, VS Code interprets this file as JavaScript and will evaluate the contents with the JavaScript language service.</p>
 <p>Create a simple string variable in <code>app.js</code> and send the contents of the string to the console:</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> msg = <span class="string">'Hello World'</span>;</div><div class="line"><span class="built_in">console</span>.log(msg);</div></pre></td></tr></table></figure>
-<p>Note that when you typed <code>console.</code> <a href="/docs/editor/intellisense.html">IntelliSense</a> on the <code>console</code> object was automatically presented to you. When editing JavaScript files, VS Code will automatically provide you with IntelliSense for the DOM.</p>
+<p>Note that when you typed <code>console.</code> <a href="/docs/editor/intellisense">IntelliSense</a> on the <code>console</code> object was automatically presented to you. When editing JavaScript files, VS Code will automatically provide you with IntelliSense for the DOM.</p>
 <p><img src="images/nodejs/consoleintellisense.png" alt="console IntelliSense"></p>
 <p>Also notice that VS Code knows that <code>msg</code> is a string based on the initialization to <code>&#39;Hello World&#39;</code>.  If you type <code>msg.</code> you’ll see IntelliSense showing all of the string functions available on <code>msg</code>.</p>
 <p><img src="images/nodejs/stringintellisense.png" alt="string IntelliSense"></p>
-<p>After experimenting with IntelliSense, revert any extra changes from the source code example above and save the file (<code>kb(workbench.action.files.save)</code>).</p>
+<p>After experimenting with IntelliSense, revert any extra changes from the source code example above and save the file (<span class="dynamic-keybinding" data-osx="⌘S" data-win="Ctrl+S" data-linux="Ctrl+S"><span class="keybinding">⌘S</span> (Windows, Linux <span class="keybinding">Ctrl+S</span>)</span>).</p>
 <h3 id="Running-Hello-World" class="article-heading"><a href="#Running-Hello-World" class="headerlink" title="Running Hello World"></a>Running Hello World<a class="article-anchor" href="#Running-Hello-World" aria-hidden="true"></a></h3><p>It’s simple to run <code>app.js</code> with Node.js. From a terminal, just type:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">node app.js</div></pre></td></tr></table></figure>
 <p>You should see “Hello World” output to the terminal and then Node.js returns.</p>
-<h3 id="Integrated-Terminal" class="article-heading"><a href="#Integrated-Terminal" class="headerlink" title="Integrated Terminal"></a>Integrated Terminal<a class="article-anchor" href="#Integrated-Terminal" aria-hidden="true"></a></h3><p>VS Code has an <a href="/docs/editor/integrated-terminal.html">integrated terminal</a> which you can use to run shell commands. You can run Node.js directly from there and avoid switching out of VS Code while running command line tools.</p>
-<p><strong>View</strong> &gt; <strong>Integrated Terminal</strong> (<code>kb(workbench.action.terminal.toggleTerminal)</code> with the backtick character) will open the integrated terminal and you can run <code>node app.js</code> there:</p>
+<h3 id="Integrated-Terminal" class="article-heading"><a href="#Integrated-Terminal" class="headerlink" title="Integrated Terminal"></a>Integrated Terminal<a class="article-anchor" href="#Integrated-Terminal" aria-hidden="true"></a></h3><p>VS Code has an <a href="/docs/editor/integrated-terminal">integrated terminal</a> which you can use to run shell commands. You can run Node.js directly from there and avoid switching out of VS Code while running command line tools.</p>
+<p><strong>View</strong> &gt; <strong>Integrated Terminal</strong> (<span class="dynamic-keybinding" data-osx="⌃`" data-win="Ctrl+`" data-linux="Ctrl+`"><span class="keybinding">⌃`</span> (Windows, Linux <span class="keybinding">Ctrl+`</span>)</span> with the backtick character) will open the integrated terminal and you can run <code>node app.js</code> there:</p>
 <p><img src="images/nodejs/integrated-terminal.png" alt="integrated terminal"></p>
 <p>For this walkthrough, you can use either an external terminal or the VS Code integrated terminal for running the command line tools.</p>
 <h3 id="Debugging-Hello-World" class="article-heading"><a href="#Debugging-Hello-World" class="headerlink" title="Debugging Hello World"></a>Debugging Hello World<a class="article-anchor" href="#Debugging-Hello-World" aria-hidden="true"></a></h3><p>As mentioned in the introduction, VS Code ships with a debugger for Node.js applications. Let’s try debugging our simple Hello World application.</p>
-<p>To set a breakpoint in <code>app.js</code>, put the editor cursor on the first line and press <code>kb(editor.debug.action.toggleBreakpoint)</code> or simply click in the editor left gutter next to the line numbers. A red circle will appear in the gutter.</p>
+<p>To set a breakpoint in <code>app.js</code>, put the editor cursor on the first line and press <span class="dynamic-keybinding" data-osx="F9" data-win="F9" data-linux="F9"><span class="keybinding">F9</span></span> or simply click in the editor left gutter next to the line numbers. A red circle will appear in the gutter.</p>
 <p><img src="images/nodejs/app-js-breakpoint-set.png" alt="app.js breakpoint set"></p>
 <p>We now need to configure the debugger for this simple workspace.  Select the Debug View in the Side Bar:</p>
 <p><img src="images/nodejs/debugicon.png" alt="Debug icon"></p>
 <p>Click on the Configure gear icon at the top of the Debug view to create a default <code>launch.json</code> configuration file and select <strong>Node.js</strong> as the Debug Environment. This configuration file lets you specify how to start the application, what arguments to pass in, the working directory, and more.  The new <code>launch.json</code> file is created in a VS Code specific <code>.vscode</code> folder in root of your workspace.</p>
 <p><img src="images/nodejs/hello-world-launch-json.png" alt="hello world launch json"></p>
-<p>With the default Node.js <strong>Launch Program</strong> configuration created, you can now click Debug tool bar green arrow or press <code>kb(workbench.action.debug.start)</code> to launch and debug “Hello World”. Your breakpoint will be hit and you can view and step through the simple application.  Notice that VS Code displays an orange Status Bar to indicate it is in Debug mode and the DEBUG CONSOLE is displayed.</p>
+<p>With the default Node.js <strong>Launch Program</strong> configuration created, you can now click Debug tool bar green arrow or press <span class="dynamic-keybinding" data-osx="F5" data-win="F5" data-linux="F5"><span class="keybinding">F5</span></span> to launch and debug “Hello World”. Your breakpoint will be hit and you can view and step through the simple application.  Notice that VS Code displays an orange Status Bar to indicate it is in Debug mode and the DEBUG CONSOLE is displayed.</p>
 <p><img src="images/nodejs/hello-world-debugging.png" alt="hello world debugging"></p>
 <p>Now that you’ve seen VS Code in action with “Hello World”, the next section shows using VS Code with a full-stack Node.js web app.</p>
 <blockquote>
@@ -121,7 +121,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">npm start</div></pre></td></tr></table></figure>
 <p>The Node.js web server will start and you can browse to <code>http://localhost:3000</code> to see the running application.</p>
 <p><img src="images/nodejs/express.png" alt="Your first Node Express App"></p>
-<h2 id="Great-Code-Editing-Experiences" class="article-heading"><a href="#Great-Code-Editing-Experiences" class="headerlink" title="Great Code Editing Experiences"></a>Great Code Editing Experiences<a class="article-anchor" href="#Great-Code-Editing-Experiences" aria-hidden="true"></a></h2><p>Close the browser and from a terminal in the <code>myExpressApp</code> folder, stop the Node.js server by pressing <code>kbstyle(CTRL+C)</code>.</p>
+<h2 id="Great-Code-Editing-Experiences" class="article-heading"><a href="#Great-Code-Editing-Experiences" class="headerlink" title="Great Code Editing Experiences"></a>Great Code Editing Experiences<a class="article-anchor" href="#Great-Code-Editing-Experiences" aria-hidden="true"></a></h2><p>Close the browser and from a terminal in the <code>myExpressApp</code> folder, stop the Node.js server by pressing <span class="keybinding">CTRL+C</span>.</p>
 <p>Now launch VS Code:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">code .</div></pre></td></tr></table></figure>
 <blockquote>
@@ -135,7 +135,7 @@
 <p><img src="images/nodejs/moduleintellisense.png" alt="Express.Router IntelliSense"></p>
 <h2 id="Debugging-your-Express-Application" class="article-heading"><a href="#Debugging-your-Express-Application" class="headerlink" title="Debugging your Express Application"></a>Debugging your Express Application<a class="article-anchor" href="#Debugging-your-Express-Application" aria-hidden="true"></a></h2><p>Just as we did earlier for “Hello World”, you will need to create a debugger configuration file <code>launch.json</code> for your Express application. Click on the Debug icon in the View Bar and then the Configure gear icon at the top of the Debug view to create a default <code>launch.json</code> file.  Again select the <strong>Node.js</strong> environment.  When the file is first created, VS Code will look in <code>package.json</code> for a <code>start</code> script and will use that value as the <code>program</code> (which in this case is <code>${workspaceRoot}/bin/www</code>) for the <strong>Launch Program</strong> configuration. A second <strong>Attach to Process</strong> configuration is also created to show you how to attach to a running Node.js application.</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"version"</span>: <span class="string">"0.2.0"</span>,</div><div class="line">    <span class="attr">"configurations"</span>: [</div><div class="line">        &#123;</div><div class="line">            <span class="attr">"type"</span>: <span class="string">"node"</span>,</div><div class="line">            <span class="attr">"request"</span>: <span class="string">"launch"</span>,</div><div class="line">            <span class="attr">"name"</span>: <span class="string">"Launch Program"</span>,</div><div class="line">            <span class="attr">"program"</span>: <span class="string">"$&#123;workspaceRoot&#125;/bin/www"</span>,</div><div class="line">            <span class="attr">"cwd"</span>: <span class="string">"$&#123;workspaceRoot&#125;"</span></div><div class="line">        &#125;,</div><div class="line">        &#123;</div><div class="line">            <span class="attr">"type"</span>: <span class="string">"node"</span>,</div><div class="line">            <span class="attr">"request"</span>: <span class="string">"attach"</span>,</div><div class="line">            <span class="attr">"name"</span>: <span class="string">"Attach to Process"</span>,</div><div class="line">            <span class="attr">"port"</span>: <span class="number">5858</span></div><div class="line">        &#125;</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>Save the new file and make sure <strong>Launch Program</strong> is selected in the configuration dropdown at the top of the Debug view. Open <code>app.js</code> and set a breakpoint near the top of the file where the Express app object is created by clicking in the gutter to the left of the line number. Press <code>kb(workbench.action.debug.start)</code> to start debugging the application. VS Code will start the server in a new terminal and hit the breakpoint we set. From there you can inspect variables, create watches, and step through your code.</p>
+<p>Save the new file and make sure <strong>Launch Program</strong> is selected in the configuration dropdown at the top of the Debug view. Open <code>app.js</code> and set a breakpoint near the top of the file where the Express app object is created by clicking in the gutter to the left of the line number. Press <span class="dynamic-keybinding" data-osx="F5" data-win="F5" data-linux="F5"><span class="keybinding">F5</span></span> to start debugging the application. VS Code will start the server in a new terminal and hit the breakpoint we set. From there you can inspect variables, create watches, and step through your code.</p>
 <p><img src="images/nodejs/debugsession.png" alt="Debug session"></p>
 <h2 id="Node-js-Extensions" class="article-heading"><a href="#Node-js-Extensions" class="headerlink" title="Node.js Extensions"></a>Node.js Extensions<a class="article-anchor" href="#Node-js-Extensions" aria-hidden="true"></a></h2><p>The community is continually developing more and more valuable extensions for Node.js. Here are some of the extensions we have found most useful. </p>
 <ul>
@@ -153,10 +153,10 @@
 </blockquote>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>There is much more to explore with Visual Studio Code, please try the following topics:</p>
 <ul>
-<li><a href="/docs/customization/userandworkspace.html">Settings</a> - Learn how to customize VS Code for how you like to work.</li>
-<li><a href="/docs/editor/debugging.html">Debugging</a> - This is where VS Code really shines</li>
-<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - Lint, IntelliSense, Lightbulbs, Peek and Go to Definition and more</li>
-<li><a href="/docs/editor/tasks.html">Tasks</a> - Running tasks with Gulp, Grunt and Jake.  Showing Errors and Warnings</li>
+<li><a href="/docs/customization/userandworkspace">Settings</a> - Learn how to customize VS Code for how you like to work.</li>
+<li><a href="/docs/editor/debugging">Debugging</a> - This is where VS Code really shines</li>
+<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - Lint, IntelliSense, Lightbulbs, Peek and Go to Definition and more</li>
+<li><a href="/docs/editor/tasks">Tasks</a> - Running tasks with Gulp, Grunt and Jake.  Showing Errors and Warnings</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: Do I need to define a <code>jsconfig.json</code> file?</strong></p>
 <p><strong>A:</strong> Without a <code>jsconfig.json</code> file in the workspace root folder, VS Code treats all files and folders as belonging to the same project context. This is sufficient for common setups. There are situations when you want to add a <code>jsconfig.json</code> file.</p>
@@ -166,7 +166,7 @@
 <li>When a workspace contains more than one project context, then you should add a <code>jsconfig.json</code> file at the root folder for each project.</li>
 <li>When you are using the TypeScript compiler to down-level compile JavaScript source code.</li>
 </ul>
-<p>More information about the configuration options for a <code>jsconfig.json</code> can be found in <a href="/docs/languages/javascript.html#javascript-project-jsconfigjson">jsconfig.json reference</a>.</p>
+<p>More information about the configuration options for a <code>jsconfig.json</code> can be found in <a href="/docs/languages/javascript.md#javascript-project-jsconfigjson">jsconfig.json reference</a>.</p>
 
               </div>
               <footer class="article-footer">
@@ -208,10 +208,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

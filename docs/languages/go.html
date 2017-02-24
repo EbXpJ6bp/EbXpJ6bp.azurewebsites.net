@@ -56,7 +56,7 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name"></h1>
-                <a href="ABCdocs/languages/go.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/languages/go.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-15T07:41:40.628Z" itemprop="dateModified">Last updated: 2017-02-15</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
@@ -64,9 +64,9 @@
 <p><img src="images/go/go-extension.png" alt="go extension banner"></p>
 <p>You can install the Go extension from the VS Code <a href="https://marketplace.visualstudio.com/items?itemName=lukehoban.Go" target="_blank" rel="external">Marketplace</a>.</p>
 <h2 id="IntelliSense" class="article-heading"><a href="#IntelliSense" class="headerlink" title="IntelliSense"></a>IntelliSense<a class="article-anchor" href="#IntelliSense" aria-hidden="true"></a></h2><h3 id="Auto-completions" class="article-heading"><a href="#Auto-completions" class="headerlink" title="Auto completions"></a>Auto completions<a class="article-anchor" href="#Auto-completions" aria-hidden="true"></a></h3><p>As you type in a Go file, you can see IntelliSense providing you with suggested completions. This even works for members in current, imported, and not yet imported packages. Just type any package name followed by <code>.</code>, and you will get suggestions for the corresponding package members.</p>
-<p>By setting <code>go.autocompleteUnimportedPackages</code> to <code>true</code> in your <a href="/docs/customization/userandworkspace.html">settings</a>, you can also get suggestion for packages that you could import. Select one of these suggestions and an import to the selected package will be added to your file.</p>
+<p>By setting <code>go.autocompleteUnimportedPackages</code> to <code>true</code> in your <a href="/docs/customization/userandworkspace">settings</a>, you can also get suggestion for packages that you could import. Select one of these suggestions and an import to the selected package will be added to your file.</p>
 <blockquote>
-<p><strong>Tip</strong>: Use <code>kb(editor.action.triggerSuggest)</code> to trigger the suggestions manually.</p>
+<p><strong>Tip</strong>: Use <span class="dynamic-keybinding" data-osx="⌃Space" data-win="Ctrl+Space" data-linux="Ctrl+Space"><span class="keybinding">⌃Space</span> (Windows, Linux <span class="keybinding">Ctrl+Space</span>)</span> to trigger the suggestions manually.</p>
 </blockquote>
 <h3 id="Hover-Information" class="article-heading"><a href="#Hover-Information" class="headerlink" title="Hover Information"></a>Hover Information<a class="article-anchor" href="#Hover-Information" aria-hidden="true"></a></h3><p>Hovering on any variable, function, or struct will give you information on that item such as documentation, signature, etc.</p>
 <p><img src="images/go/hover.png" alt="Information on hover"></p>
@@ -74,19 +74,19 @@
 <h3 id="Signature-help" class="article-heading"><a href="#Signature-help" class="headerlink" title="Signature help"></a>Signature help<a class="article-anchor" href="#Signature-help" aria-hidden="true"></a></h3><p>When you open the <code>(</code> while calling a function, a pop-up provides signature help for the function. As you keep typing the parameters, the hint (underline) moves to the next parameter.</p>
 <p><img src="images/go/signaturehelp.png" alt="Signature Help"></p>
 <blockquote>
-<p><strong>Tip</strong>: Use <code>kb(editor.action.triggerParameterHints)</code> to manually trigger the signature help when the cursor is inside the <code>()</code> in the function call.</p>
+<p><strong>Tip</strong>: Use <span class="dynamic-keybinding" data-osx="⇧⌘Space" data-win="Ctrl+Shift+Space" data-linux="Ctrl+Shift+Space"><span class="keybinding">⇧⌘Space</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+Space</span>)</span> to manually trigger the signature help when the cursor is inside the <code>()</code> in the function call.</p>
 </blockquote>
 <p>The extension’s signature help also uses <code>godef</code> and <code>godoc</code>. You can choose to use <code>gogetdoc</code> instead by changing the setting <code>go.docsTool</code> in your User or Workspace Settings.</p>
 <h2 id="Code-navigation" class="article-heading"><a href="#Code-navigation" class="headerlink" title="Code navigation"></a>Code navigation<a class="article-anchor" href="#Code-navigation" aria-hidden="true"></a></h2><p>Code navigation features are available in the context menu in the editor.</p>
 <ul>
-<li><strong>Go To Definition</strong> <code>kb(editor.action.goToDeclaration)</code> - Go to the source code of the type definition.</li>
-<li><strong>Peek Definition</strong> <code>kb(editor.action.previewDeclaration)</code> - Bring up a Peek window with the type definition.</li>
-<li><strong>Find All References</strong> <code>kb(editor.action.referenceSearch.trigger)</code> - Find all references for the type.</li>
+<li><strong>Go To Definition</strong> <span class="dynamic-keybinding" data-osx="F12" data-win="F12" data-linux="F12"><span class="keybinding">F12</span></span> - Go to the source code of the type definition.</li>
+<li><strong>Peek Definition</strong> <span class="dynamic-keybinding" data-osx="⌥F12" data-win="Alt+F12" data-linux="Ctrl+Shift+F10"><span class="keybinding">⌥F12</span> (Windows <span class="keybinding">Alt+F12</span>, Linux <span class="keybinding">Ctrl+Shift+F10</span>)</span> - Bring up a Peek window with the type definition.</li>
+<li><strong>Find All References</strong> <span class="dynamic-keybinding" data-osx="⇧F12" data-win="Shift+F12" data-linux="Shift+F12"><span class="keybinding">⇧F12</span> (Windows, Linux <span class="keybinding">Shift+F12</span>)</span> - Find all references for the type.</li>
 </ul>
-<p>You can navigate via symbol search using the <strong>Go to Symbol</strong> commands from the <strong>Command Palette</strong> (<code>kb(workbench.action.showCommands)</code>).</p>
+<p>You can navigate via symbol search using the <strong>Go to Symbol</strong> commands from the <strong>Command Palette</strong> (<span class="dynamic-keybinding" data-osx="⇧⌘P" data-win="Ctrl+Shift+P" data-linux="Ctrl+Shift+P"><span class="keybinding">⇧⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+P</span>)</span>).</p>
 <ul>
-<li>Go to Symbol in File - <code>kb(workbench.action.gotoSymbol)</code></li>
-<li>Go to Symbol in Workspace - <code>kb(workbench.action.showAllSymbols)</code></li>
+<li>Go to Symbol in File - <span class="dynamic-keybinding" data-osx="⇧⌘O" data-win="Ctrl+Shift+O" data-linux="Ctrl+Shift+O"><span class="keybinding">⇧⌘O</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+O</span>)</span></li>
+<li>Go to Symbol in Workspace - <span class="dynamic-keybinding" data-osx="⌘T" data-win="Ctrl+T" data-linux="Ctrl+T"><span class="keybinding">⌘T</span> (Windows, Linux <span class="keybinding">Ctrl+T</span>)</span></li>
 </ul>
 <p>You can also navigate back and forth between a Go file and its test implementation using the <strong>Go: Toggle Test File</strong> command.</p>
 <h2 id="Build-Lint-and-Vet" class="article-heading"><a href="#Build-Lint-and-Vet" class="headerlink" title="Build, Lint and Vet"></a>Build, Lint and Vet<a class="article-anchor" href="#Build-Lint-and-Vet" aria-hidden="true"></a></h2><p>On save, the Go extension can run <code>go build</code>, <code>go vet</code> and your choice of linting tool (<code>golint</code> or <code>gometalinter</code>) on the package of the current file. You can control these features via the settings below:</p>
@@ -100,23 +100,23 @@
 <li><code>go.lintTool</code></li>
 </ul>
 <p>The errors and warnings from running any/all of the above will be shown red/green squiggly lines in the editor. These also show up in the <strong>Problems</strong> panel  (<strong>View</strong> &gt; <strong>Problems</strong>).</p>
-<h2 id="Formatting" class="article-heading"><a href="#Formatting" class="headerlink" title="Formatting"></a>Formatting<a class="article-anchor" href="#Formatting" aria-hidden="true"></a></h2><p>You can format your Go file using <code>kb(editor.action.formatDocument)</code> or by running the <strong>Format Document</strong> command from the <strong>Command Palette</strong> or the context menu in the editor.</p>
+<h2 id="Formatting" class="article-heading"><a href="#Formatting" class="headerlink" title="Formatting"></a>Formatting<a class="article-anchor" href="#Formatting" aria-hidden="true"></a></h2><p>You can format your Go file using <span class="dynamic-keybinding" data-osx="⇧⌥F" data-win="Shift+Alt+F" data-linux="Ctrl+Shift+I"><span class="keybinding">⇧⌥F</span> (Windows <span class="keybinding">Shift+Alt+F</span>, Linux <span class="keybinding">Ctrl+Shift+I</span>)</span> or by running the <strong>Format Document</strong> command from the <strong>Command Palette</strong> or the context menu in the editor.</p>
 <p>By default, formatting is run when you save your Go file. You can disable this behavior by setting <code>go.formatOnSave</code> to <code>false</code>.</p>
 <p>You can choose among three formatting tools: <code>gofmt</code>, <code>goreturns</code> and <code>goimports</code> by changing the setting <code>go.formatTool</code>.</p>
 <h2 id="Test" class="article-heading"><a href="#Test" class="headerlink" title="Test"></a>Test<a class="article-anchor" href="#Test" aria-hidden="true"></a></h2><p>There are many test related commands that you can explore by typing “Go: test” in the <strong>Command Palette</strong>.</p>
 <p><img src="images/go/testcommands.png" alt="Test Commands"></p>
 <p>The first three above can be used to generate test skeletons for the functions in the current package, file or at cursor using <code>gotests</code>. The last few can be used to run tests in the current package, file or at cursor using <code>go test</code>. There is also a command for getting test coverage.</p>
 <h2 id="Import-packages" class="article-heading"><a href="#Import-packages" class="headerlink" title="Import packages"></a>Import packages<a class="article-anchor" href="#Import-packages" aria-hidden="true"></a></h2><p>Run the command <strong>Go: Add Import</strong> to get a list of packages that can be imported to your Go file. Choose one and it will get added in the import block of your Go file.</p>
-<h2 id="Rename-Symbols" class="article-heading"><a href="#Rename-Symbols" class="headerlink" title="Rename Symbols"></a>Rename Symbols<a class="article-anchor" href="#Rename-Symbols" aria-hidden="true"></a></h2><p>You can rename symbols using <code>kb(editor.action.rename)</code> or by running the <strong>Rename Symbol</strong> command in the context menu in the editor.</p>
+<h2 id="Rename-Symbols" class="article-heading"><a href="#Rename-Symbols" class="headerlink" title="Rename Symbols"></a>Rename Symbols<a class="article-anchor" href="#Rename-Symbols" aria-hidden="true"></a></h2><p>You can rename symbols using <span class="dynamic-keybinding" data-osx="F2" data-win="F2" data-linux="F2"><span class="keybinding">F2</span></span> or by running the <strong>Rename Symbol</strong> command in the context menu in the editor.</p>
 <h2 id="Debugging" class="article-heading"><a href="#Debugging" class="headerlink" title="Debugging"></a>Debugging<a class="article-anchor" href="#Debugging" aria-hidden="true"></a></h2><p>The Go extension lets you debug Go code as well. You will need to install the <a href="https://github.com/derekparker/delve" target="_blank" rel="external">Delve</a> debugger manually as a prerequisite. Read <a href="https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code" target="_blank" rel="external">Debugging Go code using VS Code</a> for setup steps, information on remote debugging and a troubleshooting guide.</p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>This has been a brief overview showing the Go extension features within VS Code. For more information, see the details provided in the Go extension <a href="https://marketplace.visualstudio.com/items?itemName=lukehoban.Go" target="_blank" rel="external">README</a>.</p>
-<p>To stay up to date on the latest features/bug fixes for the Go extension, see the <a href="https://github.com/Microsoft/vscode-go/blob/master/CHANGELOG.html" target="_blank" rel="external">CHANGELOG</a>.</p>
+<p>To stay up to date on the latest features/bug fixes for the Go extension, see the <a href="https://github.com/Microsoft/vscode-go/blob/master/CHANGELOG.md" target="_blank" rel="external">CHANGELOG</a>.</p>
 <p>If you have any issues or feature requests, feel free to log them in the Go extension <a href="https://github.com/Microsoft/vscode-go/issues" target="_blank" rel="external">repo</a>.</p>
 <p>If you’d like to learn more about VS Code, try these topics:</p>
 <ul>
-<li><a href="/docs/editor/codebasics.html">Visual Studio Code Basics</a> - A quick introduction to the basics of VS Code.</li>
-<li><a href="/docs/editor/extension-gallery.html">Install an Extension</a> - Learn about other extensions are available in the <a href="https://marketplace.visualstudio.com/vscode" target="_blank" rel="external">Marketplace</a>.</li>
-<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - Become a power user by mastering tips and tricks.</li>
+<li><a href="/docs/editor/codebasics">Visual Studio Code Basics</a> - A quick introduction to the basics of VS Code.</li>
+<li><a href="/docs/editor/extension-gallery">Install an Extension</a> - Learn about other extensions are available in the <a href="https://marketplace.visualstudio.com/vscode" target="_blank" rel="external">Marketplace</a>.</li>
+<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - Become a power user by mastering tips and tricks.</li>
 </ul>
 
               </div>
@@ -159,10 +159,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

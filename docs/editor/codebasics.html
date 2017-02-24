@@ -56,7 +56,7 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name">The Basics of Visual Studio Code</h1>
-                <a href="ABCdocs/editor/codebasics.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/editor/codebasics.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-21T07:04:05.228Z" itemprop="dateModified">Last updated: 2017-02-21</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
@@ -74,25 +74,25 @@
 </ul>
 <p>Each time you start VS Code, it opens up in the same state it was in when you last closed it. The folder, layout, and opened files are preserved.</p>
 <p><img src="images/codebasics/layout.png" alt="VS Code Layout"></p>
-<p>VS Code allows up to three visible editors at any one time, allowing you to edit or view up to three files together side by side. The open files in each editor are displayed with tabbed headers (Tabs) at the top of the editor region. To learn more about tabbed headers, see the <a href="/docs/editor/tabs.html">Tabs</a> topic.</p>
+<p>VS Code allows up to three visible editors at any one time, allowing you to edit or view up to three files together side by side. The open files in each editor are displayed with tabbed headers (Tabs) at the top of the editor region. To learn more about tabbed headers, see the <a href="/docs/editor/tabs">Tabs</a> topic.</p>
 <blockquote>
-<p><strong>Tip:</strong> You can move the Side Bar to the right hand side (<strong>View</strong> &gt; <strong>Move Sidebar</strong>) or toggle its visibility (<code>kb(workbench.action.toggleSidebarVisibility)</code>).</p>
+<p><strong>Tip:</strong> You can move the Side Bar to the right hand side (<strong>View</strong> &gt; <strong>Move Sidebar</strong>) or toggle its visibility (<span class="dynamic-keybinding" data-osx="⌘B" data-win="Ctrl+B" data-linux="Ctrl+B"><span class="keybinding">⌘B</span> (Windows, Linux <span class="keybinding">Ctrl+B</span>)</span>).</p>
 </blockquote>
-<h3 id="Hide-the-Menu-Bar-Windows-Linux" class="article-heading"><a href="#Hide-the-Menu-Bar-Windows-Linux" class="headerlink" title="Hide the Menu Bar (Windows, Linux)"></a>Hide the Menu Bar (Windows, Linux)<a class="article-anchor" href="#Hide-the-Menu-Bar-Windows-Linux" aria-hidden="true"></a></h3><p>You can hide the Menu Bar on Windows and Linux with the <strong>View</strong> &gt; <strong>Toggle Menu Bar</strong> command (<code>kbstyle(Ctrl+U)</code>). You can still access the Menu Bar by pressing the <code>kbstyle(Alt)</code> key.</p>
-<h3 id="Zen-Mode" class="article-heading"><a href="#Zen-Mode" class="headerlink" title="Zen Mode"></a>Zen Mode<a class="article-anchor" href="#Zen-Mode" aria-hidden="true"></a></h3><p>Zen Mode lets you focus on your code by hiding all UI except the editor (no Activity Bar, Status Bar, Sidebar and Panel) and going to full screen. Zen mode can be toggled using the View menu, <strong>Command Palette</strong> or by the shortcut <code>kb(workbench.action.toggleZenMode)</code>. Double <code>kbstyle(Esc)</code> exits Zen Mode. The transition to full screen can be disabled via <code>zenMode.fullScreen</code>. Zen Mode can be further tuned by the following settings: <code>zenMode.hideStatusBar</code>, <code>zenMode.hideTabs</code> and <code>zenMode.fullScreen</code></p>
+<h3 id="Hide-the-Menu-Bar-Windows-Linux" class="article-heading"><a href="#Hide-the-Menu-Bar-Windows-Linux" class="headerlink" title="Hide the Menu Bar (Windows, Linux)"></a>Hide the Menu Bar (Windows, Linux)<a class="article-anchor" href="#Hide-the-Menu-Bar-Windows-Linux" aria-hidden="true"></a></h3><p>You can hide the Menu Bar on Windows and Linux with the <strong>View</strong> &gt; <strong>Toggle Menu Bar</strong> command (<span class="keybinding">Ctrl+U</span>). You can still access the Menu Bar by pressing the <span class="keybinding">Alt</span> key.</p>
+<h3 id="Zen-Mode" class="article-heading"><a href="#Zen-Mode" class="headerlink" title="Zen Mode"></a>Zen Mode<a class="article-anchor" href="#Zen-Mode" aria-hidden="true"></a></h3><p>Zen Mode lets you focus on your code by hiding all UI except the editor (no Activity Bar, Status Bar, Sidebar and Panel) and going to full screen. Zen mode can be toggled using the View menu, <strong>Command Palette</strong> or by the shortcut <span class="dynamic-keybinding" data-osx="⌘K Z" data-win="Ctrl+K Z" data-linux="Ctrl+K Z"><span class="keybinding">⌘K Z</span> (Windows, Linux <span class="keybinding">Ctrl+K Z</span>)</span>. Double <span class="keybinding">Esc</span> exits Zen Mode. The transition to full screen can be disabled via <code>zenMode.fullScreen</code>. Zen Mode can be further tuned by the following settings: <code>zenMode.hideStatusBar</code>, <code>zenMode.hideTabs</code> and <code>zenMode.fullScreen</code></p>
 <h2 id="Side-by-Side-Editing" class="article-heading"><a href="#Side-by-Side-Editing" class="headerlink" title="Side by Side Editing"></a>Side by Side Editing<a class="article-anchor" href="#Side-by-Side-Editing" aria-hidden="true"></a></h2><p>You can have up to three editors open side by side.</p>
 <p>If you already have one editor open, there are multiple ways of opening another editor to the side of the existing one:</p>
 <ul>
-<li><code>kbstyle(Ctrl)</code> (Mac: <code>kbstyle(Cmd)</code>) click on a file in the Explorer.</li>
-<li><code>kb(workbench.action.splitEditor)</code> to split the active editor into two.</li>
+<li><span class="keybinding">Ctrl</span> (Mac: <span class="keybinding">Cmd</span>) click on a file in the Explorer.</li>
+<li><span class="dynamic-keybinding" data-osx="⌘\" data-win="Ctrl+\" data-linux="Ctrl+\"><span class="keybinding">⌘\</span> (Windows, Linux <span class="keybinding">Ctrl+\</span>)</span> to split the active editor into two.</li>
 <li><strong>Open to the Side</strong> from the Explorer context menu on a file.</li>
 <li>Click the <strong>Split Editor</strong> button in the upper right of an editor.</li>
 <li>Drag and drop a file to the either side of the editor region.</li>
-<li><code>kbstyle(Ctrl+Enter)</code> (Mac: <code>kbstyle(Cmd+Enter)</code>) in the <strong>Quick Open</strong> (<code>kb(workbench.action.quickOpen)</code>) file list.</li>
+<li><span class="keybinding">Ctrl+Enter</span> (Mac: <span class="keybinding">Cmd+Enter</span>) in the <strong>Quick Open</strong> (<span class="dynamic-keybinding" data-osx="⌘P" data-win="Ctrl+P" data-linux="Ctrl+P"><span class="keybinding">⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+P</span>)</span>) file list.</li>
 </ul>
 <p><img src="images/codebasics/sidebyside.png" alt="Side by Side editing"></p>
 <p>Whenever you open another file, the editor that is active will display the content of that file. So if you have two editors side by side and you want to open file ‘foo.cs’ into the right hand editor, make sure that editor is active (by clicking inside it) before opening file ‘foo.cs’.</p>
-<p>When you have more than one editor open you can switch between them quickly by holding the <code>kbstyle(Ctrl)</code> (Mac: <code>kbstyle(&#39;Cmd&#39;)</code>) key and pressing <code>kbstyle(1)</code>, <code>kbstyle(2)</code>, or <code>kbstyle(3)</code>.</p>
+<p>When you have more than one editor open you can switch between them quickly by holding the <span class="keybinding">Ctrl</span> (Mac: <span class="keybinding">&#39;Cmd&#39;</span>) key and pressing <span class="keybinding">1</span>, <span class="keybinding">2</span>, or <span class="keybinding">3</span>.</p>
 <blockquote>
 <p><strong>Tip:</strong> You can resize editors and reorder them. Drag and drop the editor title area to reposition or resize the editor.</p>
 </blockquote>
@@ -110,9 +110,9 @@
 <p>VS Code works very well with other tools that you might use, especially command-line tools. If you want to run a command-line tool in the context of the folder you currently have open in VS Code, right-click the folder and select <strong>Open in Command Prompt</strong> (or <strong>Open in Terminal</strong> on Mac or Linux).</p>
 <p>You can also navigate to the location of a file or folder in the native Explorer by right-clicking on a file or folder and selecting <strong>Reveal in Explorer</strong> (or <strong>Reveal in Finder</strong> on the Mac or <strong>Open Containing Folder</strong> on Linux).</p>
 <blockquote>
-<p><strong>Tip:</strong> Type <code>kb(workbench.action.quickOpen)</code> (<strong>Quick Open</strong>) to quickly search and open a file by its name.</p>
+<p><strong>Tip:</strong> Type <span class="dynamic-keybinding" data-osx="⌘P" data-win="Ctrl+P" data-linux="Ctrl+P"><span class="keybinding">⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+P</span>)</span> (<strong>Quick Open</strong>) to quickly search and open a file by its name.</p>
 </blockquote>
-<p>By default, VS Code excludes some folders from the explorer (for example. <code>.git</code>). Use the <code>files.exclude</code> <a href="/docs/customization/userandworkspace.html">setting</a> to configure rules for hiding files and folders from the explorer.</p>
+<p>By default, VS Code excludes some folders from the explorer (for example. <code>.git</code>). Use the <code>files.exclude</code> <a href="/docs/customization/userandworkspace">setting</a> to configure rules for hiding files and folders from the explorer.</p>
 <p><strong>Tip:</strong> This is really useful to hide derived resources files, like <code>\*.meta</code> in Unity, or <code>\*.js</code> in a TypeScript project. For Unity to exclude the <code>\*.cs.meta</code> files, the pattern to choose would be: <code>&quot;**/*.cs.meta&quot;: true</code>. For TypeScript, you can exclude generated JavaScript for TypeScript files with: <code>&quot;**/*.js&quot;: {&quot;when&quot;: &quot;$(basename).ts&quot;}</code>.</p>
 <h2 id="Open-Editors" class="article-heading"><a href="#Open-Editors" class="headerlink" title="Open Editors"></a>Open Editors<a class="article-anchor" href="#Open-Editors" aria-hidden="true"></a></h2><p>At the top of the Explorer is a section labeled <strong>OPEN EDITORS</strong>. This is a list of active files or previews. These are files you previously opened in VS Code that you’re working on. For example, a file will be listed in the <strong>OPEN EDITORS</strong> section if you:</p>
 <ul>
@@ -123,41 +123,41 @@
 </ul>
 <p>Just click an item in the <strong>OPEN EDITORS</strong> section, and it becomes active in VS Code.</p>
 <p>Once you are done with your task, you can remove files individually from the <strong>OPEN EDITORS</strong> section, or you can remove all files by using the <strong>View: Close All Editors</strong> or <strong>View: Close All Editors in Group</strong> actions.</p>
-<h2 id="Configuring-the-Editor" class="article-heading"><a href="#Configuring-the-Editor" class="headerlink" title="Configuring the Editor"></a>Configuring the Editor<a class="article-anchor" href="#Configuring-the-Editor" aria-hidden="true"></a></h2><p>VS Code gives you many options to configure the editor. You can set options globally through user settings or per project/folder through workspace settings. Settings values are kept in a <code>settings.json</code> <a href="/docs/customization/userandworkspace.html#settings-file-locations">file</a>.</p>
+<h2 id="Configuring-the-Editor" class="article-heading"><a href="#Configuring-the-Editor" class="headerlink" title="Configuring the Editor"></a>Configuring the Editor<a class="article-anchor" href="#Configuring-the-Editor" aria-hidden="true"></a></h2><p>VS Code gives you many options to configure the editor. You can set options globally through user settings or per project/folder through workspace settings. Settings values are kept in a <code>settings.json</code> <a href="/docs/customization/userandworkspace.md#settings-file-locations">file</a>.</p>
 <ul>
-<li><p>Select <strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>User Settings</strong> (or press <code>kb(workbench.action.showCommands)</code>, type <code>user</code> and press <code>Enter</code>) to edit the user settings.json file.</p>
+<li><p>Select <strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>User Settings</strong> (or press <span class="dynamic-keybinding" data-osx="⇧⌘P" data-win="Ctrl+Shift+P" data-linux="Ctrl+Shift+P"><span class="keybinding">⇧⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+P</span>)</span>, type <code>user</code> and press <code>Enter</code>) to edit the user settings.json file.</p>
 </li>
-<li><p>Select <strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>Workspace Settings</strong> (or press <code>kb(workbench.action.showCommands)</code>, type <code>worksp</code> and press <code>Enter</code>) to edit the workspace settings.json file.</p>
+<li><p>Select <strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>Workspace Settings</strong> (or press <span class="dynamic-keybinding" data-osx="⇧⌘P" data-win="Ctrl+Shift+P" data-linux="Ctrl+Shift+P"><span class="keybinding">⇧⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+P</span>)</span>, type <code>worksp</code> and press <code>Enter</code>) to edit the workspace settings.json file.</p>
 </li>
 </ul>
 <blockquote>
 <p><strong>Note for Mac users:</strong> The <strong>Preferences</strong> menu is under <strong>Code</strong> not <strong>File</strong>. For example, <strong>Code</strong> &gt; <strong>Preferences</strong> &gt; <strong>User Settings</strong>.</p>
 </blockquote>
-<p>You will see the VS Code <a href="/docs/customization/userandworkspace.html#default-settings">Default Settings</a> in the left window and your editable <code>settings.json</code> on the right. You can easily filter settings in the <code>Default Settings</code> using the search box at the top. Copy a setting over to the editable <code>settings.json</code> on the right by clicking on the edit icon after the setting. Settings with a fixed set values allow you to pick a value as part of their edit icon menu.</p>
-<p>After editing your settings, type <code>kb(workbench.action.files.save)</code> to save your changes. The changes will take effect immediately.</p>
+<p>You will see the VS Code <a href="/docs/customization/userandworkspace.md#default-settings">Default Settings</a> in the left window and your editable <code>settings.json</code> on the right. You can easily filter settings in the <code>Default Settings</code> using the search box at the top. Copy a setting over to the editable <code>settings.json</code> on the right by clicking on the edit icon after the setting. Settings with a fixed set values allow you to pick a value as part of their edit icon menu.</p>
+<p>After editing your settings, type <span class="dynamic-keybinding" data-osx="⌘S" data-win="Ctrl+S" data-linux="Ctrl+S"><span class="keybinding">⌘S</span> (Windows, Linux <span class="keybinding">Ctrl+S</span>)</span> to save your changes. The changes will take effect immediately.</p>
 <blockquote>
 <p><strong>Note:</strong> Workspace settings will override User settings and are useful for sharing project specific settings across a team.</p>
 </blockquote>
 <h2 id="Configuring-Keyboard-Shortcuts" class="article-heading"><a href="#Configuring-Keyboard-Shortcuts" class="headerlink" title="Configuring Keyboard Shortcuts"></a>Configuring Keyboard Shortcuts<a class="article-anchor" href="#Configuring-Keyboard-Shortcuts" aria-hidden="true"></a></h2><p>VS Code supports keyboard shortcuts for nearly every editor action.</p>
 <ul>
-<li><a href="/docs/customization/keybindings.html#keyboard-shortcuts-reference">Keyboard Shortcuts Reference</a> - Learn the most commonly used and popular keyboard shortcuts by downloading the reference sheet.</li>
-<li><a href="/docs/customization/keybindings.html#keymap-extensions">Install a Keymap extension</a> - Use the keyboard shortcuts of your old editor (such as Sublime Text, Atom, and Vim) in VS Code by installing a Keymap extension.</li>
-<li><a href="/docs/customization/keybindings.html#customizing-shortcuts">Customize Keyboard Shortcuts</a> - Change the default keyboard shortcuts to fit your style.</li>
+<li><a href="/docs/customization/keybindings.md#keyboard-shortcuts-reference">Keyboard Shortcuts Reference</a> - Learn the most commonly used and popular keyboard shortcuts by downloading the reference sheet.</li>
+<li><a href="/docs/customization/keybindings.md#keymap-extensions">Install a Keymap extension</a> - Use the keyboard shortcuts of your old editor (such as Sublime Text, Atom, and Vim) in VS Code by installing a Keymap extension.</li>
+<li><a href="/docs/customization/keybindings.md#customizing-shortcuts">Customize Keyboard Shortcuts</a> - Change the default keyboard shortcuts to fit your style.</li>
 </ul>
-<h2 id="Multiple-selections-multi-cursor" class="article-heading"><a href="#Multiple-selections-multi-cursor" class="headerlink" title="Multiple selections (multi-cursor)"></a>Multiple selections (multi-cursor)<a class="article-anchor" href="#Multiple-selections-multi-cursor" aria-hidden="true"></a></h2><p>VS Code supports multiple cursors for fast simultaneous edits. You can add secondary cursors (rendered thinner) with <code>kbstyle(Alt+Click)</code>. Each cursor operates independently based on the context it sits in. A common way to add more cursors is with <code>kb(editor.action.insertCursorBelow)</code> or <code>kb(editor.action.insertCursorAbove)</code> that insert cursors below or above.</p>
+<h2 id="Multiple-selections-multi-cursor" class="article-heading"><a href="#Multiple-selections-multi-cursor" class="headerlink" title="Multiple selections (multi-cursor)"></a>Multiple selections (multi-cursor)<a class="article-anchor" href="#Multiple-selections-multi-cursor" aria-hidden="true"></a></h2><p>VS Code supports multiple cursors for fast simultaneous edits. You can add secondary cursors (rendered thinner) with <span class="keybinding">Alt+Click</span>. Each cursor operates independently based on the context it sits in. A common way to add more cursors is with <span class="dynamic-keybinding" data-osx="⌥⌘↓" data-win="Ctrl+Alt+Down" data-linux="Shift+Alt+Down"><span class="keybinding">⌥⌘↓</span> (Windows <span class="keybinding">Ctrl+Alt+Down</span>, Linux <span class="keybinding">Shift+Alt+Down</span>)</span> or <span class="dynamic-keybinding" data-osx="⌥⌘↑" data-win="Ctrl+Alt+Up" data-linux="Shift+Alt+Up"><span class="keybinding">⌥⌘↑</span> (Windows <span class="keybinding">Ctrl+Alt+Up</span>, Linux <span class="keybinding">Shift+Alt+Up</span>)</span> that insert cursors below or above.</p>
 <blockquote>
 <p><strong>Note:</strong> Your graphics card driver (for example NVIDIA) might overwrite these default shortcuts.</p>
 </blockquote>
 <p><img src="images/editingevolved/multicursor.gif" alt="Multi-cursor"></p>
-<p><code>kb(editor.action.addSelectionToNextFindMatch)</code> selects the word at the cursor, or the next occurrence of the current selection.</p>
+<p><span class="dynamic-keybinding" data-osx="⌘D" data-win="Ctrl+D" data-linux="Ctrl+D"><span class="keybinding">⌘D</span> (Windows, Linux <span class="keybinding">Ctrl+D</span>)</span> selects the word at the cursor, or the next occurrence of the current selection.</p>
 <p><img src="images/editingevolved/multicursor-word.gif" alt="Multi-cursor-next-word"></p>
 <blockquote>
-<p><strong>Tip:</strong> You can also add more cursors with <code>kb(editor.action.selectHighlights)</code>, which will add a selection at each occurrence of the current selected text.</p>
+<p><strong>Tip:</strong> You can also add more cursors with <span class="dynamic-keybinding" data-osx="⇧⌘L" data-win="Ctrl+Shift+L" data-linux="Ctrl+Shift+L"><span class="keybinding">⇧⌘L</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+L</span>)</span>, which will add a selection at each occurrence of the current selected text.</p>
 </blockquote>
-<h3 id="Shrink-expand-selection" class="article-heading"><a href="#Shrink-expand-selection" class="headerlink" title="Shrink/expand selection"></a>Shrink/expand selection<a class="article-anchor" href="#Shrink-expand-selection" aria-hidden="true"></a></h3><p>Quickly shrink or expand the current selection. Trigger it with <code>kb(editor.action.smartSelect.shrink)</code> and <code>kb(editor.action.smartSelect.grow)</code></p>
-<p>Here’s an example of expanding the selection with <code>kb(editor.action.smartSelect.grow)</code>:</p>
+<h3 id="Shrink-expand-selection" class="article-heading"><a href="#Shrink-expand-selection" class="headerlink" title="Shrink/expand selection"></a>Shrink/expand selection<a class="article-anchor" href="#Shrink-expand-selection" aria-hidden="true"></a></h3><p>Quickly shrink or expand the current selection. Trigger it with <span class="dynamic-keybinding" data-osx="⌃⇧⌘←" data-win="Shift+Alt+Left" data-linux="Shift+Alt+Left"><span class="keybinding">⌃⇧⌘←</span> (Windows, Linux <span class="keybinding">Shift+Alt+Left</span>)</span> and <span class="dynamic-keybinding" data-osx="⌃⇧⌘→" data-win="Shift+Alt+Right" data-linux="Shift+Alt+Right"><span class="keybinding">⌃⇧⌘→</span> (Windows, Linux <span class="keybinding">Shift+Alt+Right</span>)</span></p>
+<p>Here’s an example of expanding the selection with <span class="dynamic-keybinding" data-osx="⌃⇧⌘→" data-win="Shift+Alt+Right" data-linux="Shift+Alt+Right"><span class="keybinding">⌃⇧⌘→</span> (Windows, Linux <span class="keybinding">Shift+Alt+Right</span>)</span>:</p>
 <p><img src="images/editingevolved/expandselection.gif" alt="Expand selection"></p>
-<h2 id="Column-box-selection" class="article-heading"><a href="#Column-box-selection" class="headerlink" title="Column (box) selection"></a>Column (box) selection<a class="article-anchor" href="#Column-box-selection" aria-hidden="true"></a></h2><p>Hold <code>kbstyle(Shift)</code> and <code>kbstyle(Alt)</code> while dragging to do column selection:</p>
+<h2 id="Column-box-selection" class="article-heading"><a href="#Column-box-selection" class="headerlink" title="Column (box) selection"></a>Column (box) selection<a class="article-anchor" href="#Column-box-selection" aria-hidden="true"></a></h2><p>Hold <span class="keybinding">Shift</span> and <span class="keybinding">Alt</span> while dragging to do column selection:</p>
 <p><img src="images/editingevolved/column-select.gif" alt="Column text selection"></p>
 <p>There are also default key bindings for column selection on Mac and Windows, but not on Linux.</p>
 <table>
@@ -170,39 +170,39 @@
 </thead>
 <tbody>
 <tr>
-<td><code>kb(cursorColumnSelectDown)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⇧⌥⌘↓" data-win="Ctrl+Shift+Alt+Down"><span class="keybinding">⇧⌥⌘↓</span> (Windows <span class="keybinding">Ctrl+Shift+Alt+Down</span>, Linux <span class="keybinding"></span>)</span></td>
 <td>Column Select Down</td>
 <td><code>cursorColumnSelectDown</code></td>
 </tr>
 <tr>
-<td><code>kb(cursorColumnSelectUp)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⇧⌥⌘↑" data-win="Ctrl+Shift+Alt+Up"><span class="keybinding">⇧⌥⌘↑</span> (Windows <span class="keybinding">Ctrl+Shift+Alt+Up</span>, Linux <span class="keybinding"></span>)</span></td>
 <td>Column Select Up</td>
 <td><code>cursorColumnSelectUp</code></td>
 </tr>
 <tr>
-<td><code>kb(cursorColumnSelectLeft)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⇧⌥⌘←" data-win="Ctrl+Shift+Alt+Left"><span class="keybinding">⇧⌥⌘←</span> (Windows <span class="keybinding">Ctrl+Shift+Alt+Left</span>, Linux <span class="keybinding"></span>)</span></td>
 <td>Column Select Left</td>
 <td><code>cursorColumnSelectLeft</code></td>
 </tr>
 <tr>
-<td><code>kb(cursorColumnSelectRight)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⇧⌥⌘→" data-win="Ctrl+Shift+Alt+Right"><span class="keybinding">⇧⌥⌘→</span> (Windows <span class="keybinding">Ctrl+Shift+Alt+Right</span>, Linux <span class="keybinding"></span>)</span></td>
 <td>Column Select Right</td>
 <td><code>cursorColumnSelectRight</code></td>
 </tr>
 <tr>
-<td><code>kb(cursorColumnSelectPageDown)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⇧⌥⌘PageDown" data-win="Ctrl+Shift+Alt+PageDown"><span class="keybinding">⇧⌥⌘PageDown</span> (Windows <span class="keybinding">Ctrl+Shift+Alt+PageDown</span>, Linux <span class="keybinding"></span>)</span></td>
 <td>Column Select Page Down</td>
 <td><code>cursorColumnSelectPageDown</code></td>
 </tr>
 <tr>
-<td><code>kb(cursorColumnSelectPageUp)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⇧⌥⌘PageUp" data-win="Ctrl+Shift+Alt+PageUp"><span class="keybinding">⇧⌥⌘PageUp</span> (Windows <span class="keybinding">Ctrl+Shift+Alt+PageUp</span>, Linux <span class="keybinding"></span>)</span></td>
 <td>Column Select Page Up</td>
 <td><code>cursorColumnSelectPageUp</code></td>
 </tr>
 </tbody>
 </table>
-<p>You can <a href="/docs/customization/keybindings.html">edit</a> your <code>keybindings.json</code> to bind them to something more familiar if you wish.</p>
-<h2 id="Save-Auto-Save" class="article-heading"><a href="#Save-Auto-Save" class="headerlink" title="Save / Auto Save"></a>Save / Auto Save<a class="article-anchor" href="#Save-Auto-Save" aria-hidden="true"></a></h2><p>By default, VS Code requires an explicit action to save your changes to disk, <code>kb(workbench.action.files.save)</code>.</p>
+<p>You can <a href="/docs/customization/keybindings">edit</a> your <code>keybindings.json</code> to bind them to something more familiar if you wish.</p>
+<h2 id="Save-Auto-Save" class="article-heading"><a href="#Save-Auto-Save" class="headerlink" title="Save / Auto Save"></a>Save / Auto Save<a class="article-anchor" href="#Save-Auto-Save" aria-hidden="true"></a></h2><p>By default, VS Code requires an explicit action to save your changes to disk, <span class="dynamic-keybinding" data-osx="⌘S" data-win="Ctrl+S" data-linux="Ctrl+S"><span class="keybinding">⌘S</span> (Windows, Linux <span class="keybinding">Ctrl+S</span>)</span>.</p>
 <p>However, it’s easy to turn on <code>Auto Save</code>, which will save your changes after a configured delay or when focus leaves the editor. With this option turned on, there is no need to explicitly save the file. The easiest way to turn on <code>Auto Save</code> is with the <strong>File</strong> &gt; <strong>Auto Save</strong> toggle which turns on and off save after a delay.</p>
 <p>For more control over <code>Auto Save</code>, open <strong>User Settings</strong> or <strong>Workspace Settings</strong> and find the associated settings:</p>
 <ul>
@@ -217,12 +217,12 @@
 </ul>
 <h2 id="Hot-Exit" class="article-heading"><a href="#Hot-Exit" class="headerlink" title="Hot Exit"></a>Hot Exit<a class="article-anchor" href="#Hot-Exit" aria-hidden="true"></a></h2><p>VS Code will remember unsaved changes to files when you exit by default. Hot exit is triggered when the application is closed via <strong>File</strong> &gt; <strong>Exit</strong> (<strong>Code</strong> &gt; <strong>Quit</strong> on macOS) or when the last window is closed.</p>
 <p>Hot exit can be disabled by changing the setting <code>files.hotExit</code> to <code>false</code>.</p>
-<h2 id="Search-Across-Files" class="article-heading"><a href="#Search-Across-Files" class="headerlink" title="Search Across Files"></a>Search Across Files<a class="article-anchor" href="#Search-Across-Files" aria-hidden="true"></a></h2><p>VS Code allows you to quickly search over all files in the currently-opened folder.  Simply type <code>kb(workbench.view.search)</code> and type in your search. Search results are grouped into files containing the search term, with an indication of the hits in each file and its location. Expand a file to see a preview of all of the hits within that file. Then single-click on one of the hits to view it in the editor.</p>
+<h2 id="Search-Across-Files" class="article-heading"><a href="#Search-Across-Files" class="headerlink" title="Search Across Files"></a>Search Across Files<a class="article-anchor" href="#Search-Across-Files" aria-hidden="true"></a></h2><p>VS Code allows you to quickly search over all files in the currently-opened folder.  Simply type <span class="dynamic-keybinding" data-osx="⇧⌘F" data-win="Ctrl+Shift+F" data-linux="Ctrl+Shift+F"><span class="keybinding">⇧⌘F</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+F</span>)</span> and type in your search. Search results are grouped into files containing the search term, with an indication of the hits in each file and its location. Expand a file to see a preview of all of the hits within that file. Then single-click on one of the hits to view it in the editor.</p>
 <p><img src="images/codebasics/search.png" alt="A simple text search across files"></p>
 <blockquote>
 <p><strong>Tip:</strong> We support regular expression searching in the search box, too.</p>
 </blockquote>
-<p>You can configure advanced search options by typing <code>kb(workbench.action.search.toggleQueryDetails)</code>. This will show additional fields to configure the search.</p>
+<p>You can configure advanced search options by typing <span class="dynamic-keybinding" data-osx="⇧⌘J" data-win="Ctrl+Shift+J" data-linux="Ctrl+Shift+J"><span class="keybinding">⇧⌘J</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+J</span>)</span>. This will show additional fields to configure the search.</p>
 <p><img src="images/codebasics/searchadvanced.png" alt="Advanced search options"></p>
 <p>In the two input boxes below the search box, you can include and exclude files. Click on the toggle to the right to enable the glob pattern syntax:</p>
 <ul>
@@ -241,26 +241,26 @@
 <p>When you type text into the Replace text box, you will see a diff display of the pending changes. You can replace across all files from the Replace text box, replace all in one file or replace a single change.</p>
 <p><img src="images/codebasics/search-replace-example.png" alt="search and replace diff view"></p>
 <blockquote>
-<p><strong>Tip:</strong> You can quickly reuse a previous search term by using <code>kb(search.history.showNext)</code> and <code>kb(search.history.showPrevious)</code> to navigate through your search term history.</p>
+<p><strong>Tip:</strong> You can quickly reuse a previous search term by using <span class="dynamic-keybinding" data-osx="⌥↓" data-win="Alt+Down" data-linux="Alt+Down"><span class="keybinding">⌥↓</span> (Windows, Linux <span class="keybinding">Alt+Down</span>)</span> and <span class="dynamic-keybinding" data-osx="⌥↑" data-win="Alt+Up" data-linux="Alt+Up"><span class="keybinding">⌥↑</span> (Windows, Linux <span class="keybinding">Alt+Up</span>)</span> to navigate through your search term history.</p>
 </blockquote>
-<h2 id="Command-Palette" class="article-heading"><a href="#Command-Palette" class="headerlink" title="Command Palette"></a>Command Palette<a class="article-anchor" href="#Command-Palette" aria-hidden="true"></a></h2><p>VS Code is equally accessible from the keyboard. The most important key combination to know is <code>kb(workbench.action.showCommands)</code>, which brings up the <strong>Command Palette</strong>. From here, you have access to all of the functionality of VS Code, including keyboard shortcuts for the most common operations.</p>
+<h2 id="Command-Palette" class="article-heading"><a href="#Command-Palette" class="headerlink" title="Command Palette"></a>Command Palette<a class="article-anchor" href="#Command-Palette" aria-hidden="true"></a></h2><p>VS Code is equally accessible from the keyboard. The most important key combination to know is <span class="dynamic-keybinding" data-osx="⇧⌘P" data-win="Ctrl+Shift+P" data-linux="Ctrl+Shift+P"><span class="keybinding">⇧⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+P</span>)</span>, which brings up the <strong>Command Palette</strong>. From here, you have access to all of the functionality of VS Code, including keyboard shortcuts for the most common operations.</p>
 <p><img src="images/codebasics/commands.png" alt="Command Palette"></p>
 <p>The Command Palette provides access to many commands. You can execute editor commands, open files, search for symbols, and see a quick outline of a file, all using the same interactive window. Here are a few tips:</p>
 <ul>
-<li><code>kb(workbench.action.quickOpen)</code> will let you navigate to any file or symbol by simply typing its name</li>
-<li><code>kb(workbench.action.openPreviousRecentlyUsedEditorInGroup)</code> will cycle you through the last set of files opened</li>
-<li><code>kb(workbench.action.showCommands)</code> will bring you directly to the editor commands</li>
-<li><code>kb(workbench.action.gotoSymbol)</code> will let you navigate to a specific symbol in a file</li>
-<li><code>kb(workbench.action.gotoLine)</code> will let you navigate to a specific line in a file</li>
+<li><span class="dynamic-keybinding" data-osx="⌘P" data-win="Ctrl+P" data-linux="Ctrl+P"><span class="keybinding">⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+P</span>)</span> will let you navigate to any file or symbol by simply typing its name</li>
+<li><span class="dynamic-keybinding" data-osx="⌃⇧Tab" data-win="Ctrl+Shift+Tab" data-linux="Ctrl+Shift+Tab"><span class="keybinding">⌃⇧Tab</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+Tab</span>)</span> will cycle you through the last set of files opened</li>
+<li><span class="dynamic-keybinding" data-osx="⇧⌘P" data-win="Ctrl+Shift+P" data-linux="Ctrl+Shift+P"><span class="keybinding">⇧⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+P</span>)</span> will bring you directly to the editor commands</li>
+<li><span class="dynamic-keybinding" data-osx="⇧⌘O" data-win="Ctrl+Shift+O" data-linux="Ctrl+Shift+O"><span class="keybinding">⇧⌘O</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+O</span>)</span> will let you navigate to a specific symbol in a file</li>
+<li><span class="dynamic-keybinding" data-osx="⌃G" data-win="Ctrl+G" data-linux="Ctrl+G"><span class="keybinding">⌃G</span> (Windows, Linux <span class="keybinding">Ctrl+G</span>)</span> will let you navigate to a specific line in a file</li>
 </ul>
 <p>Type <code>?</code> into the input field to get a list of available commands you can execute from here:</p>
 <p><img src="images/codebasics/quickopenhelp.png" alt="Quick Open Help"></p>
 <h2 id="Quick-File-Navigation" class="article-heading"><a href="#Quick-File-Navigation" class="headerlink" title="Quick File Navigation"></a>Quick File Navigation<a class="article-anchor" href="#Quick-File-Navigation" aria-hidden="true"></a></h2><p>The Explorer is great for navigating between files when you are exploring a project. However, when you are working on a task, you will find yourself quickly jumping between the same set of files. VS Code provides two powerful commands to navigate in and across files with easy-to-use key bindings.</p>
-<p>Hold <code>kbstyle(Ctrl)</code> and press <code>kbstyle(Tab)</code> to view a list of all files open in an editor group. To open one of these files, use <code>kbstyle(Tab)</code> again to pick the file you want to navigate to, then release <code>kbstyle(Ctrl)</code> to open it.</p>
+<p>Hold <span class="keybinding">Ctrl</span> and press <span class="keybinding">Tab</span> to view a list of all files open in an editor group. To open one of these files, use <span class="keybinding">Tab</span> again to pick the file you want to navigate to, then release <span class="keybinding">Ctrl</span> to open it.</p>
 <p><img src="images/codebasics/quicknav.png" alt="Quick Navigation"></p>
-<p>Alternatively, you can use <code>kb(workbench.action.navigateBack)</code> and <code>kb(workbench.action.navigateForward)</code> to navigate between files and edit locations. If you are jumping around between different lines of the same file, these shortcuts allow you to navigate between those locations easily.</p>
+<p>Alternatively, you can use <span class="dynamic-keybinding" data-osx="⌃-" data-win="Alt+Left" data-linux="Ctrl+Alt+-"><span class="keybinding">⌃-</span> (Windows <span class="keybinding">Alt+Left</span>, Linux <span class="keybinding">Ctrl+Alt+-</span>)</span> and <span class="dynamic-keybinding" data-osx="⌃⇧-" data-win="Alt+Right" data-linux="Ctrl+Shift+-"><span class="keybinding">⌃⇧-</span> (Windows <span class="keybinding">Alt+Right</span>, Linux <span class="keybinding">Ctrl+Shift+-</span>)</span> to navigate between files and edit locations. If you are jumping around between different lines of the same file, these shortcuts allow you to navigate between those locations easily.</p>
 <blockquote>
-<p><strong>Tip:</strong> You can open any file by its name when you type <code>kb(workbench.action.quickOpen)</code> (<strong>Quick Open</strong>).</p>
+<p><strong>Tip:</strong> You can open any file by its name when you type <span class="dynamic-keybinding" data-osx="⌘P" data-win="Ctrl+P" data-linux="Ctrl+P"><span class="keybinding">⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+P</span>)</span> (<strong>Quick Open</strong>).</p>
 </blockquote>
 <h2 id="File-Encoding-Support" class="article-heading"><a href="#File-Encoding-Support" class="headerlink" title="File Encoding Support"></a>File Encoding Support<a class="article-anchor" href="#File-Encoding-Support" aria-hidden="true"></a></h2><p>Set the file encoding globally or per workspace by using the <code>files.encoding</code> setting in <strong>User Settings</strong> or <strong>Workspace Settings</strong>.</p>
 <p><img src="images/codebasics/filesencodingsetting.png" alt="files.encoding setting"></p>
@@ -273,10 +273,10 @@
 <h2 id="Launching-from-the-Command-Line" class="article-heading"><a href="#Launching-from-the-Command-Line" class="headerlink" title="Launching from the Command Line"></a>Launching from the Command Line<a class="article-anchor" href="#Launching-from-the-Command-Line" aria-hidden="true"></a></h2><p>You can launch VS Code from the command line to quickly open a file, folder, or project. Typically, you open VS Code within the context of a folder. We find the best way to do this is to simply type:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">code .</div></pre></td></tr></table></figure>
 <blockquote>
-<p><strong>Tip:</strong> We have instructions for Mac users in our <a href="/docs/setup/mac.html">Setup</a> topic that enable you to start VS Code from within a terminal.  We add the VS Code executable to the <code>PATH</code> environment variable on Windows and Linux automatically during installation.</p>
+<p><strong>Tip:</strong> We have instructions for Mac users in our <a href="/docs/setup/mac">Setup</a> topic that enable you to start VS Code from within a terminal.  We add the VS Code executable to the <code>PATH</code> environment variable on Windows and Linux automatically during installation.</p>
 </blockquote>
 <p>Sometimes you will want to open or create a file. If the specified files does not exist, VS Code will create them for you:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">code index.html style.css readme.html</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">code index.html style.css readme.md</div></pre></td></tr></table></figure>
 <blockquote>
 <p><strong>Tip:</strong> You can have as many file names as you want separated by spaces.</p>
 </blockquote>
@@ -367,24 +367,24 @@
 <p>The <code>window.reopenFolders</code> setting tells VS Code how to restore the opened windows of your previous session. By default, VS Code will<br>reopen the last opened folder you worked on (setting: <code>one</code>). Change this setting to <code>none</code> to never reopen any folders and always start with an empty VS Code instance. Change it to <code>all</code> to restore all folders you worked on during your previous session.</p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>You’ve covered the basic user interface - there is a lot more to VS Code.  Read on to find out about:</p>
 <ul>
-<li><a href="/docs/introvideos/basics.html">Intro Video - Setup and Basics</a> - Watch a tutorial on the basics of VS Code.</li>
-<li><a href="/docs/customization/userandworkspace.html">User/Workspace Settings</a> - Learn how to configure VS Code to your preferences through user and workspace settings.</li>
-<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - Lint, IntelliSense, Lightbulbs, Peek and Goto Definition, and more</li>
-<li><a href="/docs/editor/integrated-terminal.html">Integrated Terminal</a> - Learn about the integrated terminal for quickly performing command line tasks from within VS Code.</li>
-<li><a href="/docs/editor/intellisense.html">IntelliSense</a> - VS Code brings smart code completions.</li>
-<li><a href="/docs/editor/debugging.html">Debugging</a> - This is where VS Code really shines</li>
-<li><a href="/docs/customization/overview.html">Customization</a> - Themes, settings, and keyboard bindings</li>
+<li><a href="/docs/introvideos/basics">Intro Video - Setup and Basics</a> - Watch a tutorial on the basics of VS Code.</li>
+<li><a href="/docs/customization/userandworkspace">User/Workspace Settings</a> - Learn how to configure VS Code to your preferences through user and workspace settings.</li>
+<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - Lint, IntelliSense, Lightbulbs, Peek and Goto Definition, and more</li>
+<li><a href="/docs/editor/integrated-terminal">Integrated Terminal</a> - Learn about the integrated terminal for quickly performing command line tasks from within VS Code.</li>
+<li><a href="/docs/editor/intellisense">IntelliSense</a> - VS Code brings smart code completions.</li>
+<li><a href="/docs/editor/debugging">Debugging</a> - This is where VS Code really shines</li>
+<li><a href="/docs/customization/overview">Customization</a> - Themes, settings, and keyboard bindings</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: Is it possible to globally search and replace?</strong></p>
 <p><strong>A:</strong> Yes, expand the Search view text box to include a replace text field. You can search and replace across all the files in your workspace. Note that if you did not open VS Code on a folder, the search will only run on the currently open files.</p>
 <p><img src="images/codebasics/global-search-replace.png" alt="global search and replace"></p>
 <p><strong>Q: How do I turn on word wrap?</strong></p>
-<p><strong>A:</strong> You can control word wrap through the <code>editor.wrappingColumn</code> <a href="/docs/customization/userandworkspace.html">setting</a>. By default <code>editor.wrappingColumn</code> is set to 300 characters.  You can adjust the column width or set the value to zero to wrap on the editor viewport width:</p>
+<p><strong>A:</strong> You can control word wrap through the <code>editor.wrappingColumn</code> <a href="/docs/customization/userandworkspace">setting</a>. By default <code>editor.wrappingColumn</code> is set to 300 characters.  You can adjust the column width or set the value to zero to wrap on the editor viewport width:</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">"editor.wrappingColumn": 0</div></pre></td></tr></table></figure>
-<p>You can toggle word wrap for the VS Code session with <code>kb(editor.action.toggleWordWrap)</code>. Restarting VS Code will pick up the persisted <code>editor.wrappingColumn</code> value.</p>
+<p>You can toggle word wrap for the VS Code session with <span class="dynamic-keybinding" data-osx="⌥Z" data-win="Alt+Z" data-linux="Alt+Z"><span class="keybinding">⌥Z</span> (Windows, Linux <span class="keybinding">Alt+Z</span>)</span>. Restarting VS Code will pick up the persisted <code>editor.wrappingColumn</code> value.</p>
 <p>You can also add vertical column rulers to the editor with the <code>editor.rulers</code> setting which takes an array of column character positions where you’d like vertical rulers.</p>
 <p><strong>Q: How can I show more files in the OPEN EDITORS section?</strong></p>
-<p><strong>A:</strong> You can configure the appearance of <strong>OPEN EDITORS</strong> through your <a href="/docs/customization/userandworkspace.html">settings</a>. For example, you can set the maximum number of visible files before a scroll bar appears via the <code>explorer.openEditors.visible</code> setting and whether the <strong>OPEN EDITORS</strong> section should dynamically set its height via <code>explorer.openEditors.dynamicHeight</code>.</p>
+<p><strong>A:</strong> You can configure the appearance of <strong>OPEN EDITORS</strong> through your <a href="/docs/customization/userandworkspace">settings</a>. For example, you can set the maximum number of visible files before a scroll bar appears via the <code>explorer.openEditors.visible</code> setting and whether the <strong>OPEN EDITORS</strong> section should dynamically set its height via <code>explorer.openEditors.dynamicHeight</code>.</p>
 
               </div>
               <footer class="article-footer">
@@ -426,10 +426,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

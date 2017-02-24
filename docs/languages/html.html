@@ -56,7 +56,7 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name">HTML Programming in VS Code</h1>
-                <a href="ABCdocs/languages/html.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/languages/html.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-21T07:16:26.774Z" itemprop="dateModified">Last updated: 2017-02-21</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
@@ -70,31 +70,31 @@
 <p><img src="images/html/htmlintellisense.png" alt="HTML IntelliSense"></p>
 <p>We also offer up suggestions for elements, tags, some values (as defined in HTML 5), Ionic and AngularJS tags,</p>
 <p>You can also work with embedded CSS and JavaScript. However, note that script and style includes are not followed, the language support only looks at the content of the HTML file.</p>
-<p>You can trigger suggestions at any time by pressing <code>kb(editor.action.triggerSuggest)</code>.</p>
-<p>You can also control which built-in code completion providers are active. Override these in your user or workspace <a href="/docs/customization/userandworkspace.html">settings</a> if you prefer not to see the corresponding suggestions.</p>
+<p>You can trigger suggestions at any time by pressing <span class="dynamic-keybinding" data-osx="⌃Space" data-win="Ctrl+Space" data-linux="Ctrl+Space"><span class="keybinding">⌃Space</span> (Windows, Linux <span class="keybinding">Ctrl+Space</span>)</span>.</p>
+<p>You can also control which built-in code completion providers are active. Override these in your user or workspace <a href="/docs/customization/userandworkspace">settings</a> if you prefer not to see the corresponding suggestions.</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">// Configures if the built-in HTML language suggests Angular V1 tags and properties.</div><div class="line">"html.suggest.angular1": true,</div><div class="line"></div><div class="line">// Configures if the built-in HTML language suggests Ionic tags, properties and values.</div><div class="line">"html.suggest.ionic": true,</div><div class="line"></div><div class="line">// Configures if the built-in HTML language suggests HTML5 tags, properties and values.</div><div class="line">"html.suggest.html5": true</div></pre></td></tr></table></figure>
 <h2 id="Hover" class="article-heading"><a href="#Hover" class="headerlink" title="Hover"></a>Hover<a class="article-anchor" href="#Hover" aria-hidden="true"></a></h2><p>Move the mouse over HTML tags or embedded styles and JavaScript to get more information on the symbol under the cursor.</p>
 <p><img src="images/html/htmlhover.png" alt="HTML Hover"></p>
 <h2 id="Validation" class="article-heading"><a href="#Validation" class="headerlink" title="Validation"></a>Validation<a class="article-anchor" href="#Validation" aria-hidden="true"></a></h2><p>The HTML language support performs validation on all embedded JavaScript and CSS.</p>
 <p>You can turn that validation off with the following settings:</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">// Configures if the built-in HTML language support validates embedded scripts.</div><div class="line">"html.validate.scripts": true,</div><div class="line"></div><div class="line">// Configures if the built-in HTML language support validates embedded styles.</div><div class="line">"html.validate.styles": true</div></pre></td></tr></table></figure>
-<h2 id="Format-HTML" class="article-heading"><a href="#Format-HTML" class="headerlink" title="Format HTML"></a>Format HTML<a class="article-anchor" href="#Format-HTML" aria-hidden="true"></a></h2><p>To improve the formatting of your HTML source code, press <code>kb(editor.action.formatSelection)</code> and the selected area will be reformatted.</p>
+<h2 id="Format-HTML" class="article-heading"><a href="#Format-HTML" class="headerlink" title="Format HTML"></a>Format HTML<a class="article-anchor" href="#Format-HTML" aria-hidden="true"></a></h2><p>To improve the formatting of your HTML source code, press <span class="dynamic-keybinding" data-osx="⌘K ⌘F" data-win="Ctrl+K Ctrl+F" data-linux="Ctrl+K Ctrl+F"><span class="keybinding">⌘K ⌘F</span> (Windows, Linux <span class="keybinding">Ctrl+K Ctrl+F</span>)</span> and the selected area will be reformatted.</p>
 <blockquote>
 <p><strong>Tip:</strong> The formatter does not format the tags listed in the <code>html.format.unformatted</code> settings. Embedded JavaScript is formatted unless ‘script’ tags are excluded.</p>
-<p><strong>Tip:</strong> Configure the HTML formatter settings in the <a href="/docs/customization/userandworkspace.html">User and Workspace Settings</a>.</p>
+<p><strong>Tip:</strong> Configure the HTML formatter settings in the <a href="/docs/customization/userandworkspace">User and Workspace Settings</a>.</p>
 </blockquote>
-<h2 id="Emmet-snippets" class="article-heading"><a href="#Emmet-snippets" class="headerlink" title="Emmet snippets"></a>Emmet snippets<a class="article-anchor" href="#Emmet-snippets" aria-hidden="true"></a></h2><p>We support Emmet snippet expansion, simply press <code>kb(editor.emmet.action.expandAbbreviation)</code>.</p>
+<h2 id="Emmet-snippets" class="article-heading"><a href="#Emmet-snippets" class="headerlink" title="Emmet snippets"></a>Emmet snippets<a class="article-anchor" href="#Emmet-snippets" aria-hidden="true"></a></h2><p>We support Emmet snippet expansion, simply press <span class="dynamic-keybinding" data-osx="Tab" data-win="Tab" data-linux="Tab"><span class="keybinding">Tab</span></span>.</p>
 <p><img src="images/html/emmetsnippet.gif" alt="Emmet HTML support built-in"></p>
 <blockquote>
 <p><strong>Tip:</strong> See the HTML section of the <a href="http://docs.emmet.io/cheat-sheet" target="_blank" rel="external">Emmet cheat sheet</a> for valid abbreviations.</p>
 </blockquote>
-<p>If you’d like to use HTML Emmet abbreviations with other languages, you can associate an Emmet syntax profile (such as <code>html</code>, <code>css</code>) with other languages with the <code>emmet.syntaxProfiles</code> <a href="/docs/customization/userandworkspace.html">setting</a>. The setting takes a <a href="/docs/languages/overview.html#language-id">language id</a> and associates it with an Emmet profile.</p>
+<p>If you’d like to use HTML Emmet abbreviations with other languages, you can associate an Emmet syntax profile (such as <code>html</code>, <code>css</code>) with other languages with the <code>emmet.syntaxProfiles</code> <a href="/docs/customization/userandworkspace">setting</a>. The setting takes a <a href="/docs/languages/overview.md#language-id">language id</a> and associates it with an Emmet profile.</p>
 <p>For example, to use Emmet HTML abbreviations inside JavaScript:</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"emmet.syntaxProfiles"</span>: &#123;</div><div class="line">        <span class="attr">"javascript"</span>: <span class="string">"html"</span></div><div class="line">     &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>We also support <a href="/docs/customization/userdefinedsnippets.html">User Defined Snippets</a>.</p>
+<p>We also support <a href="/docs/customization/userdefinedsnippets">User Defined Snippets</a>.</p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>Read on to find out about:</p>
 <ul>
-<li><a href="/docs/languages/css.html">CSS, Less and Sass</a> - VS Code has first class support for CSS including Less and Sass.</li>
+<li><a href="/docs/languages/css">CSS, Less and Sass</a> - VS Code has first class support for CSS including Less and Sass.</li>
 </ul>
 
               </div>
@@ -137,10 +137,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

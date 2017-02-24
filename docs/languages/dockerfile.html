@@ -56,12 +56,12 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name"></h1>
-                <a href="ABCdocs/languages/dockerfile.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/languages/dockerfile.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-15T07:41:40.624Z" itemprop="dateModified">Last updated: 2017-02-15</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
                 <h1 id="Working-with-Docker" class="article-heading"><a href="#Working-with-Docker" class="headerlink" title="Working with Docker"></a>Working with Docker<a class="article-anchor" href="#Working-with-Docker" aria-hidden="true"></a></h1><p><a href="http://www.docker.com" target="_blank" rel="external">Docker</a> is a very popular container platform that lets you easily package, deploy, and consume applications and services. Whether you are a seasoned Docker developer or just getting started, Visual Studio Code makes it easy to author <code>Dockerfile</code> and <code>docker-compose.yml</code> files in your workspace.</p>
-<h2 id="Install-the-Docker-extension" class="article-heading"><a href="#Install-the-Docker-extension" class="headerlink" title="Install the Docker extension"></a>Install the Docker extension<a class="article-anchor" href="#Install-the-Docker-extension" aria-hidden="true"></a></h2><p>Docker support for VS Code is provided by an extension. To install the Docker extension, open the Extension Viewlet by pressing <code>kb(workbench.view.extensions)</code> and search for <code>vscode-docker</code> to filter the results. Select the <a href="https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker" target="_blank" rel="external">Docker Support</a> extension.</p>
+<h2 id="Install-the-Docker-extension" class="article-heading"><a href="#Install-the-Docker-extension" class="headerlink" title="Install the Docker extension"></a>Install the Docker extension<a class="article-anchor" href="#Install-the-Docker-extension" aria-hidden="true"></a></h2><p>Docker support for VS Code is provided by an extension. To install the Docker extension, open the Extension Viewlet by pressing <span class="dynamic-keybinding" data-osx="⇧⌘X" data-win="Ctrl+Shift+X" data-linux="Ctrl+Shift+X"><span class="keybinding">⇧⌘X</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+X</span>)</span> and search for <code>vscode-docker</code> to filter the results. Select the <a href="https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker" target="_blank" rel="external">Docker Support</a> extension.</p>
 <p><img src="images/docker/installdockerextension.png" alt="Select Docker extension"></p>
 <p>While here, you can install many other extensions to make you more productive with VS Code. </p>
 <div class="marketplace-extensions-docker"></div>
@@ -73,10 +73,10 @@
 <p>VS Code understands the structure of Dockerfiles as well as the available set of instructions, meaning we can give you a great experience when authoring these files in the tool.</p>
 <ol>
 <li>Create a new file in your workspace named <code>Dockerfile</code></li>
-<li><p>Press <code>kb(editor.action.triggerSuggest)</code> to bring up a list of snippets corresponding to valid <code>Dockerfile</code> commands</p>
+<li><p>Press <span class="dynamic-keybinding" data-osx="⌃Space" data-win="Ctrl+Space" data-linux="Ctrl+Space"><span class="keybinding">⌃Space</span> (Windows, Linux <span class="keybinding">Ctrl+Space</span>)</span> to bring up a list of snippets corresponding to valid <code>Dockerfile</code> commands</p>
 <p><img src="images/docker/dockerfileintellisense.png" alt="Dockerfile snippets"></p>
 </li>
-<li><p>Press <code>kbstyle(Tab)</code> to move between fields within the snippet. For example, with the <code>COPY</code> snippet you can fill in the <code>source</code> and then press <code>kbstyle(Tab)</code> to move to the <code>dest</code> field.</p>
+<li><p>Press <span class="keybinding">Tab</span> to move between fields within the snippet. For example, with the <code>COPY</code> snippet you can fill in the <code>source</code> and then press <span class="keybinding">Tab</span> to move to the <code>dest</code> field.</p>
 <p><img src="images/docker/dockerfiletemplate.png" alt="Dockerfile snippet navigation"></p>
 </li>
 </ol>
@@ -88,18 +88,18 @@
 <ol>
 <li>Create a new file in your workspace called <code>docker-compose.yml</code></li>
 <li>Define a new service called <code>web:</code></li>
-<li><p>On the second line, bring up IntelliSense by pressing <code>kb(editor.action.triggerSuggest)</code> to see a list of all valid compose directives.</p>
+<li><p>On the second line, bring up IntelliSense by pressing <span class="dynamic-keybinding" data-osx="⌃Space" data-win="Ctrl+Space" data-linux="Ctrl+Space"><span class="keybinding">⌃Space</span> (Windows, Linux <span class="keybinding">Ctrl+Space</span>)</span> to see a list of all valid compose directives.</p>
 <p><img src="images/docker/dockercomposeintellisense.png" alt="Docker Compose IntelliSense"></p>
 </li>
-<li><p>For the <code>image</code> directive, you can press <code>kb(editor.action.triggerSuggest)</code> again and VS Code will query the Docker Hub index for public images.</p>
+<li><p>For the <code>image</code> directive, you can press <span class="dynamic-keybinding" data-osx="⌃Space" data-win="Ctrl+Space" data-linux="Ctrl+Space"><span class="keybinding">⌃Space</span> (Windows, Linux <span class="keybinding">Ctrl+Space</span>)</span> again and VS Code will query the Docker Hub index for public images.</p>
 <p><img src="images/docker/dockercomposeimageintellisense.png" alt="Docker Compose image suggestions"></p>
 </li>
 </ol>
 <p>VS Code will first show a list of popular images along with metadata such as the number of stars and description. If you continue typing VS Code will query the Docker Hub index for matching images, including searching public profiles. For example, searching for <code>Microsoft</code> will show you all the public Microsoft images.</p>
 <p> <img src="images/docker/dockercomposesearch.png" alt="Docker Compose Microsoft image suggestions"></p>
-<h2 id="Docker-commands" class="article-heading"><a href="#Docker-commands" class="headerlink" title="Docker commands"></a>Docker commands<a class="article-anchor" href="#Docker-commands" aria-hidden="true"></a></h2><p>Many of the most common Docker and docker-compose commands are built right into the <strong>Command Palette</strong> (<code>kb(workbench.action.showCommands)</code>).</p>
+<h2 id="Docker-commands" class="article-heading"><a href="#Docker-commands" class="headerlink" title="Docker commands"></a>Docker commands<a class="article-anchor" href="#Docker-commands" aria-hidden="true"></a></h2><p>Many of the most common Docker and docker-compose commands are built right into the <strong>Command Palette</strong> (<span class="dynamic-keybinding" data-osx="⇧⌘P" data-win="Ctrl+Shift+P" data-linux="Ctrl+Shift+P"><span class="keybinding">⇧⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+P</span>)</span>).</p>
 <p><img src="images/docker/dockercommands.gif" alt="intelliSense"></p>
-<h2 id="Dockerfile-linting" class="article-heading"><a href="#Dockerfile-linting" class="headerlink" title="Dockerfile linting"></a>Dockerfile linting<a class="article-anchor" href="#Dockerfile-linting" aria-hidden="true"></a></h2><p>You can enable linting of Dockerfile files through the <code>docker.enableLinting</code> <a href="/docs/customization/userandworkspace.html">setting</a>. The extension uses the <a href="https://github.com/projectatomic/dockerfile_lint" target="_blank" rel="external">dockerfile_lint</a> rules based linter to analyze the Dockerfile. You can provide your own customized rules file by using the <code>docker.linterRuleFile</code> setting. You can find <a href="https://github.com/projectatomic/dockerfile_lint#extending-and-customizing-rule-files" target="_blank" rel="external">more information</a> on how to create rules files as well as <a href="https://github.com/projectatomic/dockerfile_lint/tree/master/sample_rules" target="_blank" rel="external">sample rules files</a> in the <a href="https://github.com/projectatomic/dockerfile_lint" target="_blank" rel="external">dockerfile_lint</a> project. </p>
+<h2 id="Dockerfile-linting" class="article-heading"><a href="#Dockerfile-linting" class="headerlink" title="Dockerfile linting"></a>Dockerfile linting<a class="article-anchor" href="#Dockerfile-linting" aria-hidden="true"></a></h2><p>You can enable linting of Dockerfile files through the <code>docker.enableLinting</code> <a href="/docs/customization/userandworkspace">setting</a>. The extension uses the <a href="https://github.com/projectatomic/dockerfile_lint" target="_blank" rel="external">dockerfile_lint</a> rules based linter to analyze the Dockerfile. You can provide your own customized rules file by using the <code>docker.linterRuleFile</code> setting. You can find <a href="https://github.com/projectatomic/dockerfile_lint#extending-and-customizing-rule-files" target="_blank" rel="external">more information</a> on how to create rules files as well as <a href="https://github.com/projectatomic/dockerfile_lint/tree/master/sample_rules" target="_blank" rel="external">sample rules files</a> in the <a href="https://github.com/projectatomic/dockerfile_lint" target="_blank" rel="external">dockerfile_lint</a> project. </p>
 <p><img src="images/docker/dockerfilelinting.gif" alt="linting"></p>
 <h2 id="Running-commands-on-Linux" class="article-heading"><a href="#Running-commands-on-Linux" class="headerlink" title="Running commands on Linux"></a>Running commands on Linux<a class="article-anchor" href="#Running-commands-on-Linux" aria-hidden="true"></a></h2><p>By default, Docker runs as the root user on Linux, requiring other users to access it with <code>sudo</code>. This extension does not assume root access, so you will need to create a Unix group called “docker” and add users to it. Instructions can be found here: <a href="https://docs.docker.com/engine/installation/linux/ubuntulinux/#/create-a-docker-group" target="_blank" rel="external">Create a Docker group</a></p>
 
@@ -143,10 +143,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

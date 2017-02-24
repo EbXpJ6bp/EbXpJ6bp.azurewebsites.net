@@ -56,23 +56,23 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name"></h1>
-                <a href="ABCdocs/languages/csharp.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/languages/csharp.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2016-12-20T11:44:04.047Z" itemprop="dateModified">Last updated: 2016-12-20</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <h1 id="Working-with-C-35" class="article-heading"><a href="#Working-with-C-35" class="headerlink" title="Working with C&#35;"></a>Working with C&#35;<a class="article-anchor" href="#Working-with-C-35" aria-hidden="true"></a></h1><p>The C# support in VS Code is optimized for cross-platform .NET Core development (see <a href="/docs/runtimes/dotnet.html">working with .NET Core and VS Code</a> for another relevant article).  Our focus with VS Code is to be a great editor for cross-platform C# development.  For instance, many <a href="/docs/runtimes/unity.html">Unity</a> game developers enjoy using VS Code in place of the MonoDevelop IDE.</p>
+                <h1 id="Working-with-C-35" class="article-heading"><a href="#Working-with-C-35" class="headerlink" title="Working with C&#35;"></a>Working with C&#35;<a class="article-anchor" href="#Working-with-C-35" aria-hidden="true"></a></h1><p>The C# support in VS Code is optimized for cross-platform .NET Core development (see <a href="/docs/runtimes/dotnet">working with .NET Core and VS Code</a> for another relevant article).  Our focus with VS Code is to be a great editor for cross-platform C# development.  For instance, many <a href="/docs/runtimes/unity">Unity</a> game developers enjoy using VS Code in place of the MonoDevelop IDE.</p>
 <p><img src="images/csharp/c_sharp_hero.png" alt="C# language within VS Code"></p>
 <p>VS Code supports debugging of C# applications running on either .NET Core or Mono. </p>
 <p>For detailed instructions on: </p>
 <ul>
-<li>.NET Core debugging - see the <a href="https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.html" target="_blank" rel="external">Microsoft C# extension’s GitHub page</a>.</li>
+<li>.NET Core debugging - see the <a href="https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md" target="_blank" rel="external">Microsoft C# extension’s GitHub page</a>.</li>
 <li>Mono debugging - see the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.mono-debug" target="_blank" rel="external">Mono Debug extension’s README</a>.</li>
 </ul>
 <blockquote>
 <p><strong>Note:</strong> VS Code does not support debugging applications running on the Desktop .NET Framework.</p>
 </blockquote>
 <p>Due to this focus, many standard C# project types are not recognized by VS Code.  An example of a non-supported project type is an ASP.NET MVC Application (though ASP.NET Core is supported).  In these cases, if you simply want to have a lightweight tool to edit a file - VS Code has you covered.  If you want the best possible experience for those projects and development on Windows in general, we recommend you use <a href="https://www.visualstudio.com/products/visual-studio-community-vs" target="_blank" rel="external">Visual Studio Community</a>.</p>
-<h2 id="Installing-C-35-support" class="article-heading"><a href="#Installing-C-35-support" class="headerlink" title="Installing C&#35; support"></a>Installing C&#35; support<a class="article-anchor" href="#Installing-C-35-support" aria-hidden="true"></a></h2><p>C# language support is an optional <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp" target="_blank" rel="external">install from the Marketplace</a>. You can install it from within VS Code by searching for ‘C#’ in the <strong>Extensions: Install Extension</strong> dropdown (<code>kb(workbench.action.showCommands)</code> and type <code>ext install</code>) or if you already have a project with C# files, VS Code will prompt you to install the extension as soon as you open a C# file.</p>
+<h2 id="Installing-C-35-support" class="article-heading"><a href="#Installing-C-35-support" class="headerlink" title="Installing C&#35; support"></a>Installing C&#35; support<a class="article-anchor" href="#Installing-C-35-support" aria-hidden="true"></a></h2><p>C# language support is an optional <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp" target="_blank" rel="external">install from the Marketplace</a>. You can install it from within VS Code by searching for ‘C#’ in the <strong>Extensions: Install Extension</strong> dropdown (<span class="dynamic-keybinding" data-osx="⇧⌘P" data-win="Ctrl+Shift+P" data-linux="Ctrl+Shift+P"><span class="keybinding">⇧⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+P</span>)</span> and type <code>ext install</code>) or if you already have a project with C# files, VS Code will prompt you to install the extension as soon as you open a C# file.</p>
 <p><a href="https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core" target="_blank" rel="external">Video Tutorial on Getting Started with C# in VS Code with .NET Core</a></p>
 <p>In addition to the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp" target="_blank" rel="external">Microsoft C# extension</a>, the community has produced other extensions. </p>
 <div class="marketplace-extensions-csharp"></div>
@@ -96,16 +96,16 @@
 <p>Once the project is loaded the enhanced experiences light up…</p>
 <h2 id="Editing-Evolved" class="article-heading"><a href="#Editing-Evolved" class="headerlink" title="Editing Evolved"></a>Editing Evolved<a class="article-anchor" href="#Editing-Evolved" aria-hidden="true"></a></h2><p>There is a lot to discover with C# and the editor, such as format on type, IntelliSense, the rename-refactoring, etc.</p>
 <p><img src="images/csharp/editingevolved.png" alt="Right Click Menu"></p>
-<p>For a full description of our editing features go to the <a href="/docs/editor/editingevolved.html">Editing Evolved</a> documentation.</p>
+<p>For a full description of our editing features go to the <a href="/docs/editor/editingevolved">Editing Evolved</a> documentation.</p>
 <p>Here are a few highlights…</p>
-<h2 id="IntelliSense" class="article-heading"><a href="#IntelliSense" class="headerlink" title="IntelliSense"></a>IntelliSense<a class="article-anchor" href="#IntelliSense" aria-hidden="true"></a></h2><p>IntelliSense just works hit <code>kb(editor.action.triggerSuggest)</code> at any time to get context specific suggestions.</p>
+<h2 id="IntelliSense" class="article-heading"><a href="#IntelliSense" class="headerlink" title="IntelliSense"></a>IntelliSense<a class="article-anchor" href="#IntelliSense" aria-hidden="true"></a></h2><p>IntelliSense just works hit <span class="dynamic-keybinding" data-osx="⌃Space" data-win="Ctrl+Space" data-linux="Ctrl+Space"><span class="keybinding">⌃Space</span> (Windows, Linux <span class="keybinding">Ctrl+Space</span>)</span> at any time to get context specific suggestions.</p>
 <p><img src="images/csharp/intellisense.png" alt="IntelliSense"></p>
-<h2 id="Snippets-for-C-35" class="article-heading"><a href="#Snippets-for-C-35" class="headerlink" title="Snippets for C&#35;"></a>Snippets for C&#35;<a class="article-anchor" href="#Snippets-for-C-35" aria-hidden="true"></a></h2><p>We have several built-in snippets included in VS Code that will come up as you type or you can press <code>kb(editor.action.triggerSuggest)</code> (Trigger Suggest) and we will give you a context specific list of suggestions.</p>
+<h2 id="Snippets-for-C-35" class="article-heading"><a href="#Snippets-for-C-35" class="headerlink" title="Snippets for C&#35;"></a>Snippets for C&#35;<a class="article-anchor" href="#Snippets-for-C-35" aria-hidden="true"></a></h2><p>We have several built-in snippets included in VS Code that will come up as you type or you can press <span class="dynamic-keybinding" data-osx="⌃Space" data-win="Ctrl+Space" data-linux="Ctrl+Space"><span class="keybinding">⌃Space</span> (Windows, Linux <span class="keybinding">Ctrl+Space</span>)</span> (Trigger Suggest) and we will give you a context specific list of suggestions.</p>
 <p><img src="images/csharp/snippet.png" alt="Snippets"></p>
 <blockquote>
-<p><strong>Tip:</strong> You can add in your own User Defined Snippets for C#.  Take a look at <a href="/docs/customization/userdefinedsnippets.html">User Defined Snippets</a> to find out how.</p>
+<p><strong>Tip:</strong> You can add in your own User Defined Snippets for C#.  Take a look at <a href="/docs/customization/userdefinedsnippets">User Defined Snippets</a> to find out how.</p>
 </blockquote>
-<h2 id="Search-for-Symbols" class="article-heading"><a href="#Search-for-Symbols" class="headerlink" title="Search for Symbols"></a>Search for Symbols<a class="article-anchor" href="#Search-for-Symbols" aria-hidden="true"></a></h2><p>There are also features outside the editor. One is the ability to search for symbols from wherever you are. Hit <code>kb(workbench.action.showAllSymbols)</code>, start typing, and see a list of matching C# symbols. Select one and you’ll be taken straight to its code location.</p>
+<h2 id="Search-for-Symbols" class="article-heading"><a href="#Search-for-Symbols" class="headerlink" title="Search for Symbols"></a>Search for Symbols<a class="article-anchor" href="#Search-for-Symbols" aria-hidden="true"></a></h2><p>There are also features outside the editor. One is the ability to search for symbols from wherever you are. Hit <span class="dynamic-keybinding" data-osx="⌘T" data-win="Ctrl+T" data-linux="Ctrl+T"><span class="keybinding">⌘T</span> (Windows, Linux <span class="keybinding">Ctrl+T</span>)</span>, start typing, and see a list of matching C# symbols. Select one and you’ll be taken straight to its code location.</p>
 <p><img src="images/csharp/symbols.png" alt="Symbols"></p>
 <h2 id="CodeLens" class="article-heading"><a href="#CodeLens" class="headerlink" title="CodeLens"></a>CodeLens<a class="article-anchor" href="#CodeLens" aria-hidden="true"></a></h2><p>Another cool feature is the ability to see the number of references to a method directly above the method. Click on the reference info to see the references in the Peek view.  This reference information updates as you type.</p>
 <blockquote>
@@ -113,25 +113,25 @@
 </blockquote>
 <p><img src="images/csharp/codelens.png" alt="CodeLens"></p>
 <blockquote>
-<p><strong>Tip:</strong> You can turn off references information displayed in CodeLens with the <code>editor.codeLens</code> <a href="/docs/customization/userandworkspace.html">setting</a>.</p>
+<p><strong>Tip:</strong> You can turn off references information displayed in CodeLens with the <code>editor.codeLens</code> <a href="/docs/customization/userandworkspace">setting</a>.</p>
 </blockquote>
 <h2 id="Find-References-Peek-Definition" class="article-heading"><a href="#Find-References-Peek-Definition" class="headerlink" title="Find References/Peek Definition"></a>Find References/Peek Definition<a class="article-anchor" href="#Find-References-Peek-Definition" aria-hidden="true"></a></h2><p>You can click on the references of an object to find the locations of its use in place without losing context.  This same experience works in reverse where you can Peek the definition of an object and see it inline without leaving your location.</p>
 <p><img src="images/csharp/peek.png" alt="Peek"></p>
-<h2 id="Quick-Fixes-Suggestions" class="article-heading"><a href="#Quick-Fixes-Suggestions" class="headerlink" title="Quick Fixes / Suggestions"></a>Quick Fixes / Suggestions<a class="article-anchor" href="#Quick-Fixes-Suggestions" aria-hidden="true"></a></h2><p>There are some basic quick fixes supported in VS Code.  You will see a lightbulb and clicking on it, or pressing <code>kb(editor.action.quickFix)</code> provides you with a simple list of fixes/suggestions.</p>
+<h2 id="Quick-Fixes-Suggestions" class="article-heading"><a href="#Quick-Fixes-Suggestions" class="headerlink" title="Quick Fixes / Suggestions"></a>Quick Fixes / Suggestions<a class="article-anchor" href="#Quick-Fixes-Suggestions" aria-hidden="true"></a></h2><p>There are some basic quick fixes supported in VS Code.  You will see a lightbulb and clicking on it, or pressing <span class="dynamic-keybinding" data-osx="⌘." data-win="Ctrl+." data-linux="Ctrl+."><span class="keybinding">⌘.</span> (Windows, Linux <span class="keybinding">Ctrl+.</span>)</span> provides you with a simple list of fixes/suggestions.</p>
 <p><img src="images/csharp/lightbulb.png" alt="Quick fix"></p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>Read on to find out about:</p>
 <ul>
-<li><a href="/docs/runtimes/dotnet.html">.NET Core Development</a> - get up and running with cross-platform .NET</li>
-<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - find out more about advanced editing features</li>
-<li><a href="/docs/editor/tasks.html">Tasks</a> - use tasks to build your project and more</li>
-<li><a href="/docs/editor/debugging.html">Debugging</a> - find out how to use the debugger with your project</li>
+<li><a href="/docs/runtimes/dotnet">.NET Core Development</a> - get up and running with cross-platform .NET</li>
+<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - find out more about advanced editing features</li>
+<li><a href="/docs/editor/tasks">Tasks</a> - use tasks to build your project and more</li>
+<li><a href="/docs/editor/debugging">Debugging</a> - find out how to use the debugger with your project</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: My Project won’t load.</strong></p>
 <p><strong>A:</strong> VS Code only supports a limited set of project types (primarily .NET Core).  For full .NET project support, we suggest you use <a href="https://www.visualstudio.com/products/visual-studio-community-vs" target="_blank" rel="external">Visual Studio Community</a>.</p>
 <p><strong>Q: IntelliSense is not working.</strong></p>
 <p><strong>A:</strong> This is typically as a result of the current project type not being supported.  You can see an indication in the OmniSharp flame in the bottom left hand side of the status bar.</p>
 <p><strong>Q: How do I build/run my project?</strong></p>
-<p><strong>A:</strong> VS Code supports tasks for build and natively understand the output of MSBuild, CSC, XBuild.  Find out more in the <a href="/docs/editor/tasks.html">Tasks</a> documentation.</p>
+<p><strong>A:</strong> VS Code supports tasks for build and natively understand the output of MSBuild, CSC, XBuild.  Find out more in the <a href="/docs/editor/tasks">Tasks</a> documentation.</p>
 
               </div>
               <footer class="article-footer">
@@ -173,10 +173,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

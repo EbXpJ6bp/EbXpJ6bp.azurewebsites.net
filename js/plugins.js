@@ -1,79 +1,24 @@
-(function(){
-  'use strict';
-
-  var elements = document.getElementsByClassName('plugin');
-  var $count = document.getElementById('plugin-list-count');
-  var $input = document.getElementById('plugin-search-input');
-  var elementLen = elements.length;
-  var index = lunr.Index.load(window.SEARCH_INDEX);
-
-  function updateCount(count){
-    $count.innerHTML = count + (count === 1 ? ' item' : ' items');
-  }
-
-  function addClass(elem, className){
-    var classList = elem.classList;
-
-    if (!classList.contains(className)){
-      classList.add(className);
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  [The MIT License (MIT)](https://github.com/Microsoft/vscode/blob/master/LICENSE.txt)
+ *--------------------------------------------------------------------------------------------*/
+$(function () {
+    var t = 20;
+    var n = navigator.userAgent,
+        r = n.indexOf("Macintosh") >= 0,
+        o = n.indexOf("Linux") >= 0,
+        i = n.indexOf("Windows") >= 0;
+    if (r || o || i) {
+        var a, u, s, l, c;
+        r ? (a = "osx", u = "win", l = "Windows", s = "linux", c = "Linux") : i ? (a = "win", u = "osx", l = "OSX", s = "linux", c = "Linux") : (a = "linux", u = "osx", l = "OSX", s = "win", c = "Windows"),
+            $(".dynamic-keybinding").each(function (e) {
+                var t = ($(this), this.getAttribute("data-" + a));
+                t || (t = "unassigned");
+                var n = this.getAttribute("data-" + u),
+                    r = this.getAttribute("data-" + s),
+                    o = "";
+                n && r ? o = l + ": " + n + ", " + c + ": " + r : n ? o = l + ": " + n : r && (o = c + ": " + r), this.setAttribute("title", o), this.className += " keybinding " + a, this.innerHTML = "", this.appendChild(document.createTextNode(t))
+            })
     }
-  }
-
-  function removeClass(elem, className){
-    var classList = elem.classList;
-
-    if (classList.contains(className)){
-      classList.remove(className);
-    }
-  }
-
-  function search(value){
-    var result = index.search(value);
-    var len = result.length;
-    var selected = {};
-    var i = 0;
-
-    for (i = 0; i < len; i++){
-      selected[result[i].ref] = true;
-    }
-
-    for (i = 0; i < elementLen; i++){
-      if (selected[i]){
-        addClass(elements[i], 'on');
-      } else {
-        removeClass(elements[i], 'on');
-      }
-    }
-
-    updateCount(len);
-  }
-
-  function displayAll(){
-    for (var i = 0; i < elementLen; i++){
-      addClass(elements[i], 'on');
-    }
-
-    updateCount(elements.length);
-  }
-
-  function hashchange(){
-    var hash = location.hash.substring(1);
-    $input.value = hash;
-
-    if (hash){
-      search(hash);
-    } else {
-      displayAll();
-    }
-  }
-
-  $input.addEventListener('input', function(){
-    var value = this.value;
-
-    if (!value) return displayAll();
-    search(value);
-  });
-
-  window.addEventListener('hashchange', hashchange);
-  hashchange();
-})();
+    e()
+});

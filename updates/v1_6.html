@@ -56,7 +56,7 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name">September 2016 (version 1.6)</h1>
-                <a href="ABCupdates/v1_6.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/updates/v1_6.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-19T07:46:28.538Z" itemprop="dateModified">Last updated: 2017-02-19</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
@@ -98,8 +98,8 @@
 </blockquote>
 <h3 id="Search-term-history" class="article-heading"><a href="#Search-term-history" class="headerlink" title="Search term history"></a>Search term history<a class="article-anchor" href="#Search-term-history" aria-hidden="true"></a></h3><p>グローバル検索ビューおよびエディタの検索ウィジェットにおいて、検索履歴を呼び出すことが可能になりました。</p>
 <ul>
-<li><code>kbstyle(Alt+Up)</code> 検索履歴を後方に移動します。対応するコマンドは、<code>search.history.showPrevious</code> と <code>find.history.showPrevious</code>です</li>
-<li><code>kbstyle(Alt+Down)</code> 検索履歴を前方に移動します。対応するコマンドは、<code>search.history.showNext</code> と <code>find.history.showNext</code> です</li>
+<li><span class="keybinding">Alt+Up</span> 検索履歴を後方に移動します。対応するコマンドは、<code>search.history.showPrevious</code> と <code>find.history.showPrevious</code>です</li>
+<li><span class="keybinding">Alt+Down</span> 検索履歴を前方に移動します。対応するコマンドは、<code>search.history.showNext</code> と <code>find.history.showNext</code> です</li>
 </ul>
 <h3 id="Hover-amp-IntelliSense-UI-consistency" class="article-heading"><a href="#Hover-amp-IntelliSense-UI-consistency" class="headerlink" title="Hover &amp; IntelliSense UI consistency"></a>Hover &amp; IntelliSense UI consistency<a class="article-anchor" href="#Hover-amp-IntelliSense-UI-consistency" aria-hidden="true"></a></h3><p>ホバーウィジェットの UI は、IntelliSense が提供する多くの機能と揃うよう更新されました。</p>
 <p><img src="https://code.visualstudio.com/images/1_6_hover.png" alt="hover"></p>
@@ -253,7 +253,7 @@
 </blockquote>
 <h2 id="Miscellaneous" class="article-heading"><a href="#Miscellaneous" class="headerlink" title="Miscellaneous"></a>Miscellaneous<a class="article-anchor" href="#Miscellaneous" aria-hidden="true"></a></h2><h3 id="New-location-for-dirty-indicator-when-Tabs-are-disabled-タブが無効になっている場合のダーティーファイルインジケーターについて" class="article-heading"><a href="#New-location-for-dirty-indicator-when-Tabs-are-disabled-タブが無効になっている場合のダーティーファイルインジケーターについて" class="headerlink" title="New location for dirty indicator when Tabs are disabled (タブが無効になっている場合のダーティーファイルインジケーターについて)"></a>New location for dirty indicator when Tabs are disabled (タブが無効になっている場合のダーティーファイルインジケーターについて)<a class="article-anchor" href="#New-location-for-dirty-indicator-when-Tabs-are-disabled-タブが無効になっている場合のダーティーファイルインジケーターについて" aria-hidden="true"></a></h3><p>タブ（タブ付きヘッダ）が無効になっている場合、<strong>閉じる (Clodse)</strong> ボタンの上にダーティーファイル(まだ保存されていないファイル)を示すインジケータを表示することにしました。<br>これは、ダーティーファイルの指標として <strong>閉じる (Clodse)</strong> ボタンと交換することで他の場所と同一の経験を提供します。（例えば、<strong>開いているエディタ(OPEN EDITORS)</strong> 内、またはタブが有効になっている場合）</p>
 <p><img src="https://code.visualstudio.com/images/1_6_dirty.png" alt="Status"></p>
-<h3 id="Electron-update" class="article-heading"><a href="#Electron-update" class="headerlink" title="Electron update"></a>Electron update<a class="article-anchor" href="#Electron-update" aria-hidden="true"></a></h3><p>このリリースでは、<a href="https://github.com/electron/electron" target="_blank" rel="external">Electron</a> フレームワークのメジャーアップデートを採用しました。Chrome レンダリングエンジン (<strong>49</strong> から <strong>52</strong> へ) と Node.js (<strong>5.10.0</strong> から <strong>6.5.0</strong> へ) の大きなバージョン変更を含んだ Electron バージョン 1.3.7 を実行することで、この VS Code のリリースで動作する全ての拡張機能は、Node.js <strong>6.5.0</strong> ランタイムのフル機能を期待することが可能になることを意味します。<br>Node.js の変更点の完全なリストについては、<a href="https://github.com/nodejs/node/blob/master/CHANGELOG.html" target="_blank" rel="external">Node.js Changelog</a> を参照してください。</p>
+<h3 id="Electron-update" class="article-heading"><a href="#Electron-update" class="headerlink" title="Electron update"></a>Electron update<a class="article-anchor" href="#Electron-update" aria-hidden="true"></a></h3><p>このリリースでは、<a href="https://github.com/electron/electron" target="_blank" rel="external">Electron</a> フレームワークのメジャーアップデートを採用しました。Chrome レンダリングエンジン (<strong>49</strong> から <strong>52</strong> へ) と Node.js (<strong>5.10.0</strong> から <strong>6.5.0</strong> へ) の大きなバージョン変更を含んだ Electron バージョン 1.3.7 を実行することで、この VS Code のリリースで動作する全ての拡張機能は、Node.js <strong>6.5.0</strong> ランタイムのフル機能を期待することが可能になることを意味します。<br>Node.js の変更点の完全なリストについては、<a href="https://github.com/nodejs/node/blob/master/CHANGELOG.md" target="_blank" rel="external">Node.js Changelog</a> を参照してください。</p>
 <blockquote>
 <p><strong>Note:</strong> 拡張機能でネイティブ <code>npm</code> モジュールを使用することはお勧めしません。しかしながら、ネイティブモジュールを使用した拡張機能を作成している場合は、それらのすべてを再コンパイルすることを忘れないでください</p>
 </blockquote>
@@ -281,27 +281,27 @@
 <td></td>
 </tr>
 <tr>
-<td><code>kb(find.history.showNext)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌥↓" data-win="Alt+Down" data-linux="Alt+Down"><span class="keybinding">⌥↓</span> (Windows, Linux <span class="keybinding">Alt+Down</span>)</span></td>
 <td>次の検索用語 (Next Search Term)</td>
 <td><code>find.history.showNext</code></td>
 </tr>
 <tr>
-<td><code>kb(find.history.showPrevious)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌥↑" data-win="Alt+Up" data-linux="Alt+Up"><span class="keybinding">⌥↑</span> (Windows, Linux <span class="keybinding">Alt+Up</span>)</span></td>
 <td>前の検索用語 (Previous Search Term)</td>
 <td><code>find.history.showPrevious</code></td>
 </tr>
 <tr>
-<td><code>kb(toggleSearchCaseSensitive)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌥⌘C" data-win="Alt+C" data-linux="Alt+C"><span class="keybinding">⌥⌘C</span> (Windows, Linux <span class="keybinding">Alt+C</span>)</span></td>
 <td>大文字と小文字を区別のトグル(Toggle Case Senstive)</td>
 <td><code>toggleSearchCaseSensitive</code></td>
 </tr>
 <tr>
-<td><code>kb(toggleSearchRegex)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌥⌘R" data-win="Alt+R" data-linux="Alt+R"><span class="keybinding">⌥⌘R</span> (Windows, Linux <span class="keybinding">Alt+R</span>)</span></td>
 <td>正規表現のトグル (Toggle Regex)</td>
 <td><code>toggleSearchRegex</code></td>
 </tr>
 <tr>
-<td><code>kb(toggleSearchWholeWord)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌥⌘W" data-win="Alt+W" data-linux="Alt+W"><span class="keybinding">⌥⌘W</span> (Windows, Linux <span class="keybinding">Alt+W</span>)</span></td>
 <td>単語単位のトグル (Toggle Whole Word)</td>
 <td><code>toggleSearchWholeWord</code></td>
 </tr>
@@ -311,17 +311,17 @@
 <td></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.terminal.scrollUpPage)</code></td>
+<td><span class="dynamic-keybinding" data-osx="PageUp" data-win="Shift+PageUp" data-linux="Shift+PageUp"><span class="keybinding">PageUp</span> (Windows, Linux <span class="keybinding">Shift+PageUp</span>)</span></td>
 <td>スクロールアップ(Scroll Up)</td>
 <td><code>workbench.action.terminal.scrollUpPage</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.terminal.scrollDownPage)</code></td>
+<td><span class="dynamic-keybinding" data-osx="PageDown" data-win="Shift+PageDown" data-linux="Shift+PageDown"><span class="keybinding">PageDown</span> (Windows, Linux <span class="keybinding">Shift+PageDown</span>)</span></td>
 <td>スクロールダウン(Scroll Down)</td>
 <td><code>workbench.action.terminal.scrollDownPage</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.terminal.clear)</code></td>
+<td><span class="dynamic-keybinding" data-osx="⌘K" data-win="Ctrl+K"><span class="keybinding">⌘K</span> (Windows <span class="keybinding">Ctrl+K</span>, Linux <span class="keybinding"></span>)</span></td>
 <td>端末のクリア(Clear Terminal)</td>
 <td><code>workbench.action.terminal.clear</code></td>
 </tr>
@@ -331,12 +331,12 @@
 <td></td>
 </tr>
 <tr>
-<td><code>kb(workbench.extensions.action.updateAllExtensions)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>全ての拡張機能をアップデート(Update All Extensions)</td>
 <td><code>workbench.extensions.action.updateAllExtensions</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.extensions.action.openExtensionsFolder)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>拡張機能フォルダの表示(Open Extensions Folder)</td>
 <td><code>workbench.extensions.action.openExtensionsFolder</code></td>
 </tr>
@@ -346,12 +346,12 @@
 <td></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.focusActiveEditorGroup)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>アクティブなエディタグループへフォーカスを移動(Focus Active Editor Group)</td>
 <td><code>workbench.action.focusActiveEditorGroup</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.switchWindow)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>スイッチウィンドウ(Switch Window (Instance))</td>
 <td><code>workbench.action.switchWindow</code></td>
 </tr>
@@ -361,12 +361,12 @@
 <td></td>
 </tr>
 <tr>
-<td><code>kb(update.showCurrentReleaseNotes)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>リリースノートの表示(Show Release Notes)</td>
 <td><code>update.showCurrentReleaseNotes</code></td>
 </tr>
 <tr>
-<td><code>kb(workbench.action.reportIssues)</code></td>
+<td><span class="dynamic-keybinding"></span></td>
 <td>問題の報告(Report Issues)</td>
 <td><code>workbench.action.reportIssues</code></td>
 </tr>
@@ -479,10 +479,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

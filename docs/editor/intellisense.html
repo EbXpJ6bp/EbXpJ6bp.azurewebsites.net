@@ -56,7 +56,7 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name">IntelliSense</h1>
-                <a href="ABCdocs/editor/intellisense.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/editor/intellisense.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-22T00:00:00.000Z" itemprop="dateModified">Last updated: 2017-02-22</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
@@ -65,8 +65,8 @@
 <h2 id="プログラミング言語の-IntelliSense" class="article-heading"><a href="#プログラミング言語の-IntelliSense" class="headerlink" title="プログラミング言語の IntelliSense"></a>プログラミング言語の IntelliSense<a class="article-anchor" href="#プログラミング言語の-IntelliSense" aria-hidden="true"></a></h2><p>箱から出したばかりの IntelliSense は JavaScript, TypeScript, JSON, CSS ,LESS, SASS に補完を提供します。この状態でも、それなりの言語で単語ベースの補完をサポートしますが、言語拡張機能をインストールすることでより豊かな IntelliSense を構成可能です。</p>
 <p>以下は <a href="https://marketplace.visualstudio.com/vscode" target="_blank" rel="external">Marketplace</a> で最も人気な言語拡張です。クリックして、ベストな拡張機能を探してください。</p>
 <p>(編集メモ: 本家でここに人気言語4つが表示</p>
-<h2 id="IntelliSense-の特徴" class="article-heading"><a href="#IntelliSense-の特徴" class="headerlink" title="IntelliSense の特徴"></a>IntelliSense の特徴<a class="article-anchor" href="#IntelliSense-の特徴" aria-hidden="true"></a></h2><p>IntelliSense の機能は、セマンティクスとソースコードの分析に基づいて高度なコードな補完を生成する言語サーバーによって構成されています。生成された補完は IntelliSenseを通してリスト表示しますが、文字を続けることで IntelliSense がフィルターをかけて、メンバー(変数, メソッドなど)のより最適なリスト表示が可能になります。こうして出てきた項目は、<code>kbstyle(Tab)</code> や <code>kbstyle(Enter)</code> で確定します。</p>
-<p>IntelliSense を起動するときには、エディタで<code>kb(editor.action.triggerSuggest)</code>もしくはトリガーになるような文字(javascript では ドット(<code>kbstyle(.)</code>)などを入力してください。</p>
+<h2 id="IntelliSense-の特徴" class="article-heading"><a href="#IntelliSense-の特徴" class="headerlink" title="IntelliSense の特徴"></a>IntelliSense の特徴<a class="article-anchor" href="#IntelliSense-の特徴" aria-hidden="true"></a></h2><p>IntelliSense の機能は、セマンティクスとソースコードの分析に基づいて高度なコードな補完を生成する言語サーバーによって構成されています。生成された補完は IntelliSenseを通してリスト表示しますが、文字を続けることで IntelliSense がフィルターをかけて、メンバー(変数, メソッドなど)のより最適なリスト表示が可能になります。こうして出てきた項目は、<span class="keybinding">Tab</span> や <span class="keybinding">Enter</span> で確定します。</p>
+<p>IntelliSense を起動するときには、エディタで<span class="dynamic-keybinding" data-osx="⌃Space" data-win="Ctrl+Space" data-linux="Ctrl+Space"><span class="keybinding">⌃Space</span> (Windows, Linux <span class="keybinding">Ctrl+Space</span>)</span>もしくはトリガーになるような文字(javascript では ドット(<span class="keybinding">.</span>)などを入力してください。</p>
 <p><img src="images/intellisense/intellisense_packagejson.gif" alt="intellisense in package json"></p>
 <blockquote>
 <p><strong>Tip:</strong> IntelliSense はキャメルケースフィルターをサポートしています。ですから、メソッド名に大文字を入力するだけで、項目を限定することができます。例えば「createApplication」を表示するときは「cra」ですぐに表示可能です。</p>
@@ -218,10 +218,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

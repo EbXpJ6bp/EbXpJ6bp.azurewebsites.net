@@ -2,7 +2,7 @@
 <html lang="ja">
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Visual Studio Code</title>
+  <title>Node.js Debugging | Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Canonical links -->
@@ -55,13 +55,13 @@
           <div class="article">
             <div class="inner">
               <header class="article-header">
-                <h1 class="article-title" itemprop="name"></h1>
-                <a href="ABCdocs/editor/node-debugging.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
-                <h2><time class="article-updated" data-position="header" datetime="2017-02-15T07:41:40.571Z" itemprop="dateModified">Last updated: 2017-02-15</time></h2>
+                <h1 class="article-title" itemprop="name">Node.js Debugging</h1>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/editor/node-debugging.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <h2><time class="article-updated" data-position="header" datetime="2017-02-24T12:47:04.036Z" itemprop="dateModified">Last updated: 2017-02-24</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <h1 id="Node-js-Debugging" class="article-heading"><a href="#Node-js-Debugging" class="headerlink" title="Node.js Debugging"></a>Node.js Debugging<a class="article-anchor" href="#Node-js-Debugging" aria-hidden="true"></a></h1><p>Visual Studio Code has built-in debugging support for the <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a> runtime and can debug JavaScript, TypeScript, and any other language that gets transpiled to JavaScript.</p>
-<p>This document explains the details of Node.js debugging. The general debugging feature are described in <a href="/docs/editor/debugging.html">Debugging</a>.</p>
+                <p>Visual Studio Code has built-in debugging support for the <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a> runtime and can debug JavaScript, TypeScript, and any other language that gets transpiled to JavaScript.</p>
+<p>This document explains the details of Node.js debugging. The general debugging feature are described in <a href="/docs/editor/debugging">Debugging</a>.</p>
 <h2 id="Experimental-Node-js-debugger-node2" class="article-heading"><a href="#Experimental-Node-js-debugger-node2" class="headerlink" title="Experimental Node.js debugger (node2)"></a>Experimental Node.js debugger (node2)<a class="article-anchor" href="#Experimental-Node-js-debugger-node2" aria-hidden="true"></a></h2><p>VS Code includes an experimental Node.js debug extension with debug type <code>node2</code> that uses the <a href="https://chromedevtools.github.io/debugger-protocol-viewer/v8/" target="_blank" rel="external">V8 Inspector Protocol</a>, which Node.js now exposes via the <code>--inspect</code> flag, only in Node.js versions 6.3+. This is the same protocol exposed by <a href="https://developer.chrome.com/devtools/docs/debugger-protocol" target="_blank" rel="external">Chrome and other targets</a>. This extension runs on the <a href="https://github.com/Microsoft/vscode-chrome-debug-core" target="_blank" rel="external">vscode-chrome-debug-core</a> library which also powers the <a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome" target="_blank" rel="external">Debugger for Chrome</a> extension, and several others.</p>
 <p>We recommend using the new experimental debugger <code>node2</code> for node.js versions &gt;= 6.3. When debugging Node.js versions &lt; 6.3, you have to use the ‘old’ debugger <code>node</code>.</p>
 <blockquote>
@@ -236,7 +236,7 @@
 <li>Do you have <code>&quot;sourceMaps&quot;: true</code> in your <code>launch.json</code>?</li>
 <li>Did you build with source maps enabled? Are there <code>.js.map</code> files, or inlined source maps in your <code>.js</code> files?</li>
 <li>Did you set the <code>outFiles</code> property in your <code>launch.json</code>? It should be a glob pattern for an absolute path that matches your <code>.js</code> files.</li>
-<li>Try the new experimental <a href="/docs/editor/node-debugging.html#experimental-nodejs-debugger-node2">node2</a> debug adapter. It can handle some more of the more complex source map cases.</li>
+<li>Try the new experimental <a href="/docs/editor/node-debugging.md#experimental-nodejs-debugger-node2">node2</a> debug adapter. It can handle some more of the more complex source map cases.</li>
 <li>Are the <code>sourceRoot</code> and <code>sources</code> properties in your source map correct? Can they be combined to get the correct path to the <code>.ts</code> file?</li>
 <li>Are you using Webpack? By default, it outputs paths with a <code>webpack:///</code> prefix, which the debug adapter can’t resolve. You can change this in your Webpack configuration with the <code>devtoolModuleFilenameTemplate</code> option, or try using <code>node2</code>, which provides some extra options for resolving these paths.</li>
 <li>Have you opened the folder in VS Code with the incorrect case? It’s possible to open folder <code>foo/</code> from the command line like <code>code FOO</code> in which case source maps may not be resolved correctly.</li>
@@ -245,19 +245,19 @@
 </ul>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>In case you didn’t already read the Node.js section, take a look at:</p>
 <ul>
-<li><a href="/docs/runtimes/nodejs.html">Node.js</a> - End to end Node scenario with a sample application</li>
+<li><a href="/docs/runtimes/nodejs">Node.js</a> - End to end Node scenario with a sample application</li>
 </ul>
 <p>To see a tutorial on the basics of Node.js debugging, check out:</p>
 <ul>
-<li><a href="/docs/introvideos/debugging.html">Intro Video - Debugging</a> - Introductory video showcasing the basics of debugging.</li>
+<li><a href="/docs/introvideos/debugging">Intro Video - Debugging</a> - Introductory video showcasing the basics of debugging.</li>
 </ul>
 <p>To learn about VS Code’s task running support, go to:</p>
 <ul>
-<li><a href="/docs/editor/tasks.html">Tasks</a> - Running tasks with Gulp, Grunt and Jake.  Showing Errors and Warnings</li>
+<li><a href="/docs/editor/tasks">Tasks</a> - Running tasks with Gulp, Grunt and Jake.  Showing Errors and Warnings</li>
 </ul>
 <p>To write your own debugger extension, visit:</p>
 <ul>
-<li><a href="/docs/extensions/example-debuggers.html">Debuggers</a> - Steps to create a VS Code debug extension starting from a mock sample</li>
+<li><a href="/docs/extensions/example-debuggers">Debuggers</a> - Steps to create a VS Code debug extension starting from a mock sample</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: What Node.js version is required for Node.js debugging?</strong></p>
 <p><strong>A:</strong> The latest LTS version of <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a> is recommended.</p>
@@ -266,14 +266,14 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-updated" datetime="2017-02-15T07:41:40.571Z" itemprop="dateModified">Last updated: 2017-02-15</time>
+                <time class="article-updated" datetime="2017-02-24T12:47:04.036Z" itemprop="dateModified">Last updated: 2017-02-24</time>
               </footer>
             </div>
           </div>
           <aside id="article-toc" role="navigation">
             <div id="article-toc-inner">
               <strong class="sidebar-title">Contents</strong>
-              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Node-js-Debugging"><span class="toc-text">Node.js Debugging</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Experimental-Node-js-debugger-node2"><span class="toc-text">Experimental Node.js debugger (node2)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Launch-configuration-attributes"><span class="toc-text">Launch configuration attributes</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Launch-configuration-snippets-for-common-scenarios"><span class="toc-text">Launch configuration snippets for common scenarios</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-console"><span class="toc-text">Node console</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Launch-configuration-support-for-‘npm’-and-other-tools"><span class="toc-text">Launch configuration support for ‘npm’ and other tools</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Load-environment-variables-from-external-file-node"><span class="toc-text">Load environment variables from external file (node)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Attaching-to-Node-js"><span class="toc-text">Attaching to Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Remote-debugging"><span class="toc-text">Remote debugging</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Restarting-debug-sessions-automatically-when-source-is-edited"><span class="toc-text">Restarting debug sessions automatically when source is edited</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Restart-frame-node"><span class="toc-text">Restart frame (node)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Function-breakpoints"><span class="toc-text">Function breakpoints</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Breakpoint-hit-counts"><span class="toc-text">Breakpoint hit counts</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Breakpoint-validation"><span class="toc-text">Breakpoint validation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Skipping-uninteresting-code-node-node2-chrome"><span class="toc-text">Skipping uninteresting code (node, node2, chrome)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Source-maps"><span class="toc-text">Source maps</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Smart-stepping"><span class="toc-text">Smart stepping</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JavaScript-source-map-tips"><span class="toc-text">JavaScript source map tips</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Next-Steps"><span class="toc-text">Next Steps</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Common-Questions"><span class="toc-text">Common Questions</span></a></li></ol></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Experimental-Node-js-debugger-node2"><span class="toc-text">Experimental Node.js debugger (node2)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Launch-configuration-attributes"><span class="toc-text">Launch configuration attributes</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Launch-configuration-snippets-for-common-scenarios"><span class="toc-text">Launch configuration snippets for common scenarios</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-console"><span class="toc-text">Node console</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Launch-configuration-support-for-‘npm’-and-other-tools"><span class="toc-text">Launch configuration support for ‘npm’ and other tools</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Load-environment-variables-from-external-file-node"><span class="toc-text">Load environment variables from external file (node)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Attaching-to-Node-js"><span class="toc-text">Attaching to Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Remote-debugging"><span class="toc-text">Remote debugging</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Restarting-debug-sessions-automatically-when-source-is-edited"><span class="toc-text">Restarting debug sessions automatically when source is edited</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Restart-frame-node"><span class="toc-text">Restart frame (node)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Function-breakpoints"><span class="toc-text">Function breakpoints</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Breakpoint-hit-counts"><span class="toc-text">Breakpoint hit counts</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Breakpoint-validation"><span class="toc-text">Breakpoint validation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Skipping-uninteresting-code-node-node2-chrome"><span class="toc-text">Skipping uninteresting code (node, node2, chrome)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Source-maps"><span class="toc-text">Source maps</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Smart-stepping"><span class="toc-text">Smart stepping</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JavaScript-source-map-tips"><span class="toc-text">JavaScript source map tips</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Next-Steps"><span class="toc-text">Next Steps</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Common-Questions"><span class="toc-text">Common Questions</span></a></li></ol>
               <a href="#" id="article-toc-top">Back to Top</a>
             </div>
           </aside>
@@ -304,10 +304,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

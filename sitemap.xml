@@ -2,6 +2,104 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/index.html</loc>
+    
+    <lastmod>2017-02-24T12:59:45.160Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/node-debugging.html</loc>
+    
+    <lastmod>2017-02-24T12:47:04.036Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/tabs.html</loc>
+    
+    <lastmod>2017-02-24T12:46:52.921Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/tasks_appendix.html</loc>
+    
+    <lastmod>2017-02-24T12:46:41.336Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/tasks.html</loc>
+    
+    <lastmod>2017-02-24T12:46:30.925Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/editingevolved.html</loc>
+    
+    <lastmod>2017-02-24T12:46:05.704Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/debugging.html</loc>
+    
+    <lastmod>2017-02-24T12:45:51.477Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/userdefinedsnippets.html</loc>
+    
+    <lastmod>2017-02-24T12:45:30.675Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/themes.html</loc>
+    
+    <lastmod>2017-02-24T12:45:08.651Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/keybindings.html</loc>
+    
+    <lastmod>2017-02-24T12:44:38.752Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/colorizer.html</loc>
+    
+    <lastmod>2017-02-24T12:44:10.966Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/README.html</loc>
+    
+    <lastmod>2017-02-24T12:39:14.434Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/memo.html</loc>
+    
+    <lastmod>2017-02-24T12:32:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/versioncontrol.html</loc>
+    
+    <lastmod>2017-02-24T06:09:02.513Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/userandworkspace.html</loc>
     
     <lastmod>2017-02-23T11:44:02.820Z</lastmod>
@@ -11,7 +109,7 @@
   <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/languages/overview.html</loc>
     
-    <lastmod>2017-02-23T10:23:37.427Z</lastmod>
+    <lastmod>2017-02-23T00:00:00.000Z</lastmod>
     
   </url>
   
@@ -40,13 +138,6 @@
     <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/faq.html</loc>
     
     <lastmod>2017-02-22T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/index.html</loc>
-    
-    <lastmod>2017-02-21T11:26:55.075Z</lastmod>
     
   </url>
   
@@ -86,14 +177,14 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/overview.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/locales.html</loc>
     
     <lastmod>2017-02-21T00:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/locales.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/overview.html</loc>
     
     <lastmod>2017-02-21T00:00:00.000Z</lastmod>
     
@@ -128,14 +219,7 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/errors.html</loc>
-    
-    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/setup-overview.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/updates/index.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
@@ -149,13 +233,6 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/index.html</loc>
-    
-    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/additional-components.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
@@ -163,7 +240,21 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/updates/index.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/index.html</loc>
+    
+    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/errors.html</loc>
+    
+    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/setup-overview.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
@@ -331,55 +422,6 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/tasks_appendix.html</loc>
-    
-    <lastmod>2017-02-15T07:41:40.582Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/tasks.html</loc>
-    
-    <lastmod>2017-02-15T07:41:40.577Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/node-debugging.html</loc>
-    
-    <lastmod>2017-02-15T07:41:40.571Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/debugging.html</loc>
-    
-    <lastmod>2017-02-15T07:41:40.552Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/userdefinedsnippets.html</loc>
-    
-    <lastmod>2017-02-15T07:41:40.522Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/themes.html</loc>
-    
-    <lastmod>2017-02-15T07:41:40.509Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/keybindings.html</loc>
-    
-    <lastmod>2017-02-15T07:41:40.506Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/tools/vscecli.html</loc>
     
     <lastmod>2017-02-03T07:14:16.429Z</lastmod>
@@ -523,34 +565,6 @@
     <loc>http://ebxpj6bp.azurewebsites.net/docs/extensionAPI/activation-events.html</loc>
     
     <lastmod>2017-02-03T07:14:15.960Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/versioncontrol.html</loc>
-    
-    <lastmod>2017-02-03T07:14:15.924Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/tabs.html</loc>
-    
-    <lastmod>2017-02-03T07:14:15.907Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/editingevolved.html</loc>
-    
-    <lastmod>2017-02-03T07:14:15.854Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/colorizer.html</loc>
-    
-    <lastmod>2017-02-03T07:14:15.771Z</lastmod>
     
   </url>
   

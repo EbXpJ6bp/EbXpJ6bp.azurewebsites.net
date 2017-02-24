@@ -56,19 +56,19 @@
             <div class="inner">
               <header class="article-header">
                 <h1 class="article-title" itemprop="name"></h1>
-                <a href="ABCdocs/extensionAPI/activation-events.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/extensionAPI/activation-events.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-03T07:14:15.960Z" itemprop="dateModified">Last updated: 2017-02-03</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
                 <h1 id="Activation-Events-package-json" class="article-heading"><a href="#Activation-Events-package-json" class="headerlink" title="Activation Events - package.json"></a>Activation Events - package.json<a class="article-anchor" href="#Activation-Events-package-json" aria-hidden="true"></a></h1><p>Extensions are activated lazily in VS Code.  As a result you need to provide VS Code with context as to when your extension should be activated.  We support the following activation events:</p>
 <ul>
-<li><a href="/docs/extensionAPI/activation-events.html#activationeventsonlanguage"><code>onLanguage:${language}</code></a></li>
-<li><a href="/docs/extensionAPI/activation-events.html#activationeventsoncommand"><code>onCommand:${command}</code></a></li>
-<li><a href="/docs/extensionAPI/activation-events.html#activationeventsondebug"><code>onDebug:${type}</code></a></li>
-<li><a href="/docs/extensionAPI/activation-events.html#activationeventsworkspacecontains"><code>workspaceContains:${toplevelfilename}</code></a></li>
-<li><a href="/docs/extensionAPI/activation-events.html#activationevents"><code>*</code></a></li>
+<li><a href="/docs/extensionAPI/activation-events.md#activationeventsonlanguage"><code>onLanguage:${language}</code></a></li>
+<li><a href="/docs/extensionAPI/activation-events.md#activationeventsoncommand"><code>onCommand:${command}</code></a></li>
+<li><a href="/docs/extensionAPI/activation-events.md#activationeventsondebug"><code>onDebug:${type}</code></a></li>
+<li><a href="/docs/extensionAPI/activation-events.md#activationeventsworkspacecontains"><code>workspaceContains:${toplevelfilename}</code></a></li>
+<li><a href="/docs/extensionAPI/activation-events.md#activationevents"><code>*</code></a></li>
 </ul>
-<p>We also provide an overview of the <a href="/docs/extensionAPI/extension-manifest.html"><code>package.json</code> extension manifest</a> and the minimum required fields.</p>
+<p>We also provide an overview of the <a href="/docs/extensionAPI/extension-manifest"><code>package.json</code> extension manifest</a> and the minimum required fields.</p>
 <h2 id="activationEvents-onLanguage" class="article-heading"><a href="#activationEvents-onLanguage" class="headerlink" title="activationEvents.onLanguage"></a>activationEvents.onLanguage<a class="article-anchor" href="#activationEvents-onLanguage" aria-hidden="true"></a></h2><p>This activation event is emitted and interested extensions will be activated whenever a file that resolves to a certain language gets opened.</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">...</div><div class="line">"activationEvents": [</div><div class="line">    "onLanguage:python"</div><div class="line">]</div><div class="line">...</div></pre></td></tr></table></figure>
 <h2 id="activationEvents-onCommand" class="article-heading"><a href="#activationEvents-onCommand" class="headerlink" title="activationEvents.onCommand"></a>activationEvents.onCommand<a class="article-anchor" href="#activationEvents-onCommand" aria-hidden="true"></a></h2><p>This activation event is emitted and interested extensions will be activated whenever a command is being invoked:</p>
@@ -85,8 +85,8 @@
 </blockquote>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>To learn more about VS Code extensibility model, try these topic:</p>
 <ul>
-<li><a href="/docs/extensionAPI/extension-manifest.html">Extension Manifest File</a> - VS Code package.json extension manifest file reference</li>
-<li><a href="/docs/extensionAPI/extension-points.html">Contribution Points</a> - VS Code contribution points reference</li>
+<li><a href="/docs/extensionAPI/extension-manifest">Extension Manifest File</a> - VS Code package.json extension manifest file reference</li>
+<li><a href="/docs/extensionAPI/extension-points">Contribution Points</a> - VS Code contribution points reference</li>
 </ul>
 
               </div>
@@ -129,10 +129,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="ja">
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Visual Studio Code</title>
+  <title>Version Control | Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Canonical links -->
@@ -55,12 +55,12 @@
           <div class="article">
             <div class="inner">
               <header class="article-header">
-                <h1 class="article-title" itemprop="name"></h1>
-                <a href="ABCdocs/editor/versioncontrol.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
-                <h2><time class="article-updated" data-position="header" datetime="2017-02-03T07:14:15.924Z" itemprop="dateModified">Last updated: 2017-02-03</time></h2>
+                <h1 class="article-title" itemprop="name">Version Control</h1>
+                <a href="https://github.com/EbXpJ6bp/doc-vscode/edit/master/docs/editor/versioncontrol.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+                <h2><time class="article-updated" data-position="header" datetime="2017-02-24T06:09:02.513Z" itemprop="dateModified">Last updated: 2017-02-24</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <h1 id="Version-Control" class="article-heading"><a href="#Version-Control" class="headerlink" title="Version Control"></a>Version Control<a class="article-anchor" href="#Version-Control" aria-hidden="true"></a></h1><p>Visual Studio Code has integrated <a href="http://git-scm.com/" target="_blank" rel="external">Git</a> support for the most common commands. This makes it an excellent choice to manage your code commits while you develop.</p>
+                <p>Visual Studio Code has integrated <a href="http://git-scm.com/" target="_blank" rel="external">Git</a> support for the most common commands. This makes it an excellent choice to manage your code commits while you develop.</p>
 <blockquote>
 <p><strong>Note:</strong> VS Code will leverage your machine’s Git installation, so you need to <a href="http://git-scm.com/download" target="_blank" rel="external">install Git</a> first before you get these features. Make sure you install at least version <code>2.0.0</code>.</p>
 <p><strong>Tip:</strong> VS Code will work with any Git repository.  If you don’t already have a private hosted Git provider, <a href="https://www.visualstudio.com/products/visual-studio-team-services-vs" target="_blank" rel="external">Visual Studio Team Services</a> is a great free option. <a href="https://go.microsoft.com/fwlink/?LinkID=307137&amp;campaign=o~msft~code~vc" target="_blank" rel="external">Click here to sign-up</a>.</p>
@@ -77,17 +77,17 @@
 <p>If there is no upstream branch configured and the Git repository has remotes set up, the <strong>Publish</strong> action is enabled. This will let you publish the current branch to a remote.</p>
 <p><img src="images/versioncontrol/git-status-bar-publish.png" alt="git status bar publish"></p>
 <h2 id="Commit" class="article-heading"><a href="#Commit" class="headerlink" title="Commit"></a>Commit<a class="article-anchor" href="#Commit" aria-hidden="true"></a></h2><p><strong>Staging</strong> and <strong>unstaging</strong> can be done via contextual actions in the files or by drag-and-drop.</p>
-<p>You can type a commit message above the changes and press <code>kbstyle(Ctrl+Enter)</code> (Mac: <code>kbstyle(⌘+Enter)</code>) to commit them. If there are any staged changes, only those will be committed, otherwise all changes will be committed.</p>
+<p>You can type a commit message above the changes and press <span class="keybinding">Ctrl+Enter</span> (Mac: <span class="keybinding">⌘+Enter</span>) to commit them. If there are any staged changes, only those will be committed, otherwise all changes will be committed.</p>
 <p>We’ve found this to be a great workflow. For example, in the previous screenshot, only the <code>config.js</code> file will be included in the commit. A consecutive commit action would commit both <code>vinyl-zip.js</code> and <code>tests.js</code> in a separate commit.</p>
 <p>More specific <strong>commit actions</strong> can be found in the <code>...</code> menu on the top of the Git view.</p>
-<h2 id="Branches-and-Tags" class="article-heading"><a href="#Branches-and-Tags" class="headerlink" title="Branches and Tags"></a>Branches and Tags<a class="article-anchor" href="#Branches-and-Tags" aria-hidden="true"></a></h2><p>You can create and checkout branches directly within VS code through <strong>Quick Open</strong>. Press <code>kb(workbench.action.quickOpen)</code>, type <code>git</code> and then press <code>Space</code>. You should see the following:</p>
+<h2 id="Branches-and-Tags" class="article-heading"><a href="#Branches-and-Tags" class="headerlink" title="Branches and Tags"></a>Branches and Tags<a class="article-anchor" href="#Branches-and-Tags" aria-hidden="true"></a></h2><p>You can create and checkout branches directly within VS code through <strong>Quick Open</strong>. Press <span class="dynamic-keybinding" data-osx="⌘P" data-win="Ctrl+P" data-linux="Ctrl+P"><span class="keybinding">⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+P</span>)</span>, type <code>git</code> and then press <code>Space</code>. You should see the following:</p>
 <p><img src="images/versioncontrol/gitcommands.png" alt="Git commands"></p>
-<p>If you type <code>checkout</code> and press <code>kbstyle(Space)</code> again, you will see a dropdown containing all of the branches or tags in the current repository.</p>
+<p>If you type <code>checkout</code> and press <span class="keybinding">Space</span> again, you will see a dropdown containing all of the branches or tags in the current repository.</p>
 <p><img src="images/versioncontrol/gitbranches.png" alt="Git checkout"></p>
 <p>The <code>git branch</code> command lets you quickly create a new branch.  Just provide the name of your new branch and VS Code will create the branch and switch to it.</p>
 <h2 id="Remotes" class="article-heading"><a href="#Remotes" class="headerlink" title="Remotes"></a>Remotes<a class="article-anchor" href="#Remotes" aria-hidden="true"></a></h2><p>Given that your repository is connected to some remote and that your checked out branch has an <a href="http://git-scm.com/book/ch3-5.html" target="_blank" rel="external">upstream link</a> to a branch in that remote, VS Code offers you useful actions to <strong>push</strong>, <strong>pull</strong> and <strong>sync</strong> that branch (the latter will run a <strong>pull</strong> command followed by a <strong>push</strong> command). You can find these actions in the <code>...</code> menu.</p>
 <blockquote>
-<p><strong>Tip:</strong> You should <a href="https://help.github.com/articles/caching-your-github-password-in-git/" target="_blank" rel="external">set up a credential helper</a> to avoid getting asked for credentials every time VS Code talks to your Git remotes.  If you don’t do this, you may want to consider disabling automatic fetching via the <code>git.autofetch</code> <a href="/docs/customization/userandworkspace.html">setting</a> to reduce the number of prompts you get.</p>
+<p><strong>Tip:</strong> You should <a href="https://help.github.com/articles/caching-your-github-password-in-git/" target="_blank" rel="external">set up a credential helper</a> to avoid getting asked for credentials every time VS Code talks to your Git remotes.  If you don’t do this, you may want to consider disabling automatic fetching via the <code>git.autofetch</code> <a href="/docs/customization/userandworkspace">setting</a> to reduce the number of prompts you get.</p>
 </blockquote>
 <h2 id="Gutter-indicators" class="article-heading"><a href="#Gutter-indicators" class="headerlink" title="Gutter indicators"></a>Gutter indicators<a class="article-anchor" href="#Gutter-indicators" aria-hidden="true"></a></h2><p>If you open a folder that is a Git repository and begin making changes, VS Code will add useful annotations to the gutter and to the overview ruler.</p>
 <ul>
@@ -101,7 +101,7 @@
 <h2 id="Viewing-Diffs" class="article-heading"><a href="#Viewing-Diffs" class="headerlink" title="Viewing Diffs"></a>Viewing Diffs<a class="article-anchor" href="#Viewing-Diffs" aria-hidden="true"></a></h2><p>Our Git tooling supports viewing of diffs within VS Code.</p>
 <p><img src="images/versioncontrol/diff.png" alt="A File Diff in VS Code"></p>
 <blockquote>
-<p><strong>Tip:</strong> You can diff any two files by first right clicking on a file in the Explorer or <strong>OPEN EDITORS</strong> list and selecting <strong>Select for Compare</strong> and then right-click on the second file to compare with and select <strong>Compare with ‘file_name_you_chose’</strong>.   Alternatively from the keyboard hit <code>kb(workbench.action.showCommands)</code> and select <strong>File: Compare Active File With…</strong> and you will be presented with a list of recent files.</p>
+<p><strong>Tip:</strong> You can diff any two files by first right clicking on a file in the Explorer or <strong>OPEN EDITORS</strong> list and selecting <strong>Select for Compare</strong> and then right-click on the second file to compare with and select <strong>Compare with ‘file_name_you_chose’</strong>.   Alternatively from the keyboard hit <span class="dynamic-keybinding" data-osx="⇧⌘P" data-win="Ctrl+Shift+P" data-linux="Ctrl+Shift+P"><span class="keybinding">⇧⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+P</span>)</span> and select <strong>File: Compare Active File With…</strong> and you will be presented with a list of recent files.</p>
 </blockquote>
 <h2 id="Git-Output-Window" class="article-heading"><a href="#Git-Output-Window" class="headerlink" title="Git Output Window"></a>Git Output Window<a class="article-anchor" href="#Git-Output-Window" aria-hidden="true"></a></h2><p>You can always peek under the hood to see the Git commands we are using.  This is helpful if something strange is happening or if you simply get curious. :)</p>
 <p>To open the Git output window, run <strong>View</strong> &gt; <strong>Toggle Output</strong> and select <code>Git</code> from the dropdown.</p>
@@ -131,15 +131,15 @@
 <ul>
 <li><code>git rebase HEAD~3 -i</code> do interactive rebase using VS Code</li>
 <li><code>git commit</code> use VS Code for the commit message</li>
-<li><code>git add -p</code> followed by <code>kbstyle(e)</code> for interactive add</li>
+<li><code>git add -p</code> followed by <span class="keybinding">e</span> for interactive add</li>
 <li><code>git difftool &lt;commit&gt;^ &lt;commit&gt;</code> use VS Code as the diff editor for changes</li>
 </ul>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><ul>
-<li><a href="/docs/introvideos/versioncontrol.html">Intro Video - Git Version Control</a> - An introductory video providing an overview of VS Code Git support.</li>
-<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - Lint, IntelliSense, Lightbulbs, Peek and Goto Definition and more</li>
-<li><a href="/docs/editor/debugging.html">Debugging</a> - This is where VS Code really shines</li>
-<li><a href="/docs/editor/tasks.html">Tasks</a> - Running tasks with Gulp, Grunt and Jake.  Showing Errors and Warnings</li>
-<li><a href="/docs/customization/overview.html">Customization</a> - Themes, settings and keyboard bindings</li>
+<li><a href="/docs/introvideos/versioncontrol">Intro Video - Git Version Control</a> - An introductory video providing an overview of VS Code Git support.</li>
+<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - Lint, IntelliSense, Lightbulbs, Peek and Goto Definition and more</li>
+<li><a href="/docs/editor/debugging">Debugging</a> - This is where VS Code really shines</li>
+<li><a href="/docs/editor/tasks">Tasks</a> - Running tasks with Gulp, Grunt and Jake.  Showing Errors and Warnings</li>
+<li><a href="/docs/customization/overview">Customization</a> - Themes, settings and keyboard bindings</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: Hey, I initialized my repo but the actions in the <code>...</code> menu are all grayed out. What gives?</strong></p>
 <p><strong>A:</strong> To <strong>push, pull and sync</strong> you need to have a Git origin set up.  You can get the required URL from the repo host.  Once you have that URL, you simply need to add it to the Git settings by running a couple of command line actions. For example, for Visual Studio Team Services:</p>
@@ -165,21 +165,21 @@
 <p>You can either:</p>
 <ul>
 <li>Add the location of <code>git.exe</code> to <code>PATH</code> and restart VS Code.</li>
-<li>Set the <code>git.path</code> <a href="/docs/customization/userandworkspace.html">setting</a> to the location of <code>git.exe</code>.</li>
+<li>Set the <code>git.path</code> <a href="/docs/customization/userandworkspace">setting</a> to the location of <code>git.exe</code>.</li>
 </ul>
 <p>On a <strong>GitHub Desktop</strong> Windows installation, <code>git.exe</code> is usually under <code>C:\Users\USERNAME\AppData\Local\GitHub\PortableGit_COMMITID\ming32\bin</code>.  Searching for <code>git.exe</code> under AppData\Local\GitHub should find the binary.</p>
 <p>You can also install Git from <a href="http://git-scm.com/" target="_blank" rel="external">git-scm</a> and this will not interfere with <strong>GitHub Desktop</strong>.</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-updated" datetime="2017-02-03T07:14:15.924Z" itemprop="dateModified">Last updated: 2017-02-03</time>
+                <time class="article-updated" datetime="2017-02-24T06:09:02.513Z" itemprop="dateModified">Last updated: 2017-02-24</time>
               </footer>
             </div>
           </div>
           <aside id="article-toc" role="navigation">
             <div id="article-toc-inner">
               <strong class="sidebar-title">Contents</strong>
-              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Version-Control"><span class="toc-text">Version Control</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-text">Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-Status-Bar-Actions"><span class="toc-text">Git Status Bar Actions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Commit"><span class="toc-text">Commit</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Branches-and-Tags"><span class="toc-text">Branches and Tags</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Remotes"><span class="toc-text">Remotes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gutter-indicators"><span class="toc-text">Gutter indicators</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Merge-Conflicts"><span class="toc-text">Merge Conflicts</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Viewing-Diffs"><span class="toc-text">Viewing Diffs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-Output-Window"><span class="toc-text">Git Output Window</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Initialize-a-Repository"><span class="toc-text">Initialize a Repository</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-patch-diff-mode"><span class="toc-text">Git patch/diff mode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Next-Steps"><span class="toc-text">Next Steps</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Common-Questions"><span class="toc-text">Common Questions</span></a></li></ol></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-text">Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-Status-Bar-Actions"><span class="toc-text">Git Status Bar Actions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Commit"><span class="toc-text">Commit</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Branches-and-Tags"><span class="toc-text">Branches and Tags</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Remotes"><span class="toc-text">Remotes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gutter-indicators"><span class="toc-text">Gutter indicators</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Merge-Conflicts"><span class="toc-text">Merge Conflicts</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Viewing-Diffs"><span class="toc-text">Viewing Diffs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-Output-Window"><span class="toc-text">Git Output Window</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Initialize-a-Repository"><span class="toc-text">Initialize a Repository</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-patch-diff-mode"><span class="toc-text">Git patch/diff mode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Next-Steps"><span class="toc-text">Next Steps</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Common-Questions"><span class="toc-text">Common Questions</span></a></li></ol>
               <a href="#" id="article-toc-top">Back to Top</a>
             </div>
           </aside>
@@ -210,10 +210,10 @@
   <a id="scroll-to-top" role="button" aria-label="scroll to top" onclick="container.scrollTop = 0;"><span class="icon"></span></a>
 
   <!-- Scripts -->
-<!-- build:js build/js/main.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
-
+<script src="/js/plugins.js"></script>
 
 </body>
 </html>
