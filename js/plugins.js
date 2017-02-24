@@ -20,5 +20,4 @@ $(function () {
                 n && r ? o = l + ": " + n + ", " + c + ": " + r : n ? o = l + ": " + n : r && (o = c + ": " + r), this.setAttribute("title", o), this.className += " keybinding " + a, this.innerHTML = "", this.appendChild(document.createTextNode(t))
             })
     }
-    e()
 });

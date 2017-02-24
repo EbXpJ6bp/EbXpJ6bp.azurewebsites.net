@@ -121,7 +121,7 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/accessibility.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/intellisense.html</loc>
     
     <lastmod>2017-02-22T00:00:00.000Z</lastmod>
     
@@ -135,7 +135,7 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/intellisense.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/editor/accessibility.html</loc>
     
     <lastmod>2017-02-22T00:00:00.000Z</lastmod>
     
@@ -177,14 +177,14 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/locales.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/overview.html</loc>
     
     <lastmod>2017-02-21T00:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/overview.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/locales.html</loc>
     
     <lastmod>2017-02-21T00:00:00.000Z</lastmod>
     
@@ -219,6 +219,27 @@
   </url>
   
   <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/updates/index.html</loc>
+    
+    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/windows.html</loc>
+    
+    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/setup-overview.html</loc>
+    
+    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/requirements.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
@@ -233,13 +254,6 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/setup-overview.html</loc>
-    
-    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/errors.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
@@ -248,20 +262,6 @@
   
   <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/additional-components.html</loc>
-    
-    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/updates/index.html</loc>
-    
-    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/windows.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
