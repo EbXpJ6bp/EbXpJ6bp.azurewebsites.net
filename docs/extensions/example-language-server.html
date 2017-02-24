@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/extensions/example-language-server.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -62,7 +55,7 @@
               <div class="article-content" itemprop="articleBody">
                 <h1 id="Example-Language-Server" class="article-heading"><a href="#Example-Language-Server" class="headerlink" title="Example - Language Server"></a>Example - Language Server<a class="article-anchor" href="#Example-Language-Server" aria-hidden="true"></a></h1><p>Language servers allow you to add your own validation logic to files open in VS Code. Typically you just validate programming languages. However validating other file types is useful as well. A language server could, for example, check files for inappropriate language.</p>
 <p>In general, validating a programming language can be expensive. Especially when validation requires parsing multiple files and building up abstract syntax trees. To avoid that performance cost, language servers in VS Code are executed in a separate process. This architecture also makes it possible that language servers can be written in other languages besides TypeScript/JavaScript and that they can support expensive additional language features like code completion or <code>Find All References</code>.</p>
-<p>The remaining document assumes that you are familiar with normal <a href="/docs/extensions/overview">extension development</a> for VS Code.</p>
+<p>The remaining document assumes that you are familiar with normal <a href="/docs/extensions/overview.html">extension development</a> for VS Code.</p>
 <h2 id="Implement-your-own-Language-Server" class="article-heading"><a href="#Implement-your-own-Language-Server" class="headerlink" title="Implement your own Language Server"></a>Implement your own Language Server<a class="article-anchor" href="#Implement-your-own-Language-Server" aria-hidden="true"></a></h2><p>Language servers can be implemented in any language and follow the <a href="https://github.com/Microsoft/language-server-protocol" target="_blank" rel="external">Language Server Protocol</a>. However, right now VS Code only provides libraries for Node.js. Additional libraries will follow in the future. A good starting point for a language server implementation in Node.js is the example repository <a href="https://github.com/Microsoft/vscode-languageserver-node-example.git" target="_blank" rel="external">Language Server Node Example</a>. </p>
 <p>Clone the repository and then do:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">&gt; <span class="built_in">cd</span> client</div><div class="line">&gt; npm install</div><div class="line">&gt; code .</div><div class="line">&gt; <span class="built_in">cd</span> ../server</div><div class="line">&gt; npm install</div><div class="line">&gt; code .</div></pre></td></tr></table></figure>
@@ -102,7 +95,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">typescript lets you write JavaScript the way you really want to.</div><div class="line">typescript is a typed superset of JavaScript that compiles to plain JavaScript.</div><div class="line">Any browser. Any host. Any OS. Open Source.</div></pre></td></tr></table></figure>
 <p>The <code>Extension Development Host</code> instance will then look like this:</p>
 <p><img src="images/example-language-server/validation.png" alt="Validating a text file"></p>
-<h2 id="Debugging-both-Client-and-Server" class="article-heading"><a href="#Debugging-both-Client-and-Server" class="headerlink" title="Debugging both Client and Server"></a>Debugging both Client and Server<a class="article-anchor" href="#Debugging-both-Client-and-Server" aria-hidden="true"></a></h2><p>Debugging the client code is as easy as debugging a normal extension. Simply set a breakpoint in the VS Code instance that contains the client code and debug the extension by pressing <span class="dynamic-keybinding" data-osx="F5" data-win="F5" data-linux="F5"><span class="keybinding">F5</span></span>. For a detailed description about launching and debugging an extension see <a href="/docs/extensions/debugging-extensions">Running and Debugging Your Extension</a>.</p>
+<h2 id="Debugging-both-Client-and-Server" class="article-heading"><a href="#Debugging-both-Client-and-Server" class="headerlink" title="Debugging both Client and Server"></a>Debugging both Client and Server<a class="article-anchor" href="#Debugging-both-Client-and-Server" aria-hidden="true"></a></h2><p>Debugging the client code is as easy as debugging a normal extension. Simply set a breakpoint in the VS Code instance that contains the client code and debug the extension by pressing <span class="dynamic-keybinding" data-osx="F5" data-win="F5" data-linux="F5"><span class="keybinding">F5</span></span>. For a detailed description about launching and debugging an extension see <a href="/docs/extensions/debugging-extensions.html">Running and Debugging Your Extension</a>.</p>
 <p><img src="images/example-language-server/debugging-client.png" alt="Debugging the client"></p>
 <p>Since the server is started by the <code>LanguageClient</code> running in the extension (client), we need to attach a debugger to the running server. To do so, switch to the VS Code instance containing the server code and press <span class="dynamic-keybinding" data-osx="F5" data-win="F5" data-linux="F5"><span class="keybinding">F5</span></span>. This will attach the debugger to the server. Use the normal Debug View to interact with the running server.</p>
 <p><img src="images/example-language-server/debugging-server.png" alt="Debugging the server"></p>
@@ -136,7 +129,7 @@
 <li><em>Rename</em>: project-wide rename of a symbol.</li>
 <li><em>Document Links</em>: compute and resolve links inside a document.</li>
 </ul>
-<p>The <a href="/docs/extensions/language-support">Language Extension Guidelines</a> topic describes each of the language features above and provides guidance on how to implement them either through the language server protocol or by using the extensibility API directly from your extension.</p>
+<p>The <a href="/docs/extensions/language-support.html">Language Extension Guidelines</a> topic describes each of the language features above and provides guidance on how to implement them either through the language server protocol or by using the extensibility API directly from your extension.</p>
 <h2 id="Incremental-Text-Document-Synchronization" class="article-heading"><a href="#Incremental-Text-Document-Synchronization" class="headerlink" title="Incremental Text Document Synchronization"></a>Incremental Text Document Synchronization<a class="article-anchor" href="#Incremental-Text-Document-Synchronization" aria-hidden="true"></a></h2><p>The example uses the simple text document manager provided by the <code>vscode-languageserver</code> module to synchronize documents between VS Code and the language server.</p>
 <p>This has two drawbacks:</p>
 <ul>
@@ -154,8 +147,8 @@
 <figure class="highlight typescript"><table><tr><td class="code"><pre><div class="line">connection.onInitialize((params): InitializeResult =&gt; &#123;</div><div class="line">    ...</div><div class="line">    <span class="keyword">return</span> &#123;</div><div class="line">        capabilities: &#123;</div><div class="line">            <span class="comment">// Enable incremental document sync</span></div><div class="line">            textDocumentSync: TextDocumentSyncKind.Incremental,</div><div class="line">            ...</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">connection.onDidOpenTextDocument((params) =&gt; &#123;</div><div class="line">    <span class="comment">// A text document got opened in VS Code.</span></div><div class="line">    <span class="comment">// params.uri uniquely identifies the document. For documents store on disk this is a file URI.</span></div><div class="line">    <span class="comment">// params.text the initial full content of the document.</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line">connection.onDidChangeTextDocument((params) =&gt; &#123;</div><div class="line">    <span class="comment">// The content of a text document did change in VS Code.</span></div><div class="line">    <span class="comment">// params.uri uniquely identifies the document.</span></div><div class="line">    <span class="comment">// params.contentChanges describe the content changes to the document.</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line">connection.onDidCloseTextDocument((params) =&gt; &#123;</div><div class="line">    <span class="comment">// A text document got closed in VS Code.</span></div><div class="line">    <span class="comment">// params.uri uniquely identifies the document.</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>To learn more about VS Code extensibility model, try these topic:</p>
 <ul>
-<li><a href="/docs/extensionAPI/vscode-api">vscode API Reference</a> - Learn about deep language integration with VS Code language services.</li>
-<li><a href="/docs/extensions/language-support">Language Extension Guideline</a> - A guide to implementing VS Code’s rich language features.</li>
+<li><a href="/docs/extensionAPI/vscode-api.html">vscode API Reference</a> - Learn about deep language integration with VS Code language services.</li>
+<li><a href="/docs/extensions/language-support.html">Language Extension Guideline</a> - A guide to implementing VS Code’s rich language features.</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: When I try to attach to the server, I get “cannot connect to runtime process (timeout after 5000ms)”?</strong></p>
 <p><strong>A:</strong> You will see this timeout error if the server isn’t running when you try to attach the debugger.  The client starts the language server so make sure you have started the client in order to have a running server. You may also need to disable your client breakpoints if they are interfering with starting the server.</p>

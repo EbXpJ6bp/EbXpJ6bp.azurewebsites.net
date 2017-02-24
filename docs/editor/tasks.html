@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Integrate with External Tools via Tasks | Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/editor/tasks.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -234,10 +227,10 @@
 <figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"version"</span>: <span class="string">"0.1.0"</span>,</div><div class="line">    <span class="attr">"command"</span>: <span class="string">"tsc"</span>,</div><div class="line">    <span class="attr">"suppressTaskName"</span>: <span class="literal">true</span>,</div><div class="line">    <span class="attr">"tasks"</span>: [</div><div class="line">        &#123;</div><div class="line">            <span class="attr">"taskName"</span>: <span class="string">"watch"</span>,</div><div class="line">            <span class="attr">"args"</span>: [<span class="string">"--watch"</span>],</div><div class="line">            <span class="attr">"isWatching"</span>: <span class="literal">true</span>,</div><div class="line">            <span class="attr">"problemMatcher"</span>: &#123;</div><div class="line">                <span class="attr">"owner"</span>: <span class="string">"typescript"</span>,</div><div class="line">                <span class="attr">"fileLocation"</span>: <span class="string">"relative"</span>,</div><div class="line">                <span class="attr">"pattern"</span>: &#123;</div><div class="line">                    <span class="attr">"regexp"</span>: <span class="string">"^([^\\s].*)\\((\\d+|\\,\\d+|\\d+,\\d+,\\d+,\\d+)\\):\\s+(error|warning|info)\\s+(TS\\d+)\\s*:\\s*(.*)$"</span>,</div><div class="line">                    <span class="attr">"file"</span>: <span class="number">1</span>,</div><div class="line">                    <span class="attr">"location"</span>: <span class="number">2</span>,</div><div class="line">                    <span class="attr">"severity"</span>: <span class="number">3</span>,</div><div class="line">                    <span class="attr">"code"</span>: <span class="number">4</span>,</div><div class="line">                    <span class="attr">"message"</span>: <span class="number">5</span></div><div class="line">                &#125;,</div><div class="line">                <span class="attr">"watching"</span>: &#123;</div><div class="line">                    <span class="attr">"activeOnStart"</span>: <span class="literal">true</span>,</div><div class="line">                    <span class="attr">"beginsPattern"</span>: <span class="string">"^\\s*\\d&#123;1,2&#125;:\\d&#123;1,2&#125;:\\d&#123;1,2&#125;(?: AM| PM)? - File change detected\\. Starting incremental compilation\\.\\.\\."</span>,</div><div class="line">                    <span class="attr">"endsPattern"</span>: <span class="string">"^\\s*\\d&#123;1,2&#125;:\\d&#123;1,2&#125;:\\d&#123;1,2&#125;(?: AM| PM)? - Compilation complete\\. Watching for file changes\\."</span></div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>That was tasks - let’s keep going…</p>
 <ul>
-<li><a href="/docs/editor/tasks_appendix">tasks.json Schema</a> - You can review the full <code>tasks.json</code> schema and descriptions.</li>
-<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - Lint, IntelliSense, Lightbulbs, Peek and Go to Definition and more.</li>
-<li><a href="/docs/languages/overview">Language Support</a> - Learn about our supported programming languages, both shipped with VS Code and through community extensions.</li>
-<li><a href="/docs/editor/debugging">Debugging</a> - Debug your source code directly in the VS Code editor.</li>
+<li><a href="/docs/editor/tasks_appendix.html">tasks.json Schema</a> - You can review the full <code>tasks.json</code> schema and descriptions.</li>
+<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - Lint, IntelliSense, Lightbulbs, Peek and Go to Definition and more.</li>
+<li><a href="/docs/languages/overview.html">Language Support</a> - Learn about our supported programming languages, both shipped with VS Code and through community extensions.</li>
+<li><a href="/docs/editor/debugging.html">Debugging</a> - Debug your source code directly in the VS Code editor.</li>
 </ul>
 
               </div>

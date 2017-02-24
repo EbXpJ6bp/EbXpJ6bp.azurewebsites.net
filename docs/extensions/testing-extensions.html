@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/extensions/testing-extensions.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -61,7 +54,7 @@
               </header>
               <div class="article-content" itemprop="articleBody">
                 <h1 id="Testing-Your-Extension" class="article-heading"><a href="#Testing-Your-Extension" class="headerlink" title="Testing Your Extension"></a>Testing Your Extension<a class="article-anchor" href="#Testing-Your-Extension" aria-hidden="true"></a></h1><p>VS Code supports running and debugging tests for your extension that require the VS Code API. These tests will run inside a special instance of VS Code, the <code>Extension Development Host</code>, and have access to the full APIs. We refer to these tests as integration tests, because they go beyond unit tests that can run in isolation from a VS Code window. This documentation focuses on VS Code integration tests. For unit testing, you can use any popular testing framework, like <a href="http://mochajs.org/" target="_blank" rel="external">Mocha</a> or <a href="http://jasmine.github.io/" target="_blank" rel="external">Jasmine</a>.</p>
-<h2 id="Yo-Code-Test-Scaffolding" class="article-heading"><a href="#Yo-Code-Test-Scaffolding" class="headerlink" title="Yo Code Test Scaffolding"></a>Yo Code Test Scaffolding<a class="article-anchor" href="#Yo-Code-Test-Scaffolding" aria-hidden="true"></a></h2><p>The basic <a href="/docs/tools/yocode">yo code generator</a> extension project includes a sample test as well as the necessary infrastructure to run it.</p>
+<h2 id="Yo-Code-Test-Scaffolding" class="article-heading"><a href="#Yo-Code-Test-Scaffolding" class="headerlink" title="Yo Code Test Scaffolding"></a>Yo Code Test Scaffolding<a class="article-anchor" href="#Yo-Code-Test-Scaffolding" aria-hidden="true"></a></h2><p>The basic <a href="/docs/tools/yocode.html">yo code generator</a> extension project includes a sample test as well as the necessary infrastructure to run it.</p>
 <p><strong>Note</strong>: The documentation below assumes that you created a TypeScript extension but the same also applies for a JavaScript extension. However, some file names may be different.</p>
 <p>After you’ve created a new extension and opened the project in VS Code, you can select the <code>Launch Tests</code> configuration from the dropdown at the top of the Debug View.</p>
 <p><img src="images/testing-extensions/launch-tests.png" alt="launch tests"></p>
@@ -76,7 +69,7 @@
 <h2 id="Passing-Arguments-to-the-Extension-Development-Host" class="article-heading"><a href="#Passing-Arguments-to-the-Extension-Development-Host" class="headerlink" title="Passing Arguments to the Extension Development Host"></a>Passing Arguments to the Extension Development Host<a class="article-anchor" href="#Passing-Arguments-to-the-Extension-Development-Host" aria-hidden="true"></a></h2><p>You can set the file or folder that the test instance should open by inserting the path at the front of the argument list for the launch configuration.</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">"args": ["file or folder name", "--extensionDevelopmentPath=$&#123;workspaceRoot&#125;", "--extensionTestsPath=$&#123;workspaceRoot&#125;/out/test" ],</div></pre></td></tr></table></figure>
 <p>This way you can run your tests with predictable content and folder structure.</p>
-<h2 id="Excluding-test-files-from-your-extension-package" class="article-heading"><a href="#Excluding-test-files-from-your-extension-package" class="headerlink" title="Excluding test files from your extension package"></a>Excluding test files from your extension package<a class="article-anchor" href="#Excluding-test-files-from-your-extension-package" aria-hidden="true"></a></h2><p>If you decide to share your extension, you may not want to include the tests in your extension package.  The <a href="/docs/tools/vscecli.md#advance-usage"><code>.vscodeignore</code></a> file lets you exclude test files when you package and publish your extension with the <a href="/docs/tools/vscecli"><code>vsce</code> publishing tool</a>.  By default, the <code>yo code</code> generated extension project excludes the <code>test</code> and <code>out/test</code> folders.</p>
+<h2 id="Excluding-test-files-from-your-extension-package" class="article-heading"><a href="#Excluding-test-files-from-your-extension-package" class="headerlink" title="Excluding test files from your extension package"></a>Excluding test files from your extension package<a class="article-anchor" href="#Excluding-test-files-from-your-extension-package" aria-hidden="true"></a></h2><p>If you decide to share your extension, you may not want to include the tests in your extension package.  The <a href="/docs/tools/vscecli.md#advance-usage"><code>.vscodeignore</code></a> file lets you exclude test files when you package and publish your extension with the <a href="/docs/tools/vscecli.html"><code>vsce</code> publishing tool</a>.  By default, the <code>yo code</code> generated extension project excludes the <code>test</code> and <code>out/test</code> folders.</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">out/test/**</div><div class="line">test/**</div></pre></td></tr></table></figure>
 <h2 id="Running-tests-automatically-on-Travis-CI-build-machines" class="article-heading"><a href="#Running-tests-automatically-on-Travis-CI-build-machines" class="headerlink" title="Running tests automatically on Travis CI build machines"></a>Running tests automatically on Travis CI build machines<a class="article-anchor" href="#Running-tests-automatically-on-Travis-CI-build-machines" aria-hidden="true"></a></h2><p>You can run extension tests automatically on build machines like <a href="http://travis-ci.org" target="_blank" rel="external">Travis CI</a>.</p>
 <p>In order to enable automated extension tests, the <code>vscode</code> npm module provides a test command that will:</p>
@@ -119,10 +112,10 @@
 </table>
 <h2 id="Running-tests-on-Windows-with-AppVeyor" class="article-heading"><a href="#Running-tests-on-Windows-with-AppVeyor" class="headerlink" title="Running tests on Windows with AppVeyor"></a>Running tests on Windows with AppVeyor<a class="article-anchor" href="#Running-tests-on-Windows-with-AppVeyor" aria-hidden="true"></a></h2><p>You can also run extension tests on Windows with <a href="http://www.appveyor.com/" target="_blank" rel="external">AppVeyor</a>. To get started, you can review the VS Code integration tests AppVeyor <a href="https://github.com/Microsoft/vscode/blob/master/appveyor.yml" target="_blank" rel="external">configuration file</a>.</p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><ul>
-<li><a href="/docs/extensions/debugging-extensions">Debugging your Extension</a> - Learn more about how to run and debug your extension</li>
-<li><a href="/docs/tools/vscecli">vsce</a> - Publish your extension with the VSCE command line tool.</li>
-<li><a href="/docs/extensionAPI/extension-manifest">Extension Manifest file</a> - VS Code extension manifest file reference</li>
-<li><a href="/docs/extensionAPI/overview">Extension API</a> - Learn about the VS Code extensibility APIs</li>
+<li><a href="/docs/extensions/debugging-extensions.html">Debugging your Extension</a> - Learn more about how to run and debug your extension</li>
+<li><a href="/docs/tools/vscecli.html">vsce</a> - Publish your extension with the VSCE command line tool.</li>
+<li><a href="/docs/extensionAPI/extension-manifest.html">Extension Manifest file</a> - VS Code extension manifest file reference</li>
+<li><a href="/docs/extensionAPI/overview.html">Extension API</a> - Learn about the VS Code extensibility APIs</li>
 </ul>
 
               </div>

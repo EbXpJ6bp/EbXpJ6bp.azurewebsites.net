@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/languages/php.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -60,13 +53,13 @@
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-15T07:41:40.718Z" itemprop="dateModified">Last updated: 2017-02-15</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <h1 id="PHP-Programming-in-VS-Code" class="article-heading"><a href="#PHP-Programming-in-VS-Code" class="headerlink" title="PHP Programming in VS Code"></a>PHP Programming in VS Code<a class="article-anchor" href="#PHP-Programming-in-VS-Code" aria-hidden="true"></a></h1><p>Visual Studio Code is a great editor for PHP development. You get features like syntax highlighting and bracket matching, IntelliSense (code completion), and snippets out of the box and you can add more functionality through community created VS Code <a href="/docs/editor/extension-gallery">extensions</a>.</p>
+                <h1 id="PHP-Programming-in-VS-Code" class="article-heading"><a href="#PHP-Programming-in-VS-Code" class="headerlink" title="PHP Programming in VS Code"></a>PHP Programming in VS Code<a class="article-anchor" href="#PHP-Programming-in-VS-Code" aria-hidden="true"></a></h1><p>Visual Studio Code is a great editor for PHP development. You get features like syntax highlighting and bracket matching, IntelliSense (code completion), and snippets out of the box and you can add more functionality through community created VS Code <a href="/docs/editor/extension-gallery.html">extensions</a>.</p>
 <h2 id="PHP-Extensions" class="article-heading"><a href="#PHP-Extensions" class="headerlink" title="PHP Extensions"></a>PHP Extensions<a class="article-anchor" href="#PHP-Extensions" aria-hidden="true"></a></h2><p>There are many PHP language extensions available on the <a href="https://marketplace.visualstudio.com/VSCode" target="_blank" rel="external">VS Code Marketplace</a> and more are being created.  You can search for PHP extensions from within VS Code by running the <strong>Extensions: Install Extension</strong> command (<span class="dynamic-keybinding" data-osx="⇧⌘P" data-win="Ctrl+Shift+P" data-linux="Ctrl+Shift+P"><span class="keybinding">⇧⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+P</span>)</span> and type <code>ext install</code>) then filter the extensions drop down list by typing <code>php</code>.</p>
 <div class="marketplace-extensions-php"></div>
 
 <blockquote>
 <p>Tip: The extensions shown above are dynamically queried. Click on an extension tile above to read the description and reviews to decide which extension is best for you. See more in the <a href="https://marketplace.visualstudio.com" target="_blank" rel="external">Marketplace</a>.</p>
-<p>Tip: The following <a href="/docs/customization/userandworkspace">setting</a> allows to disable the built-in PHP completions in favor of proposals created by installed PHP extensions.</p>
+<p>Tip: The following <a href="/docs/customization/userandworkspace.html">setting</a> allows to disable the built-in PHP completions in favor of proposals created by installed PHP extensions.</p>
 </blockquote>
 <ul>
 <li><code>php.suggest.basic</code>: Configures if the built-in PHP language suggestions are enabled. Enabled by default.</li>
@@ -74,7 +67,7 @@
 <h2 id="Snippets" class="article-heading"><a href="#Snippets" class="headerlink" title="Snippets"></a>Snippets<a class="article-anchor" href="#Snippets" aria-hidden="true"></a></h2><p>Visual Studio Code includes a set of common snippets for PHP.  To access these, hit <span class="dynamic-keybinding" data-osx="⌃Space" data-win="Ctrl+Space" data-linux="Ctrl+Space"><span class="keybinding">⌃Space</span> (Windows, Linux <span class="keybinding">Ctrl+Space</span>)</span> to get a context specific list.</p>
 <p><img src="images/php/php-snippets.png" alt="PHP Snippets"></p>
 <h2 id="Linting" class="article-heading"><a href="#Linting" class="headerlink" title="Linting"></a>Linting<a class="article-anchor" href="#Linting" aria-hidden="true"></a></h2><p>VS Code uses the official PHP linter (<code>php -l</code>) for PHP language diagnostics. This allows VS Code to stay current with PHP linter improvements.</p>
-<p>There are three <a href="/docs/customization/userandworkspace">settings</a> to control the PHP linter:</p>
+<p>There are three <a href="/docs/customization/userandworkspace.html">settings</a> to control the PHP linter:</p>
 <ul>
 <li><code>php.validate.enable</code>: controls whether to enable PHP linting at all. Enabled by default.</li>
 <li><code>php.validate.executablePath</code>: points to the PHP executable on disk. Set this if the PHP executable is not on the system path.</li>
@@ -86,8 +79,8 @@
 <h2 id="Debugging" class="article-heading"><a href="#Debugging" class="headerlink" title="Debugging"></a>Debugging<a class="article-anchor" href="#Debugging" aria-hidden="true"></a></h2><p>PHP debugging with <strong>XDebug</strong> is supported through a <a href="https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug" target="_blank" rel="external">PHP Debug extension</a>.  Follow the extension’s instructions for configuring <strong>XDebug</strong> to work with VS Code.</p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>Read on to find out about:</p>
 <ul>
-<li><a href="/docs/editor/extension-gallery">Extension Marketplace</a> - Browse the extensions others have shared</li>
-<li><a href="/docs/editor/debugging">Debugging</a> - Learn more about VS Code debugging</li>
+<li><a href="/docs/editor/extension-gallery.html">Extension Marketplace</a> - Browse the extensions others have shared</li>
+<li><a href="/docs/editor/debugging.html">Debugging</a> - Learn more about VS Code debugging</li>
 </ul>
 
               </div>

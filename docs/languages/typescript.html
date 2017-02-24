@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/languages/typescript.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -77,7 +70,7 @@
 <p>A simple <code>tsconfig.json</code> looks like this for ES5, <strong>CommonJS</strong> <a href="http://www.commonjs.org/specs/modules/1.0" target="_blank" rel="external">modules</a> and source maps:</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"compilerOptions"</span>: &#123;</div><div class="line">        <span class="attr">"target"</span>: <span class="string">"es5"</span>,</div><div class="line">        <span class="attr">"module"</span>: <span class="string">"commonjs"</span>,</div><div class="line">        <span class="attr">"sourceMap"</span>: <span class="literal">true</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Now when you create a <code>.ts</code> file as part of the project we will offer up rich editing experiences and syntax validation.</p>
-<h2 id="Transpiling-TypeScript-into-JavaScript" class="article-heading"><a href="#Transpiling-TypeScript-into-JavaScript" class="headerlink" title="Transpiling TypeScript into JavaScript"></a>Transpiling TypeScript into JavaScript<a class="article-anchor" href="#Transpiling-TypeScript-into-JavaScript" aria-hidden="true"></a></h2><p>VS Code integrates with <code>tsc</code> through our integrated <a href="/docs/editor/tasks">task runner</a>.  We can use this to transpile <code>.ts</code> files into <code>.js</code> files.  Let’s walk through transpiling a simple TypeScript Hello World program.</p>
+<h2 id="Transpiling-TypeScript-into-JavaScript" class="article-heading"><a href="#Transpiling-TypeScript-into-JavaScript" class="headerlink" title="Transpiling TypeScript into JavaScript"></a>Transpiling TypeScript into JavaScript<a class="article-anchor" href="#Transpiling-TypeScript-into-JavaScript" aria-hidden="true"></a></h2><p>VS Code integrates with <code>tsc</code> through our integrated <a href="/docs/editor/tasks.html">task runner</a>.  We can use this to transpile <code>.ts</code> files into <code>.js</code> files.  Let’s walk through transpiling a simple TypeScript Hello World program.</p>
 <h3 id="Step-1-Create-a-simple-TS-file" class="article-heading"><a href="#Step-1-Create-a-simple-TS-file" class="headerlink" title="Step 1: Create a simple TS file"></a>Step 1: Create a simple TS file<a class="article-anchor" href="#Step-1-Create-a-simple-TS-file" aria-hidden="true"></a></h3><p>Open VS Code on an empty folder and create a <code>HelloWorld.ts</code> file, place the following code in that file…</p>
 <figure class="highlight typescript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">class</span> Startup &#123;</div><div class="line">    <span class="keyword">public</span> <span class="keyword">static</span> main(): <span class="built_in">number</span> &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Hello World'</span>);</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">Startup.main();</div></pre></td></tr></table></figure>
 <h3 id="Step-2-Create-tasks-json" class="article-heading"><a href="#Step-2-Create-tasks-json" class="headerlink" title="Step 2: Create tasks.json"></a>Step 2: Create tasks.json<a class="article-anchor" href="#Step-2-Create-tasks-json" aria-hidden="true"></a></h3><p>The next step is to set up the task configuration.  To do this open the <strong>Command Palette</strong> with <span class="dynamic-keybinding" data-osx="⇧⌘P" data-win="Ctrl+Shift+P" data-linux="Ctrl+Shift+P"><span class="keybinding">⇧⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+P</span>)</span> and type in <strong>Configure Task Runner</strong>, press <span class="keybinding">Enter</span> to select it. This shows a selection box with templates you can choose from:</p>
@@ -107,7 +100,7 @@
 <p><img src="images/typescript/compileerror.png" alt="Compile Problems"></p>
 <p>You can also use the keyboard to open the list <span class="dynamic-keybinding" data-osx="⇧⌘M" data-win="Ctrl+Shift+M" data-linux="Ctrl+Shift+M"><span class="keybinding">⇧⌘M</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+M</span>)</span>.</p>
 <blockquote>
-<p><strong>Tip:</strong> Tasks offer rich support for many actions. Check the <a href="/docs/editor/tasks">Tasks</a> topic for more information on how to configure them.</p>
+<p><strong>Tip:</strong> Tasks offer rich support for many actions. Check the <a href="/docs/editor/tasks.html">Tasks</a> topic for more information on how to configure them.</p>
 </blockquote>
 <h2 id="Goto-Symbol-amp-Show-All-Symbols" class="article-heading"><a href="#Goto-Symbol-amp-Show-All-Symbols" class="headerlink" title="Goto Symbol &amp; Show All Symbols"></a>Goto Symbol &amp; Show All Symbols<a class="article-anchor" href="#Goto-Symbol-amp-Show-All-Symbols" aria-hidden="true"></a></h2><p><span class="dynamic-keybinding" data-osx="⇧⌘O" data-win="Ctrl+Shift+O" data-linux="Ctrl+Shift+O"><span class="keybinding">⇧⌘O</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+O</span>)</span>: lists all defined symbols of the current open TypeScript and lets you navigate in it.</p>
 <p><span class="dynamic-keybinding" data-osx="⌘T" data-win="Ctrl+T" data-linux="Ctrl+T"><span class="keybinding">⌘T</span> (Windows, Linux <span class="keybinding">Ctrl+T</span>)</span>: lets you search all symbols defined in the current project or file scope. You need to have a TypeScript file open in the active editor.</p>
@@ -117,7 +110,7 @@
 <p>To generate source maps for your TypeScript files, compile with the <code>--sourcemap</code> option or set the <code>sourceMap</code> property in the <code>tsconfig.json</code> file to <code>true</code>.</p>
 <p>In-lined source maps (a source map where the content is stored as a data URL instead of a separate file) are also supported, although in-lined source is not yet supported.</p>
 <h2 id="Setting-a-different-outFiles-for-generated-files" class="article-heading"><a href="#Setting-a-different-outFiles-for-generated-files" class="headerlink" title="Setting a different outFiles for generated files"></a>Setting a different outFiles for generated files<a class="article-anchor" href="#Setting-a-different-outFiles-for-generated-files" aria-hidden="true"></a></h2><p>If generated (transpiled) JavaScript files do not live next to their source, you can help the VS Code debugger locate them by setting the <code>outFiles</code> attribute in the launch configuration. Whenever you set a breakpoint in the original source, VS Code tries to find the generated source by searching the files specified by glob patterns in <code>outFiles</code>.</p>
-<h2 id="Hiding-Derived-JavaScript-Files" class="article-heading"><a href="#Hiding-Derived-JavaScript-Files" class="headerlink" title="Hiding Derived JavaScript Files"></a>Hiding Derived JavaScript Files<a class="article-anchor" href="#Hiding-Derived-JavaScript-Files" aria-hidden="true"></a></h2><p>When you are working with TypeScript, you often don’t want to see generated JavaScript files in the explorer or in search results. VS Code offers filtering capabilities with a <code>files.exclude</code> <a href="/docs/customization/userandworkspace">setting</a> (<strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>Workspace Settings</strong>) and you can easily create an expression to hide those derived files:</p>
+<h2 id="Hiding-Derived-JavaScript-Files" class="article-heading"><a href="#Hiding-Derived-JavaScript-Files" class="headerlink" title="Hiding Derived JavaScript Files"></a>Hiding Derived JavaScript Files<a class="article-anchor" href="#Hiding-Derived-JavaScript-Files" aria-hidden="true"></a></h2><p>When you are working with TypeScript, you often don’t want to see generated JavaScript files in the explorer or in search results. VS Code offers filtering capabilities with a <code>files.exclude</code> <a href="/docs/customization/userandworkspace.html">setting</a> (<strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>Workspace Settings</strong>) and you can easily create an expression to hide those derived files:</p>
 <p><code>&quot;**/*.js&quot;: { &quot;when&quot;: &quot;$(basename).ts&quot;}</code></p>
 <p>This pattern will match on any JavaScript file (<code>**/*.js</code>) but only if a sibling TypeScript file with the same name is present. The file explorer will no longer show derived resources for JavaScript if they are compiled to the same location.</p>
 <p><img src="images/typescript/hidingDerivedBefore.png" alt="Hiding derived resources"> <img src="images/typescript/hidingDerivedAfter.png" alt="Hiding derived resources"></p>
@@ -152,10 +145,10 @@
 </blockquote>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>OK, read on to find out about:</p>
 <ul>
-<li><a href="/docs/languages/javascript">JavaScript</a> - we have several JavaScript specific features in VS Code</li>
-<li><a href="/docs/editor/tasks">Tasks</a> - we used tasks to transpile your TS file. Read more to find out what else tasks can do</li>
-<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - dig into multi-cursor, snippets and more</li>
-<li><a href="/docs/editor/debugging">Debugging</a> - we support debugging TypeScript Node.js apps</li>
+<li><a href="/docs/languages/javascript.html">JavaScript</a> - we have several JavaScript specific features in VS Code</li>
+<li><a href="/docs/editor/tasks.html">Tasks</a> - we used tasks to transpile your TS file. Read more to find out what else tasks can do</li>
+<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - dig into multi-cursor, snippets and more</li>
+<li><a href="/docs/editor/debugging.html">Debugging</a> - we support debugging TypeScript Node.js apps</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: How do I resolve a TypeScript “Cannot compile external module” error?</strong></p>
 <p><strong>A</strong>: If you get that error, resolve it by creating a <code>tsconfig.json</code> file in the root folder of your project. The tsconfig.json file lets you control how Visual Studio Code compiles your TypeScript code. For more information, see the <a href="https://www.typescriptlang.org/docs/handbook/tsconfig-json.html" target="_blank" rel="external">tsconfig.json overview</a>.</p>

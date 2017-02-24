@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>The Basics of Visual Studio Code | Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/editor/codebasics.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -74,7 +67,7 @@
 </ul>
 <p>Each time you start VS Code, it opens up in the same state it was in when you last closed it. The folder, layout, and opened files are preserved.</p>
 <p><img src="images/codebasics/layout.png" alt="VS Code Layout"></p>
-<p>VS Code allows up to three visible editors at any one time, allowing you to edit or view up to three files together side by side. The open files in each editor are displayed with tabbed headers (Tabs) at the top of the editor region. To learn more about tabbed headers, see the <a href="/docs/editor/tabs">Tabs</a> topic.</p>
+<p>VS Code allows up to three visible editors at any one time, allowing you to edit or view up to three files together side by side. The open files in each editor are displayed with tabbed headers (Tabs) at the top of the editor region. To learn more about tabbed headers, see the <a href="/docs/editor/tabs.html">Tabs</a> topic.</p>
 <blockquote>
 <p><strong>Tip:</strong> You can move the Side Bar to the right hand side (<strong>View</strong> &gt; <strong>Move Sidebar</strong>) or toggle its visibility (<span class="dynamic-keybinding" data-osx="⌘B" data-win="Ctrl+B" data-linux="Ctrl+B"><span class="keybinding">⌘B</span> (Windows, Linux <span class="keybinding">Ctrl+B</span>)</span>).</p>
 </blockquote>
@@ -112,7 +105,7 @@
 <blockquote>
 <p><strong>Tip:</strong> Type <span class="dynamic-keybinding" data-osx="⌘P" data-win="Ctrl+P" data-linux="Ctrl+P"><span class="keybinding">⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+P</span>)</span> (<strong>Quick Open</strong>) to quickly search and open a file by its name.</p>
 </blockquote>
-<p>By default, VS Code excludes some folders from the explorer (for example. <code>.git</code>). Use the <code>files.exclude</code> <a href="/docs/customization/userandworkspace">setting</a> to configure rules for hiding files and folders from the explorer.</p>
+<p>By default, VS Code excludes some folders from the explorer (for example. <code>.git</code>). Use the <code>files.exclude</code> <a href="/docs/customization/userandworkspace.html">setting</a> to configure rules for hiding files and folders from the explorer.</p>
 <p><strong>Tip:</strong> This is really useful to hide derived resources files, like <code>\*.meta</code> in Unity, or <code>\*.js</code> in a TypeScript project. For Unity to exclude the <code>\*.cs.meta</code> files, the pattern to choose would be: <code>&quot;**/*.cs.meta&quot;: true</code>. For TypeScript, you can exclude generated JavaScript for TypeScript files with: <code>&quot;**/*.js&quot;: {&quot;when&quot;: &quot;$(basename).ts&quot;}</code>.</p>
 <h2 id="Open-Editors" class="article-heading"><a href="#Open-Editors" class="headerlink" title="Open Editors"></a>Open Editors<a class="article-anchor" href="#Open-Editors" aria-hidden="true"></a></h2><p>At the top of the Explorer is a section labeled <strong>OPEN EDITORS</strong>. This is a list of active files or previews. These are files you previously opened in VS Code that you’re working on. For example, a file will be listed in the <strong>OPEN EDITORS</strong> section if you:</p>
 <ul>
@@ -201,7 +194,7 @@
 </tr>
 </tbody>
 </table>
-<p>You can <a href="/docs/customization/keybindings">edit</a> your <code>keybindings.json</code> to bind them to something more familiar if you wish.</p>
+<p>You can <a href="/docs/customization/keybindings.html">edit</a> your <code>keybindings.json</code> to bind them to something more familiar if you wish.</p>
 <h2 id="Save-Auto-Save" class="article-heading"><a href="#Save-Auto-Save" class="headerlink" title="Save / Auto Save"></a>Save / Auto Save<a class="article-anchor" href="#Save-Auto-Save" aria-hidden="true"></a></h2><p>By default, VS Code requires an explicit action to save your changes to disk, <span class="dynamic-keybinding" data-osx="⌘S" data-win="Ctrl+S" data-linux="Ctrl+S"><span class="keybinding">⌘S</span> (Windows, Linux <span class="keybinding">Ctrl+S</span>)</span>.</p>
 <p>However, it’s easy to turn on <code>Auto Save</code>, which will save your changes after a configured delay or when focus leaves the editor. With this option turned on, there is no need to explicitly save the file. The easiest way to turn on <code>Auto Save</code> is with the <strong>File</strong> &gt; <strong>Auto Save</strong> toggle which turns on and off save after a delay.</p>
 <p>For more control over <code>Auto Save</code>, open <strong>User Settings</strong> or <strong>Workspace Settings</strong> and find the associated settings:</p>
@@ -273,7 +266,7 @@
 <h2 id="Launching-from-the-Command-Line" class="article-heading"><a href="#Launching-from-the-Command-Line" class="headerlink" title="Launching from the Command Line"></a>Launching from the Command Line<a class="article-anchor" href="#Launching-from-the-Command-Line" aria-hidden="true"></a></h2><p>You can launch VS Code from the command line to quickly open a file, folder, or project. Typically, you open VS Code within the context of a folder. We find the best way to do this is to simply type:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">code .</div></pre></td></tr></table></figure>
 <blockquote>
-<p><strong>Tip:</strong> We have instructions for Mac users in our <a href="/docs/setup/mac">Setup</a> topic that enable you to start VS Code from within a terminal.  We add the VS Code executable to the <code>PATH</code> environment variable on Windows and Linux automatically during installation.</p>
+<p><strong>Tip:</strong> We have instructions for Mac users in our <a href="/docs/setup/mac.html">Setup</a> topic that enable you to start VS Code from within a terminal.  We add the VS Code executable to the <code>PATH</code> environment variable on Windows and Linux automatically during installation.</p>
 </blockquote>
 <p>Sometimes you will want to open or create a file. If the specified files does not exist, VS Code will create them for you:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">code index.html style.css readme.md</div></pre></td></tr></table></figure>
@@ -367,24 +360,24 @@
 <p>The <code>window.reopenFolders</code> setting tells VS Code how to restore the opened windows of your previous session. By default, VS Code will<br>reopen the last opened folder you worked on (setting: <code>one</code>). Change this setting to <code>none</code> to never reopen any folders and always start with an empty VS Code instance. Change it to <code>all</code> to restore all folders you worked on during your previous session.</p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>You’ve covered the basic user interface - there is a lot more to VS Code.  Read on to find out about:</p>
 <ul>
-<li><a href="/docs/introvideos/basics">Intro Video - Setup and Basics</a> - Watch a tutorial on the basics of VS Code.</li>
-<li><a href="/docs/customization/userandworkspace">User/Workspace Settings</a> - Learn how to configure VS Code to your preferences through user and workspace settings.</li>
-<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - Lint, IntelliSense, Lightbulbs, Peek and Goto Definition, and more</li>
-<li><a href="/docs/editor/integrated-terminal">Integrated Terminal</a> - Learn about the integrated terminal for quickly performing command line tasks from within VS Code.</li>
-<li><a href="/docs/editor/intellisense">IntelliSense</a> - VS Code brings smart code completions.</li>
-<li><a href="/docs/editor/debugging">Debugging</a> - This is where VS Code really shines</li>
-<li><a href="/docs/customization/overview">Customization</a> - Themes, settings, and keyboard bindings</li>
+<li><a href="/docs/introvideos/basics.html">Intro Video - Setup and Basics</a> - Watch a tutorial on the basics of VS Code.</li>
+<li><a href="/docs/customization/userandworkspace.html">User/Workspace Settings</a> - Learn how to configure VS Code to your preferences through user and workspace settings.</li>
+<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - Lint, IntelliSense, Lightbulbs, Peek and Goto Definition, and more</li>
+<li><a href="/docs/editor/integrated-terminal.html">Integrated Terminal</a> - Learn about the integrated terminal for quickly performing command line tasks from within VS Code.</li>
+<li><a href="/docs/editor/intellisense.html">IntelliSense</a> - VS Code brings smart code completions.</li>
+<li><a href="/docs/editor/debugging.html">Debugging</a> - This is where VS Code really shines</li>
+<li><a href="/docs/customization/overview.html">Customization</a> - Themes, settings, and keyboard bindings</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: Is it possible to globally search and replace?</strong></p>
 <p><strong>A:</strong> Yes, expand the Search view text box to include a replace text field. You can search and replace across all the files in your workspace. Note that if you did not open VS Code on a folder, the search will only run on the currently open files.</p>
 <p><img src="images/codebasics/global-search-replace.png" alt="global search and replace"></p>
 <p><strong>Q: How do I turn on word wrap?</strong></p>
-<p><strong>A:</strong> You can control word wrap through the <code>editor.wrappingColumn</code> <a href="/docs/customization/userandworkspace">setting</a>. By default <code>editor.wrappingColumn</code> is set to 300 characters.  You can adjust the column width or set the value to zero to wrap on the editor viewport width:</p>
+<p><strong>A:</strong> You can control word wrap through the <code>editor.wrappingColumn</code> <a href="/docs/customization/userandworkspace.html">setting</a>. By default <code>editor.wrappingColumn</code> is set to 300 characters.  You can adjust the column width or set the value to zero to wrap on the editor viewport width:</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">"editor.wrappingColumn": 0</div></pre></td></tr></table></figure>
 <p>You can toggle word wrap for the VS Code session with <span class="dynamic-keybinding" data-osx="⌥Z" data-win="Alt+Z" data-linux="Alt+Z"><span class="keybinding">⌥Z</span> (Windows, Linux <span class="keybinding">Alt+Z</span>)</span>. Restarting VS Code will pick up the persisted <code>editor.wrappingColumn</code> value.</p>
 <p>You can also add vertical column rulers to the editor with the <code>editor.rulers</code> setting which takes an array of column character positions where you’d like vertical rulers.</p>
 <p><strong>Q: How can I show more files in the OPEN EDITORS section?</strong></p>
-<p><strong>A:</strong> You can configure the appearance of <strong>OPEN EDITORS</strong> through your <a href="/docs/customization/userandworkspace">settings</a>. For example, you can set the maximum number of visible files before a scroll bar appears via the <code>explorer.openEditors.visible</code> setting and whether the <strong>OPEN EDITORS</strong> section should dynamically set its height via <code>explorer.openEditors.dynamicHeight</code>.</p>
+<p><strong>A:</strong> You can configure the appearance of <strong>OPEN EDITORS</strong> through your <a href="/docs/customization/userandworkspace.html">settings</a>. For example, you can set the maximum number of visible files before a scroll bar appears via the <code>explorer.openEditors.visible</code> setting and whether the <strong>OPEN EDITORS</strong> section should dynamically set its height via <code>explorer.openEditors.dynamicHeight</code>.</p>
 
               </div>
               <footer class="article-footer">

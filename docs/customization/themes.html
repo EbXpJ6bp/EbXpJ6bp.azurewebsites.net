@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Color Themes | Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/customization/themes.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -69,20 +62,20 @@
 <li>Select the theme you want and hit <span class="keybinding">Enter</span>.</li>
 </ol>
 <p><img src="images/themes/colorthemes.png" alt="Themes in the Command Palette"></p>
-<h2 id="Adding-Themes-from-the-Extension-Marketplace" class="article-heading"><a href="#Adding-Themes-from-the-Extension-Marketplace" class="headerlink" title="Adding Themes from the Extension Marketplace"></a>Adding Themes from the Extension Marketplace<a class="article-anchor" href="#Adding-Themes-from-the-Extension-Marketplace" aria-hidden="true"></a></h2><p>Many themes have been uploaded to the VS Code <a href="/docs/editor/extension-gallery">Extension Marketplace</a> by the community.  If you find one you want to use, simply install it and restart VS Code and the new theme will be available.</p>
+<h2 id="Adding-Themes-from-the-Extension-Marketplace" class="article-heading"><a href="#Adding-Themes-from-the-Extension-Marketplace" class="headerlink" title="Adding Themes from the Extension Marketplace"></a>Adding Themes from the Extension Marketplace<a class="article-anchor" href="#Adding-Themes-from-the-Extension-Marketplace" aria-hidden="true"></a></h2><p>Many themes have been uploaded to the VS Code <a href="/docs/editor/extension-gallery.html">Extension Marketplace</a> by the community.  If you find one you want to use, simply install it and restart VS Code and the new theme will be available.</p>
 <blockquote>
 <p><strong>Tip:</strong> To search for themes, type ‘theme’ in the Extensions view (<span class="dynamic-keybinding" data-osx="⇧⌘X" data-win="Ctrl+Shift+X" data-linux="Ctrl+Shift+X"><span class="keybinding">⇧⌘X</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+X</span>)</span>) search box.</p>
 </blockquote>
 <div class="marketplace-extensions-themes"></div>
 
 <p>You can also browse the <a href="https://marketplace.visualstudio.com/vscode/Themes" target="_blank" rel="external">VS Code Marketplace</a> site directly to find available themes.</p>
-<h2 id="Adding-a-new-Theme" class="article-heading"><a href="#Adding-a-new-Theme" class="headerlink" title="Adding a new Theme"></a>Adding a new Theme<a class="article-anchor" href="#Adding-a-new-Theme" aria-hidden="true"></a></h2><p>You can also add new TextMate theme files (.tmTheme) to your VS Code installation using VS Code’s <a href="http://yeoman.io" target="_blank" rel="external">Yeoman</a> extension generator, <a href="/docs/tools/yocode">yo code</a>. The extension generator takes an existing TextMate theme file and packages it for use in VS Code.</p>
+<h2 id="Adding-a-new-Theme" class="article-heading"><a href="#Adding-a-new-Theme" class="headerlink" title="Adding a new Theme"></a>Adding a new Theme<a class="article-anchor" href="#Adding-a-new-Theme" aria-hidden="true"></a></h2><p>You can also add new TextMate theme files (.tmTheme) to your VS Code installation using VS Code’s <a href="http://yeoman.io" target="_blank" rel="external">Yeoman</a> extension generator, <a href="/docs/tools/yocode.html">yo code</a>. The extension generator takes an existing TextMate theme file and packages it for use in VS Code.</p>
 <p><a href="http://colorsublime.com" target="_blank" rel="external">ColorSublime</a> has hundreds of existing TextMate themes to choose from.  Pick a theme you like and copy the Download link to use in the Yeoman generator.  It will be in a format like <code>&quot;http://colorsublime.com/theme/download/(number)&quot;</code>.  The ‘code’ generator will prompt you for the URL or file location of the .tmTheme file, the theme name, and other information related to the theme.</p>
 <p><img src="images/themes/yocodetheme.png" alt="yo code theme"></p>
 <p>Copy the generated theme folder to a new folder under <a href="/docs/extensions/install-extension.md#your-extensions-folder">your <code>.vscode/extensions</code> folder</a> and restart VS Code.</p>
 <p>Open the Color Theme picker theme with <strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>Color Theme</strong> and you can see your theme in the dropdown.  Arrow up and down to see a live preview of your theme.</p>
 <p><img src="images/themes/mytheme.png" alt="select my theme"></p>
-<h2 id="Publishing-a-Theme-to-the-Extension-Marketplace" class="article-heading"><a href="#Publishing-a-Theme-to-the-Extension-Marketplace" class="headerlink" title="Publishing a Theme to the Extension Marketplace"></a>Publishing a Theme to the Extension Marketplace<a class="article-anchor" href="#Publishing-a-Theme-to-the-Extension-Marketplace" aria-hidden="true"></a></h2><p>If you’d like to share your new theme with the community, you can publish it to the <a href="/docs/editor/extension-gallery">Extension Marketplace</a>. Use the <a href="/docs/tools/vscecli">vsce publishing tool</a> to package your theme and publish it to the VS Code Marketplace.</p>
+<h2 id="Publishing-a-Theme-to-the-Extension-Marketplace" class="article-heading"><a href="#Publishing-a-Theme-to-the-Extension-Marketplace" class="headerlink" title="Publishing a Theme to the Extension Marketplace"></a>Publishing a Theme to the Extension Marketplace<a class="article-anchor" href="#Publishing-a-Theme-to-the-Extension-Marketplace" aria-hidden="true"></a></h2><p>If you’d like to share your new theme with the community, you can publish it to the <a href="/docs/editor/extension-gallery.html">Extension Marketplace</a>. Use the <a href="/docs/tools/vscecli.html">vsce publishing tool</a> to package your theme and publish it to the VS Code Marketplace.</p>
 <blockquote>
 <p><strong>Tip:</strong> To make it easy for users to find your theme, include the word “theme” in the extension description and set the <code>Category</code> to <code>Theme</code> in your <code>package.json</code>.</p>
 </blockquote>
@@ -161,9 +154,9 @@
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">"fonts": [</div><div class="line">    &#123;</div><div class="line">        "id": "turtles-font",</div><div class="line">        "src": [</div><div class="line">            &#123;</div><div class="line">                "path": "./turtles.woff",</div><div class="line">                "format": "woff"</div><div class="line">            &#125;</div><div class="line">        ],</div><div class="line">        "weight": "normal",</div><div class="line">        "style": "normal",</div><div class="line">        "size": "150%"</div><div class="line">    &#125;</div><div class="line">],</div><div class="line">"iconDefinitions": &#123;</div><div class="line">    "_file": &#123;</div><div class="line">        "fontCharacter": "\\E002",</div><div class="line">        "fontColor": "#5f8b3b",</div><div class="line">        "fontId": "turtles-font"</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>Themes are just one way to customize VS Code. If you’d like to learn more about VS Code extensibility, try these topics:</p>
 <ul>
-<li><a href="/docs/customization/colorizer">Colorizers and Bracket Matchers</a> - Learn how to import TextMate colorizers</li>
-<li><a href="/docs/customization/userdefinedsnippets">Snippets</a> - Add additional snippets to your favorite language</li>
-<li><a href="/docs/extensions/overview">Extending Visual Studio Code</a> - Learn about other ways to extend VS Code</li>
+<li><a href="/docs/customization/colorizer.html">Colorizers and Bracket Matchers</a> - Learn how to import TextMate colorizers</li>
+<li><a href="/docs/customization/userdefinedsnippets.html">Snippets</a> - Add additional snippets to your favorite language</li>
+<li><a href="/docs/extensions/overview.html">Extending Visual Studio Code</a> - Learn about other ways to extend VS Code</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: What parts of VS code can I theme with a custom color theme?</strong></p>
 <p>The VS Code color themes affect the editor input area (text foreground, background, selection, lineHighlight, caret, and the syntax tokens) as well as some of the custom UI (see the list in <a href="/docs/customization/themes.md#creating-a-custom-theme">Creating a Theme</a>). When contributing a theme, you also specify a base theme: light (<code>vs</code>), dark (<code>vs-dark</code>) and high contrast (<code>hc-black</code>). The base theme is used for all other areas in the workbench such as the File Explorer. Base themes are not customizable or contributable by extensions.</p>

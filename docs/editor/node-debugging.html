@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Node.js Debugging | Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/editor/node-debugging.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -61,7 +54,7 @@
               </header>
               <div class="article-content" itemprop="articleBody">
                 <p>Visual Studio Code has built-in debugging support for the <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a> runtime and can debug JavaScript, TypeScript, and any other language that gets transpiled to JavaScript.</p>
-<p>This document explains the details of Node.js debugging. The general debugging feature are described in <a href="/docs/editor/debugging">Debugging</a>.</p>
+<p>This document explains the details of Node.js debugging. The general debugging feature are described in <a href="/docs/editor/debugging.html">Debugging</a>.</p>
 <h2 id="Experimental-Node-js-debugger-node2" class="article-heading"><a href="#Experimental-Node-js-debugger-node2" class="headerlink" title="Experimental Node.js debugger (node2)"></a>Experimental Node.js debugger (node2)<a class="article-anchor" href="#Experimental-Node-js-debugger-node2" aria-hidden="true"></a></h2><p>VS Code includes an experimental Node.js debug extension with debug type <code>node2</code> that uses the <a href="https://chromedevtools.github.io/debugger-protocol-viewer/v8/" target="_blank" rel="external">V8 Inspector Protocol</a>, which Node.js now exposes via the <code>--inspect</code> flag, only in Node.js versions 6.3+. This is the same protocol exposed by <a href="https://developer.chrome.com/devtools/docs/debugger-protocol" target="_blank" rel="external">Chrome and other targets</a>. This extension runs on the <a href="https://github.com/Microsoft/vscode-chrome-debug-core" target="_blank" rel="external">vscode-chrome-debug-core</a> library which also powers the <a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome" target="_blank" rel="external">Debugger for Chrome</a> extension, and several others.</p>
 <p>We recommend using the new experimental debugger <code>node2</code> for node.js versions &gt;= 6.3. When debugging Node.js versions &lt; 6.3, you have to use the ‘old’ debugger <code>node</code>.</p>
 <blockquote>
@@ -245,19 +238,19 @@
 </ul>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>In case you didn’t already read the Node.js section, take a look at:</p>
 <ul>
-<li><a href="/docs/runtimes/nodejs">Node.js</a> - End to end Node scenario with a sample application</li>
+<li><a href="/docs/runtimes/nodejs.html">Node.js</a> - End to end Node scenario with a sample application</li>
 </ul>
 <p>To see a tutorial on the basics of Node.js debugging, check out:</p>
 <ul>
-<li><a href="/docs/introvideos/debugging">Intro Video - Debugging</a> - Introductory video showcasing the basics of debugging.</li>
+<li><a href="/docs/introvideos/debugging.html">Intro Video - Debugging</a> - Introductory video showcasing the basics of debugging.</li>
 </ul>
 <p>To learn about VS Code’s task running support, go to:</p>
 <ul>
-<li><a href="/docs/editor/tasks">Tasks</a> - Running tasks with Gulp, Grunt and Jake.  Showing Errors and Warnings</li>
+<li><a href="/docs/editor/tasks.html">Tasks</a> - Running tasks with Gulp, Grunt and Jake.  Showing Errors and Warnings</li>
 </ul>
 <p>To write your own debugger extension, visit:</p>
 <ul>
-<li><a href="/docs/extensions/example-debuggers">Debuggers</a> - Steps to create a VS Code debug extension starting from a mock sample</li>
+<li><a href="/docs/extensions/example-debuggers.html">Debuggers</a> - Steps to create a VS Code debug extension starting from a mock sample</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: What Node.js version is required for Node.js debugging?</strong></p>
 <p><strong>A:</strong> The latest LTS version of <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a> is recommended.</p>

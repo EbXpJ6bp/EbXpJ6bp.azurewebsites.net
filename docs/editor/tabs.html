@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Tabs | Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/editor/tabs.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -65,7 +58,7 @@
 <p><img src="images/tabs/tabs-hero.png" alt="tabs hero"></p>
 <p>Tabs let you quickly navigate between items and you can Drag and Drop Tabs to reorder them.</p>
 <p>When you have more open items than can fit in the title area, you can use the <strong>Show Opened Editors</strong> command (available through the <code>...</code> More button) to display a dropdown of tabbed items.</p>
-<p>If you don’t want to use Tabs, you can disable the feature by setting the <code>workbench.editor.showTabs</code> <a href="/docs/customization/userandworkspace">setting</a> to false:</p>
+<p>If you don’t want to use Tabs, you can disable the feature by setting the <code>workbench.editor.showTabs</code> <a href="/docs/customization/userandworkspace.html">setting</a> to false:</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">"workbench.editor.showTabs": false</div></pre></td></tr></table></figure>
 <p>See the section below to optimize VS Code when <a href="/docs/editor/tabs.md#working-without-tabs">working without Tabs</a>.</p>
 <h2 id="Tab-ordering" class="article-heading"><a href="#Tab-ordering" class="headerlink" title="Tab ordering"></a>Tab ordering<a class="article-anchor" href="#Tab-ordering" aria-hidden="true"></a></h2><p>By default, new Tabs are added to the right of the existing Tabs but you can control where you’d like new Tabs to appear with the <code>workbench.editor.openPositioning</code> setting.</p>
@@ -96,7 +89,7 @@
 </ul>
 <h2 id="Keyboard-Shortcuts" class="article-heading"><a href="#Keyboard-Shortcuts" class="headerlink" title="Keyboard Shortcuts"></a>Keyboard Shortcuts<a class="article-anchor" href="#Keyboard-Shortcuts" aria-hidden="true"></a></h2><p>Here are some handy keyboard shortcuts to quickly navigate between editors and editor groups.</p>
 <blockquote>
-<p>If you’d like to modify the default keyboard shortcuts, see <a href="/docs/customization/keybindings">Key Bindings</a> for details.</p>
+<p>If you’d like to modify the default keyboard shortcuts, see <a href="/docs/customization/keybindings.html">Key Bindings</a> for details.</p>
 </blockquote>
 <ul>
 <li><span class="dynamic-keybinding" data-osx="⌥⌘→" data-win="Ctrl+PageDown" data-linux="Ctrl+PageDown"><span class="keybinding">⌥⌘→</span> (Windows, Linux <span class="keybinding">Ctrl+PageDown</span>)</span> go to the right editor.</li>
@@ -117,9 +110,9 @@
 <p>As mentioned above, you can disable Tabs (tabbed headings) entirely by setting <code>workbench.editor.showTabs</code> to false.</p>
 <h3 id="Disable-Preview-mode" class="article-heading"><a href="#Disable-Preview-mode" class="headerlink" title="Disable Preview mode"></a>Disable Preview mode<a class="article-anchor" href="#Disable-Preview-mode" aria-hidden="true"></a></h3><p>Without Tabs, the <strong>OPEN EDITORS</strong> section of the File Explorer is a quick way to do file navigation.  With <a href="/docs/editor/tabs.md#preview-mode">preview editor mode</a>, files are not added to the <strong>OPEN EDITOR</strong> list nor editor group on single-click open. You can disable this feature through the <code>workbench.editor.enablePreview</code> and <code>workbench.editor.enablePreviewFromQuickOpen</code> settings.</p>
 <h3 id="Ctrl-Tab-to-navigate-in-entire-editor-history" class="article-heading"><a href="#Ctrl-Tab-to-navigate-in-entire-editor-history" class="headerlink" title="Ctrl+Tab to navigate in entire editor history"></a>Ctrl+Tab to navigate in entire editor history<a class="article-anchor" href="#Ctrl-Tab-to-navigate-in-entire-editor-history" aria-hidden="true"></a></h3><p>You can change keybindings for <span class="keybinding">Ctrl+Tab</span> to show you a list of all opened editors from the history independent from the active editor group.</p>
-<p>Edit your <a href="/docs/customization/keybindings">keybindings</a> and add the following:</p>
+<p>Edit your <a href="/docs/customization/keybindings.html">keybindings</a> and add the following:</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">&#123; "key": "ctrl+tab", "command": "workbench.action.openPreviousEditorFromHistory" &#125;,</div><div class="line">&#123; "key": "ctrl+tab", "command": "workbench.action.quickOpenNavigateNext", "when": "inQuickOpen" &#125;,</div></pre></td></tr></table></figure>
-<h3 id="Close-an-entire-group-instead-of-a-single-editor" class="article-heading"><a href="#Close-an-entire-group-instead-of-a-single-editor" class="headerlink" title="Close an entire group instead of a single editor"></a>Close an entire group instead of a single editor<a class="article-anchor" href="#Close-an-entire-group-instead-of-a-single-editor" aria-hidden="true"></a></h3><p>If you liked the behavior of VS Code closing an entire group when closing one editor, you can bind the following in your <a href="/docs/customization/keybindings">keybindings</a>.</p>
+<h3 id="Close-an-entire-group-instead-of-a-single-editor" class="article-heading"><a href="#Close-an-entire-group-instead-of-a-single-editor" class="headerlink" title="Close an entire group instead of a single editor"></a>Close an entire group instead of a single editor<a class="article-anchor" href="#Close-an-entire-group-instead-of-a-single-editor" aria-hidden="true"></a></h3><p>If you liked the behavior of VS Code closing an entire group when closing one editor, you can bind the following in your <a href="/docs/customization/keybindings.html">keybindings</a>.</p>
 <p>Mac:</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123; <span class="attr">"key"</span>: <span class="string">"cmd+w"</span>, <span class="attr">"command"</span>: <span class="string">"workbench.action.closeEditorsInGroup"</span> &#125;</div></pre></td></tr></table></figure>
 <p>Windows/Linux:</p>

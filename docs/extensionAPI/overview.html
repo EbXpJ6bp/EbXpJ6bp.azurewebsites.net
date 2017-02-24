@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/extensionAPI/overview.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -60,8 +53,8 @@
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-03T07:14:15.977Z" itemprop="dateModified">Last updated: 2017-02-03</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <h1 id="Extensibility-Reference" class="article-heading"><a href="#Extensibility-Reference" class="headerlink" title="Extensibility Reference"></a>Extensibility Reference<a class="article-anchor" href="#Extensibility-Reference" aria-hidden="true"></a></h1><p>This section of our documentation goes into detail on the various features of VS Code extensibility.  It’s worth reviewing the introduction on the <a href="/docs/extensions/overview">extensions</a> as well as going through the <a href="/docs/extensions/example-hello-world">‘Hello World’</a> example before digging in too deeply here.</p>
-<p>The easiest way to see VS Code extensions in action is via the <a href="/docs/editor/extension-gallery">Extension Marketplace</a>.  Once you have built your first extension or are ready to share a <a href="/docs/customization/overview">customization</a>, it can be <a href="/docs/tools/vscecli">published</a> for others to install.</p>
+                <h1 id="Extensibility-Reference" class="article-heading"><a href="#Extensibility-Reference" class="headerlink" title="Extensibility Reference"></a>Extensibility Reference<a class="article-anchor" href="#Extensibility-Reference" aria-hidden="true"></a></h1><p>This section of our documentation goes into detail on the various features of VS Code extensibility.  It’s worth reviewing the introduction on the <a href="/docs/extensions/overview.html">extensions</a> as well as going through the <a href="/docs/extensions/example-hello-world.html">‘Hello World’</a> example before digging in too deeply here.</p>
+<p>The easiest way to see VS Code extensions in action is via the <a href="/docs/editor/extension-gallery.html">Extension Marketplace</a>.  Once you have built your first extension or are ready to share a <a href="/docs/customization/overview.html">customization</a>, it can be <a href="/docs/tools/vscecli.html">published</a> for others to install.</p>
 <h2 id="The-Extensibility-Reference-Documents" class="article-heading"><a href="#The-Extensibility-Reference-Documents" class="headerlink" title="The Extensibility Reference Documents"></a>The Extensibility Reference Documents<a class="article-anchor" href="#The-Extensibility-Reference-Documents" aria-hidden="true"></a></h2><p>This section of our documentation covers the following topics…</p>
 <table>
 <thead>
@@ -72,27 +65,27 @@
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="/docs/extensionAPI/extension-manifest">package.json Extension Manifest</a></strong></td>
+<td><strong><a href="/docs/extensionAPI/extension-manifest.html">package.json Extension Manifest</a></strong></td>
 <td>Every Visual Studio Code extension needs a manifest file <code>package.json</code> at the root of the extension folder. This document provides an overview of the structure of that file and the mandatory fields.</td>
 </tr>
 <tr>
-<td><strong><a href="/docs/extensionAPI/extension-points">Contribution Points</a></strong></td>
+<td><strong><a href="/docs/extensionAPI/extension-points.html">Contribution Points</a></strong></td>
 <td>Building on the base <code>package.json</code>, there are a number of additional extension points you can contribute to e.g. commands, themes, debuggers,…</td>
 </tr>
 <tr>
-<td><strong><a href="/docs/extensionAPI/activation-events">Activation Events</a></strong></td>
+<td><strong><a href="/docs/extensionAPI/activation-events.html">Activation Events</a></strong></td>
 <td>VS Code lazily activates extensions. This document outlines the activation options supported in <code>package.json</code> e.g. when a specific file type is loaded, when a command is fired, etc</td>
 </tr>
 <tr>
-<td><strong><a href="/docs/extensionAPI/vscode-api">API vscode namespace</a></strong></td>
+<td><strong><a href="/docs/extensionAPI/vscode-api.html">API vscode namespace</a></strong></td>
 <td>Review the full vscode namespace API reference.</td>
 </tr>
 <tr>
-<td><strong><a href="/docs/extensionAPI/vscode-api-commands">API complex commands</a></strong></td>
+<td><strong><a href="/docs/extensionAPI/vscode-api-commands.html">API complex commands</a></strong></td>
 <td>See the VS Code complex command API reference.</td>
 </tr>
 <tr>
-<td><strong><a href="/docs/extensionAPI/api-debugging">Debugging API</a></strong></td>
+<td><strong><a href="/docs/extensionAPI/api-debugging.html">Debugging API</a></strong></td>
 <td>Learn the details about integrating debuggers into VS Code.</td>
 </tr>
 <tr>
@@ -101,7 +94,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="Language-Extension-Guidelines" class="article-heading"><a href="#Language-Extension-Guidelines" class="headerlink" title="Language Extension Guidelines"></a>Language Extension Guidelines<a class="article-anchor" href="#Language-Extension-Guidelines" aria-hidden="true"></a></h2><p>If you are implementing programming language support, we have a <a href="/docs/extensions/language-support">Language Extension Guidelines</a> topic which shows the various language features available in VS Code (for example, code suggestions and actions, formatting, renaming) and provides guidance on how to implement them.</p>
+<h2 id="Language-Extension-Guidelines" class="article-heading"><a href="#Language-Extension-Guidelines" class="headerlink" title="Language Extension Guidelines"></a>Language Extension Guidelines<a class="article-anchor" href="#Language-Extension-Guidelines" aria-hidden="true"></a></h2><p>If you are implementing programming language support, we have a <a href="/docs/extensions/language-support.html">Language Extension Guidelines</a> topic which shows the various language features available in VS Code (for example, code suggestions and actions, formatting, renaming) and provides guidance on how to implement them.</p>
 
               </div>
               <footer class="article-footer">

@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Markdown and VS Code | Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/languages/markdown.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -75,15 +68,15 @@
 </blockquote>
 <h3 id="Editor-and-Preview-Synchronization" class="article-heading"><a href="#Editor-and-Preview-Synchronization" class="headerlink" title="Editor and Preview Synchronization"></a>Editor and Preview Synchronization<a class="article-anchor" href="#Editor-and-Preview-Synchronization" aria-hidden="true"></a></h3><p>When working with a Markdown preview to the side of your editor, VS Code can synchronize the view of the editor and the preview. By default, the Markdown preview will automatically scroll to reveal the element at the selected line in the editor.</p>
 <p><img src="images/Markdown/selection-preview-scroll-sync.gif" alt="Markdown Preview editor selection scroll sync"></p>
-<p>This behavior can be disabled using the <code>markdown.preview.scrollPreviewWithEditorSelection</code> <a href="/docs/customization/userandworkspace">setting</a>.</p>
+<p>This behavior can be disabled using the <code>markdown.preview.scrollPreviewWithEditorSelection</code> <a href="/docs/customization/userandworkspace.html">setting</a>.</p>
 <p>The currently selected line is indicated in the Markdown preview by a light gray bar in the left margin:</p>
 <p><img src="images/Markdown/preview-selection-marker.png" alt="Markdown Preview editor line marker"></p>
 <p>Also, when the Markdown preview is scrolled, the editor will scroll along with it:</p>
 <p><img src="images/Markdown/selection-preview-scroll-sync.gif" alt="Markdown Preview to editor scroll sync"></p>
-<p>This can be disabled using the <code>markdown.preview.scrollEditorWithPreview</code> <a href="/docs/customization/userandworkspace">setting</a>.</p>
+<p>This can be disabled using the <code>markdown.preview.scrollEditorWithPreview</code> <a href="/docs/customization/userandworkspace.html">setting</a>.</p>
 <p>Additionally, double clicking an element in the Markdown preview will automatically open the editor for the file and scroll to the line nearest the clicked element.</p>
 <p><img src="images/Markdown/double-click-preview-switch.gif" alt="Markdown Preview double click switches to editor"></p>
-<h2 id="Using-your-own-CSS" class="article-heading"><a href="#Using-your-own-CSS" class="headerlink" title="Using your own CSS"></a>Using your own CSS<a class="article-anchor" href="#Using-your-own-CSS" aria-hidden="true"></a></h2><p>By default, we use a CSS style for the preview that matches the style of VS Code. If you want to use your own CSS for the Markdown preview, update the <code>&quot;markdown.styles&quot;: []</code> <a href="/docs/customization/userandworkspace">setting</a> with the comma-separated list of URL(s) for your style sheet(s).</p>
+<h2 id="Using-your-own-CSS" class="article-heading"><a href="#Using-your-own-CSS" class="headerlink" title="Using your own CSS"></a>Using your own CSS<a class="article-anchor" href="#Using-your-own-CSS" aria-hidden="true"></a></h2><p>By default, we use a CSS style for the preview that matches the style of VS Code. If you want to use your own CSS for the Markdown preview, update the <code>&quot;markdown.styles&quot;: []</code> <a href="/docs/customization/userandworkspace.html">setting</a> with the comma-separated list of URL(s) for your style sheet(s).</p>
 <p>For instance, in the screen shot above we used a custom CSS that changes the default font for the page and changes the color for the H1 title.</p>
 <p>Here is the relevant CSS:</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">    <span class="attribute">font-family</span>: <span class="string">'Segoe UI'</span>, Tahoma, Geneva, Verdana, sans-serif;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">h1</span> &#123;</div><div class="line">    <span class="attribute">color</span>: cornflowerblue;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -91,9 +84,9 @@
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">// Place your settings in this file to overwrite default and user settings.</div><div class="line">&#123;</div><div class="line">    "markdown.styles": [</div><div class="line">        "Style.css"</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="Snippets-for-Markdown" class="article-heading"><a href="#Snippets-for-Markdown" class="headerlink" title="Snippets for Markdown"></a>Snippets for Markdown<a class="article-anchor" href="#Snippets-for-Markdown" aria-hidden="true"></a></h2><p>There are several built-in Markdown snippets included in VS Code - press <span class="dynamic-keybinding" data-osx="⌃Space" data-win="Ctrl+Space" data-linux="Ctrl+Space"><span class="keybinding">⌃Space</span> (Windows, Linux <span class="keybinding">Ctrl+Space</span>)</span> (Trigger Suggest) and you get a context specific list of suggestions.</p>
 <blockquote>
-<p><strong>Tip:</strong> You can add in your own User Defined Snippets for Markdown.  Take a look at <a href="/docs/customization/userdefinedsnippets">User Defined Snippets</a> to find out how.</p>
+<p><strong>Tip:</strong> You can add in your own User Defined Snippets for Markdown.  Take a look at <a href="/docs/customization/userdefinedsnippets.html">User Defined Snippets</a> to find out how.</p>
 </blockquote>
-<h2 id="Compiling-Markdown-into-HTML" class="article-heading"><a href="#Compiling-Markdown-into-HTML" class="headerlink" title="Compiling Markdown into HTML"></a>Compiling Markdown into HTML<a class="article-anchor" href="#Compiling-Markdown-into-HTML" aria-hidden="true"></a></h2><p>VS Code integrates with Markdown compilers through the integrated <a href="/docs/editor/tasks">task runner</a>.  We can use this to compile <code>.md</code> files into <code>.html</code> files.  Let’s walk through compiling a simple Markdown document.</p>
+<h2 id="Compiling-Markdown-into-HTML" class="article-heading"><a href="#Compiling-Markdown-into-HTML" class="headerlink" title="Compiling Markdown into HTML"></a>Compiling Markdown into HTML<a class="article-anchor" href="#Compiling-Markdown-into-HTML" aria-hidden="true"></a></h2><p>VS Code integrates with Markdown compilers through the integrated <a href="/docs/editor/tasks.html">task runner</a>.  We can use this to compile <code>.md</code> files into <code>.html</code> files.  Let’s walk through compiling a simple Markdown document.</p>
 <h3 id="Step-1-Install-a-Markdown-compiler" class="article-heading"><a href="#Step-1-Install-a-Markdown-compiler" class="headerlink" title="Step 1: Install a Markdown compiler"></a>Step 1: Install a Markdown compiler<a class="article-anchor" href="#Step-1-Install-a-Markdown-compiler" aria-hidden="true"></a></h3><p>For this walkthrough, we use the popular <a href="https://nodejs.org" target="_blank" rel="external">Node.js</a> module, <a href="https://github.com/markdown-it/markdown-it" target="_blank" rel="external">markdown-it</a>.</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">npm install -g markdown-it</div></pre></td></tr></table></figure>
 <blockquote>
@@ -143,8 +136,8 @@
 <p>If you want to stop the watch, you can use the <strong>Tasks: Terminate Running Task</strong> command in the  <strong>Command Palette</strong> (<span class="dynamic-keybinding" data-osx="⇧⌘P" data-win="Ctrl+Shift+P" data-linux="Ctrl+Shift+P"><span class="keybinding">⇧⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+P</span>)</span>).</p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>Read on to find out about:</p>
 <ul>
-<li><a href="/docs/customization/overview">Customization</a> - Dig into additional settings such as word wrap and User Defined Snippets.</li>
-<li><a href="/docs/languages/css">CSS, Less and Sass</a> - Want to edit your CSS? VS Code has great support for CSS, Less and Sass editing.</li>
+<li><a href="/docs/customization/overview.html">Customization</a> - Dig into additional settings such as word wrap and User Defined Snippets.</li>
+<li><a href="/docs/languages/css.html">CSS, Less and Sass</a> - Want to edit your CSS? VS Code has great support for CSS, Less and Sass editing.</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: Is there spell checking?</strong></p>
 <p><strong>A:</strong> Not installed with VS Code but there are spell checking extensions. Check the <a href="https://marketplace.visualstudio.com/vscode" target="_blank" rel="external">VS Code Marketplace</a> to look for useful extensions to help with your workflow.</p>

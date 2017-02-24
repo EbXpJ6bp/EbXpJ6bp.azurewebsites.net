@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/extensionAPI/api-debugging.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -119,10 +112,10 @@
 <p>VS Code terminates a debug session with the <strong>disconnect</strong> request.<br>If the debug target was ‘launched’ <em>disconnect</em> is expected to terminate the target program (even forcefully if necessary).<br>If the debug target has been ‘attached’ initially, <em>disconnect</em> should detach it from the target (so that it will continue to run).<br>In both cases and in the case that the target terminated normally or crashed the debug adapter must fire a <strong>terminated</strong> event.<br>After receiving a response from the <em>disconnect</em> request, VS Code will terminate the debug adapter.</p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>To learn more about VS Code extensibility model, try these topics:</p>
 <ul>
-<li><a href="/docs/extensions/example-debuggers">Example Debuggers</a> - See a working ‘mock’ debugger example</li>
-<li><a href="/docs/extensionAPI/overview">Extension API Overview</a> - Learn about the full VS Code extensibility model.</li>
-<li><a href="/docs/extensionAPI/extension-manifest">Extension Manifest File</a> - VS Code package.json extension manifest file reference</li>
-<li><a href="/docs/extensionAPI/extension-points">Contribution Points</a> - VS Code contribution points reference</li>
+<li><a href="/docs/extensions/example-debuggers.html">Example Debuggers</a> - See a working ‘mock’ debugger example</li>
+<li><a href="/docs/extensionAPI/overview.html">Extension API Overview</a> - Learn about the full VS Code extensibility model.</li>
+<li><a href="/docs/extensionAPI/extension-manifest.html">Extension Manifest File</a> - VS Code package.json extension manifest file reference</li>
+<li><a href="/docs/extensionAPI/extension-points.html">Contribution Points</a> - VS Code contribution points reference</li>
 </ul>
 
               </div>

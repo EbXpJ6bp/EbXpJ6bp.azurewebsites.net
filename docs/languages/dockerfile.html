@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/languages/dockerfile.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -99,7 +92,7 @@
 <p> <img src="images/docker/dockercomposesearch.png" alt="Docker Compose Microsoft image suggestions"></p>
 <h2 id="Docker-commands" class="article-heading"><a href="#Docker-commands" class="headerlink" title="Docker commands"></a>Docker commands<a class="article-anchor" href="#Docker-commands" aria-hidden="true"></a></h2><p>Many of the most common Docker and docker-compose commands are built right into the <strong>Command Palette</strong> (<span class="dynamic-keybinding" data-osx="⇧⌘P" data-win="Ctrl+Shift+P" data-linux="Ctrl+Shift+P"><span class="keybinding">⇧⌘P</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+P</span>)</span>).</p>
 <p><img src="images/docker/dockercommands.gif" alt="intelliSense"></p>
-<h2 id="Dockerfile-linting" class="article-heading"><a href="#Dockerfile-linting" class="headerlink" title="Dockerfile linting"></a>Dockerfile linting<a class="article-anchor" href="#Dockerfile-linting" aria-hidden="true"></a></h2><p>You can enable linting of Dockerfile files through the <code>docker.enableLinting</code> <a href="/docs/customization/userandworkspace">setting</a>. The extension uses the <a href="https://github.com/projectatomic/dockerfile_lint" target="_blank" rel="external">dockerfile_lint</a> rules based linter to analyze the Dockerfile. You can provide your own customized rules file by using the <code>docker.linterRuleFile</code> setting. You can find <a href="https://github.com/projectatomic/dockerfile_lint#extending-and-customizing-rule-files" target="_blank" rel="external">more information</a> on how to create rules files as well as <a href="https://github.com/projectatomic/dockerfile_lint/tree/master/sample_rules" target="_blank" rel="external">sample rules files</a> in the <a href="https://github.com/projectatomic/dockerfile_lint" target="_blank" rel="external">dockerfile_lint</a> project. </p>
+<h2 id="Dockerfile-linting" class="article-heading"><a href="#Dockerfile-linting" class="headerlink" title="Dockerfile linting"></a>Dockerfile linting<a class="article-anchor" href="#Dockerfile-linting" aria-hidden="true"></a></h2><p>You can enable linting of Dockerfile files through the <code>docker.enableLinting</code> <a href="/docs/customization/userandworkspace.html">setting</a>. The extension uses the <a href="https://github.com/projectatomic/dockerfile_lint" target="_blank" rel="external">dockerfile_lint</a> rules based linter to analyze the Dockerfile. You can provide your own customized rules file by using the <code>docker.linterRuleFile</code> setting. You can find <a href="https://github.com/projectatomic/dockerfile_lint#extending-and-customizing-rule-files" target="_blank" rel="external">more information</a> on how to create rules files as well as <a href="https://github.com/projectatomic/dockerfile_lint/tree/master/sample_rules" target="_blank" rel="external">sample rules files</a> in the <a href="https://github.com/projectatomic/dockerfile_lint" target="_blank" rel="external">dockerfile_lint</a> project. </p>
 <p><img src="images/docker/dockerfilelinting.gif" alt="linting"></p>
 <h2 id="Running-commands-on-Linux" class="article-heading"><a href="#Running-commands-on-Linux" class="headerlink" title="Running commands on Linux"></a>Running commands on Linux<a class="article-anchor" href="#Running-commands-on-Linux" aria-hidden="true"></a></h2><p>By default, Docker runs as the root user on Linux, requiring other users to access it with <code>sudo</code>. This extension does not assume root access, so you will need to create a Unix group called “docker” and add users to it. Instructions can be found here: <a href="https://docs.docker.com/engine/installation/linux/ubuntulinux/#/create-a-docker-group" target="_blank" rel="external">Create a Docker group</a></p>
 

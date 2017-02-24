@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/extensionAPI/extension-points.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -60,7 +53,7 @@
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-03T07:14:15.972Z" itemprop="dateModified">Last updated: 2017-02-03</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <h1 id="Contribution-Points-package-json" class="article-heading"><a href="#Contribution-Points-package-json" class="headerlink" title="Contribution Points - package.json"></a>Contribution Points - package.json<a class="article-anchor" href="#Contribution-Points-package-json" aria-hidden="true"></a></h1><p>This document covers the various contribution points that are defined in the <a href="/docs/extensionAPI/extension-manifest"><code>package.json</code> extension manifest</a>.</p>
+                <h1 id="Contribution-Points-package-json" class="article-heading"><a href="#Contribution-Points-package-json" class="headerlink" title="Contribution Points - package.json"></a>Contribution Points - package.json<a class="article-anchor" href="#Contribution-Points-package-json" aria-hidden="true"></a></h1><p>This document covers the various contribution points that are defined in the <a href="/docs/extensionAPI/extension-manifest.html"><code>package.json</code> extension manifest</a>.</p>
 <ul>
 <li><a href="/docs/extensionAPI/extension-points.md#contributesconfiguration"><code>configuration</code></a></li>
 <li><a href="/docs/extensionAPI/extension-points.md#contributescommands"><code>commands</code></a></li>
@@ -111,7 +104,7 @@
 <p>You can add menu items to these groups or add new groups of menu items in between, below, or above. Only the editor context menu allows this grouping control.</p>
 <h3 id="Sorting-inside-groups" class="article-heading"><a href="#Sorting-inside-groups" class="headerlink" title="Sorting inside groups"></a>Sorting inside groups<a class="article-anchor" href="#Sorting-inside-groups" aria-hidden="true"></a></h3><p>The order inside a group depends the title or an order-attribute. The group-local order of a menu item is specified by appending <code>@&lt;number&gt;</code> to the group identifier as shown below:</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">"editor/title": [&#123;</div><div class="line">    "when": "editorHasSelection",</div><div class="line">    "command": "extension.Command",</div><div class="line">    "group": "myGroup@1"</div><div class="line">&#125;]</div></pre></td></tr></table></figure>
-<h2 id="contributes-keybindings" class="article-heading"><a href="#contributes-keybindings" class="headerlink" title="contributes.keybindings"></a>contributes.keybindings<a class="article-anchor" href="#contributes-keybindings" aria-hidden="true"></a></h2><p>Contribute a key binding rule defining what command should be invoked when the user presses a key combination. See the <a href="/docs/customization/keybindings">Key Bindings</a> topic where key bindings are explained in detail.</p>
+<h2 id="contributes-keybindings" class="article-heading"><a href="#contributes-keybindings" class="headerlink" title="contributes.keybindings"></a>contributes.keybindings<a class="article-anchor" href="#contributes-keybindings" aria-hidden="true"></a></h2><p>Contribute a key binding rule defining what command should be invoked when the user presses a key combination. See the <a href="/docs/customization/keybindings.html">Key Bindings</a> topic where key bindings are explained in detail.</p>
 <p>Contributing a key binding will cause the Default Keyboard Shortcuts to display your rule, and every UI representation of the command will now show the key binding you have added. And, of course, when the user presses the key combination the command will be invoked.</p>
 <blockquote>
 <p><strong>Note:</strong> Because VS Code runs on Windows, Mac and Linux, where modifiers differ, you can use “key” to set the default key combination and overwrite it with a specific platform.</p>
@@ -157,7 +150,7 @@
 <li><code>variables</code> introduces substitution variables and binds them to commands implemented by the debugger extension.</li>
 </ul>
 <h3 id="Example-5" class="article-heading"><a href="#Example-5" class="headerlink" title="Example"></a>Example<a class="article-anchor" href="#Example-5" aria-hidden="true"></a></h3><figure class="highlight"><table><tr><td class="code"><pre><div class="line">"contributes": &#123;</div><div class="line">    "debuggers": [&#123;</div><div class="line">        "type": "node",</div><div class="line">        "label": "Node Debug",</div><div class="line"></div><div class="line">        "program": "./out/node/nodeDebug.js",</div><div class="line">        "runtime": "node",</div><div class="line"></div><div class="line">        "configurationAttributes": &#123;</div><div class="line">            "launch": &#123;</div><div class="line">                "required": [ "program" ],</div><div class="line">                "properties": &#123;</div><div class="line">                    "program": &#123;</div><div class="line">                        "type": "string",</div><div class="line">                        "description": "The program to debug."</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;,</div><div class="line"></div><div class="line">        "initialConfigurations": [&#123;</div><div class="line">            "type": "node",</div><div class="line">            "request": "launch",</div><div class="line">            "name": "Launch Program",</div><div class="line">            "program": "$&#123;workspaceRoot&#125;/app.js"</div><div class="line">        &#125;],</div><div class="line"></div><div class="line">        "configurationSnippets": [</div><div class="line">            &#123;</div><div class="line">                "label": "Node.js: Attach Configuration",</div><div class="line">                "description": "A new configuration for attaching to a running node program.",</div><div class="line">                "body": &#123;</div><div class="line">                    "type": "node",</div><div class="line">                    "request": "attach",</div><div class="line">                    "name": "$&#123;2:Attach to Port&#125;",</div><div class="line">                    "port": 5858</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        ],</div><div class="line"></div><div class="line">        "variables": &#123;</div><div class="line">            "PickProcess": "extension.node-debug.pickNodeProcess"</div><div class="line">        &#125;</div><div class="line">    &#125;]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>For a full walkthrough on how to integrate a <code>debugger</code> go to <a href="/docs/extensions/example-debuggers">Debuggers</a>.</p>
+<p>For a full walkthrough on how to integrate a <code>debugger</code> go to <a href="/docs/extensions/example-debuggers.html">Debuggers</a>.</p>
 <h2 id="contributes-breakpoints" class="article-heading"><a href="#contributes-breakpoints" class="headerlink" title="contributes.breakpoints"></a>contributes.breakpoints<a class="article-anchor" href="#contributes-breakpoints" aria-hidden="true"></a></h2><p>Usually a debugger extension will also have a <code>contributes.breakpoints</code> entry where the extension lists the language file types for which setting breakpoints will be enabled.</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">"contributes": &#123;</div><div class="line">    "breakpoints": [</div><div class="line">        &#123;</div><div class="line">            "language": "javascript"</div><div class="line">        &#125;,</div><div class="line">        &#123;</div><div class="line">            "language": "javascriptreact"</div><div class="line">        &#125;</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="contributes-grammars" class="article-heading"><a href="#contributes-grammars" class="headerlink" title="contributes.grammars"></a>contributes.grammars<a class="article-anchor" href="#contributes-grammars" aria-hidden="true"></a></h2><p>Contribute a TextMate grammar to a language. You must provide the <code>language</code> this grammar applies to, the TextMate <code>scopeName</code> for the grammar and the file path.</p>
@@ -165,19 +158,19 @@
 <p><strong>Note:</strong> The file containing the grammar can be in JSON (filenames ending in .json) or in XML plist format (all other files).</p>
 </blockquote>
 <h3 id="Example-6" class="article-heading"><a href="#Example-6" class="headerlink" title="Example"></a>Example<a class="article-anchor" href="#Example-6" aria-hidden="true"></a></h3><figure class="highlight"><table><tr><td class="code"><pre><div class="line">"contributes": &#123;</div><div class="line">    "grammars": [&#123;</div><div class="line">        "language": "shellscript",</div><div class="line">        "scopeName": "source.shell",</div><div class="line">        "path": "./syntaxes/Shell-Unix-Bash.tmLanguage"</div><div class="line">    &#125;]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>See <a href="/docs/customization/colorizer">Adding Language Colorization</a> for instructions on using the <a href="/docs/tools/yocode">yo code extension generator</a> to quickly package TextMate .tmLanguage files as VS Code extensions.</p>
+<p>See <a href="/docs/customization/colorizer.html">Adding Language Colorization</a> for instructions on using the <a href="/docs/tools/yocode.html">yo code extension generator</a> to quickly package TextMate .tmLanguage files as VS Code extensions.</p>
 <p><img src="images/extension-points/grammars.png" alt="grammars extension point example"></p>
 <h2 id="contributes-themes" class="article-heading"><a href="#contributes-themes" class="headerlink" title="contributes.themes"></a>contributes.themes<a class="article-anchor" href="#contributes-themes" aria-hidden="true"></a></h2><p>Contribute a TextMate theme to VS Code. You must specify a label, whether the theme is a dark theme or a light theme (such that the rest of VS Code changes to match your theme) and the path to the file (XML plist format).</p>
 <h3 id="Example-7" class="article-heading"><a href="#Example-7" class="headerlink" title="Example"></a>Example<a class="article-anchor" href="#Example-7" aria-hidden="true"></a></h3><figure class="highlight"><table><tr><td class="code"><pre><div class="line">"contributes": &#123;</div><div class="line">    "themes": [&#123;</div><div class="line">        "label": "Monokai",</div><div class="line">        "uiTheme": "vs-dark",</div><div class="line">        "path": "./themes/Monokai.tmTheme"</div><div class="line">    &#125;]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p><img src="images/extension-points/themes.png" alt="themes extension point example"></p>
-<p>See <a href="/docs/customization/themes">Changing the Color Theme</a> for instructions on using the <a href="/docs/tools/yocode">yo code extension generator</a> to quickly package TextMate .tmTheme files as VS Code extensions.</p>
+<p>See <a href="/docs/customization/themes.html">Changing the Color Theme</a> for instructions on using the <a href="/docs/tools/yocode.html">yo code extension generator</a> to quickly package TextMate .tmTheme files as VS Code extensions.</p>
 <h2 id="contributes-snippets" class="article-heading"><a href="#contributes-snippets" class="headerlink" title="contributes.snippets"></a>contributes.snippets<a class="article-anchor" href="#contributes-snippets" aria-hidden="true"></a></h2><figure class="highlight"><table><tr><td class="code"><pre><div class="line">"contributes": &#123;</div><div class="line">    "snippets": [&#123;</div><div class="line">        "language": "go",</div><div class="line">        "path": "./snippets/go.json"</div><div class="line">    &#125;]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="contributes-jsonValidation" class="article-heading"><a href="#contributes-jsonValidation" class="headerlink" title="contributes.jsonValidation"></a>contributes.jsonValidation<a class="article-anchor" href="#contributes-jsonValidation" aria-hidden="true"></a></h2><p>Contributes a validation schema for a specific type of <code>json</code> file.  The <code>url</code> value can be either a local path to a schema file included in the extension or a remote server URL such as a <a href="http://schemastore.org/json" target="_blank" rel="external">json schema store</a>.</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">"contributes": &#123;</div><div class="line">    "jsonValidation": [&#123;</div><div class="line">        "fileMatch": ".jshintrc",</div><div class="line">        "url": "http://json.schemastore.org/jshintrc"</div><div class="line">    &#125;]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>To learn more about VS Code extensibility model, try these topic:</p>
 <ul>
-<li><a href="/docs/extensionAPI/extension-manifest">Extension Manifest File</a> - VS Code package.json extension manifest file reference</li>
-<li><a href="/docs/extensionAPI/activation-events">Activation Events</a> - VS Code activation events reference</li>
+<li><a href="/docs/extensionAPI/extension-manifest.html">Extension Manifest File</a> - VS Code package.json extension manifest file reference</li>
+<li><a href="/docs/extensionAPI/activation-events.html">Activation Events</a> - VS Code activation events reference</li>
 </ul>
 
               </div>

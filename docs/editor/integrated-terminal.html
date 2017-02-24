@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Integrated Terminal | Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/editor/integrated-terminal.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -77,7 +70,7 @@
 <blockquote>
 <p><strong>Tip:</strong> If you use multiple terminals extensively, you can add key bindings for the <code>focusNext</code>, <code>focusPrevious</code> and <code>kill</code> commands outlined in the <a href="/docs/editor/integrated-terminal.md#key-bindings">Key Bindings section</a> to allow navigation between them using only the keyboard.</p>
 </blockquote>
-<h2 id="Configuration" class="article-heading"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration<a class="article-anchor" href="#Configuration" aria-hidden="true"></a></h2><p>The shell used defaults to <code>$SHELL</code> on Linux and OS X, and <code>%COMSPEC%</code> on Windows. These can be overridden manually by setting <code>terminal.integrated.shell.*</code> in <a href="/docs/customization/userandworkspace">settings</a>. Arguments can be passed to the terminal shell on Linux and OS X using the <code>terminal.integrated.shellArgs.*</code> settings.</p>
+<h2 id="Configuration" class="article-heading"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration<a class="article-anchor" href="#Configuration" aria-hidden="true"></a></h2><p>The shell used defaults to <code>$SHELL</code> on Linux and OS X, and <code>%COMSPEC%</code> on Windows. These can be overridden manually by setting <code>terminal.integrated.shell.*</code> in <a href="/docs/customization/userandworkspace.html">settings</a>. Arguments can be passed to the terminal shell on Linux and OS X using the <code>terminal.integrated.shellArgs.*</code> settings.</p>
 <h3 id="Windows" class="article-heading"><a href="#Windows" class="headerlink" title="Windows"></a>Windows<a class="article-anchor" href="#Windows" aria-hidden="true"></a></h3><p>Correctly configuring your shell on Windows is a matter of locating the right executable. VS Code defaults to the <code>%COMSPEC%</code> environment variable on Windows which typically points to the 32-bit version of <code>cmd.exe</code>.</p>
 <p>Below are a list of common shell executables and their default locations:</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">// 64-bit cmd if available, otherwise 32-bit</div><div class="line">"terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\cmd.exe"</div><div class="line">// 64-bit PowerShell if available, otherwise 32-bit</div><div class="line">"terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"</div><div class="line">// Git Bash</div><div class="line">"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"</div><div class="line">// Bash on Ubuntu (on Windows)</div><div class="line">"terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe"</div></pre></td></tr></table></figure>

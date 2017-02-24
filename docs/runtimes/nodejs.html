@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/runtimes/nodejs.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -80,7 +73,7 @@
 <p>By using the <code>.js</code> file extension, VS Code interprets this file as JavaScript and will evaluate the contents with the JavaScript language service.</p>
 <p>Create a simple string variable in <code>app.js</code> and send the contents of the string to the console:</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> msg = <span class="string">'Hello World'</span>;</div><div class="line"><span class="built_in">console</span>.log(msg);</div></pre></td></tr></table></figure>
-<p>Note that when you typed <code>console.</code> <a href="/docs/editor/intellisense">IntelliSense</a> on the <code>console</code> object was automatically presented to you. When editing JavaScript files, VS Code will automatically provide you with IntelliSense for the DOM.</p>
+<p>Note that when you typed <code>console.</code> <a href="/docs/editor/intellisense.html">IntelliSense</a> on the <code>console</code> object was automatically presented to you. When editing JavaScript files, VS Code will automatically provide you with IntelliSense for the DOM.</p>
 <p><img src="images/nodejs/consoleintellisense.png" alt="console IntelliSense"></p>
 <p>Also notice that VS Code knows that <code>msg</code> is a string based on the initialization to <code>&#39;Hello World&#39;</code>.  If you type <code>msg.</code> you’ll see IntelliSense showing all of the string functions available on <code>msg</code>.</p>
 <p><img src="images/nodejs/stringintellisense.png" alt="string IntelliSense"></p>
@@ -88,7 +81,7 @@
 <h3 id="Running-Hello-World" class="article-heading"><a href="#Running-Hello-World" class="headerlink" title="Running Hello World"></a>Running Hello World<a class="article-anchor" href="#Running-Hello-World" aria-hidden="true"></a></h3><p>It’s simple to run <code>app.js</code> with Node.js. From a terminal, just type:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">node app.js</div></pre></td></tr></table></figure>
 <p>You should see “Hello World” output to the terminal and then Node.js returns.</p>
-<h3 id="Integrated-Terminal" class="article-heading"><a href="#Integrated-Terminal" class="headerlink" title="Integrated Terminal"></a>Integrated Terminal<a class="article-anchor" href="#Integrated-Terminal" aria-hidden="true"></a></h3><p>VS Code has an <a href="/docs/editor/integrated-terminal">integrated terminal</a> which you can use to run shell commands. You can run Node.js directly from there and avoid switching out of VS Code while running command line tools.</p>
+<h3 id="Integrated-Terminal" class="article-heading"><a href="#Integrated-Terminal" class="headerlink" title="Integrated Terminal"></a>Integrated Terminal<a class="article-anchor" href="#Integrated-Terminal" aria-hidden="true"></a></h3><p>VS Code has an <a href="/docs/editor/integrated-terminal.html">integrated terminal</a> which you can use to run shell commands. You can run Node.js directly from there and avoid switching out of VS Code while running command line tools.</p>
 <p><strong>View</strong> &gt; <strong>Integrated Terminal</strong> (<span class="dynamic-keybinding" data-osx="⌃`" data-win="Ctrl+`" data-linux="Ctrl+`"><span class="keybinding">⌃`</span> (Windows, Linux <span class="keybinding">Ctrl+`</span>)</span> with the backtick character) will open the integrated terminal and you can run <code>node app.js</code> there:</p>
 <p><img src="images/nodejs/integrated-terminal.png" alt="integrated terminal"></p>
 <p>For this walkthrough, you can use either an external terminal or the VS Code integrated terminal for running the command line tools.</p>
@@ -153,10 +146,10 @@
 </blockquote>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>There is much more to explore with Visual Studio Code, please try the following topics:</p>
 <ul>
-<li><a href="/docs/customization/userandworkspace">Settings</a> - Learn how to customize VS Code for how you like to work.</li>
-<li><a href="/docs/editor/debugging">Debugging</a> - This is where VS Code really shines</li>
-<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - Lint, IntelliSense, Lightbulbs, Peek and Go to Definition and more</li>
-<li><a href="/docs/editor/tasks">Tasks</a> - Running tasks with Gulp, Grunt and Jake.  Showing Errors and Warnings</li>
+<li><a href="/docs/customization/userandworkspace.html">Settings</a> - Learn how to customize VS Code for how you like to work.</li>
+<li><a href="/docs/editor/debugging.html">Debugging</a> - This is where VS Code really shines</li>
+<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - Lint, IntelliSense, Lightbulbs, Peek and Go to Definition and more</li>
+<li><a href="/docs/editor/tasks.html">Tasks</a> - Running tasks with Gulp, Grunt and Jake.  Showing Errors and Warnings</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: Do I need to define a <code>jsconfig.json</code> file?</strong></p>
 <p><strong>A:</strong> Without a <code>jsconfig.json</code> file in the workspace root folder, VS Code treats all files and folders as belonging to the same project context. This is sufficient for common setups. There are situations when you want to add a <code>jsconfig.json</code> file.</p>

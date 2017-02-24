@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/languages/cpp.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -108,15 +101,15 @@
 <p>To learn more, see <a href="https://github.com/Microsoft/vscode-cpptools/blob/master/launch.md" target="_blank" rel="external">Configuring launch.json for C/C++ debugging</a>.</p>
 <p>If you are debugging with GDB on Windows, see <a href="#debug_windows_gdb">Windows Debugging on Cygwin/MinGW</a>.</p>
 <h2 id="Editing-Code" class="article-heading"><a href="#Editing-Code" class="headerlink" title="Editing Code"></a>Editing Code<a class="article-anchor" href="#Editing-Code" aria-hidden="true"></a></h2><h3 id="Code-Formatting" class="article-heading"><a href="#Code-Formatting" class="headerlink" title="Code Formatting"></a>Code Formatting<a class="article-anchor" href="#Code-Formatting" aria-hidden="true"></a></h3><p>The C/C++ extension for Visual Studio Code supports source code formatting using <a href="http://clang.llvm.org/docs/ClangFormat.html" target="_blank" rel="external">clang-format</a> which is included with the extension.</p>
-<p>You can format an entire file with <strong>Format Document</strong> (<span class="dynamic-keybinding" data-osx="⇧⌥F" data-win="Shift+Alt+F" data-linux="Ctrl+Shift+I"><span class="keybinding">⇧⌥F</span> (Windows <span class="keybinding">Shift+Alt+F</span>, Linux <span class="keybinding">Ctrl+Shift+I</span>)</span>) or just the current selection with <strong>Format Selection</strong> (<span class="dynamic-keybinding" data-osx="⌘K ⌘F" data-win="Ctrl+K Ctrl+F" data-linux="Ctrl+K Ctrl+F"><span class="keybinding">⌘K ⌘F</span> (Windows, Linux <span class="keybinding">Ctrl+K Ctrl+F</span>)</span>) in right-click context menu. You can also configure auto-formatting with the following <a href="/docs/customization/userandworkspace">settings</a>:</p>
+<p>You can format an entire file with <strong>Format Document</strong> (<span class="dynamic-keybinding" data-osx="⇧⌥F" data-win="Shift+Alt+F" data-linux="Ctrl+Shift+I"><span class="keybinding">⇧⌥F</span> (Windows <span class="keybinding">Shift+Alt+F</span>, Linux <span class="keybinding">Ctrl+Shift+I</span>)</span>) or just the current selection with <strong>Format Selection</strong> (<span class="dynamic-keybinding" data-osx="⌘K ⌘F" data-win="Ctrl+K Ctrl+F" data-linux="Ctrl+K Ctrl+F"><span class="keybinding">⌘K ⌘F</span> (Windows, Linux <span class="keybinding">Ctrl+K Ctrl+F</span>)</span>) in right-click context menu. You can also configure auto-formatting with the following <a href="/docs/customization/userandworkspace.html">settings</a>:</p>
 <ul>
 <li><code>C_Cpp.clang_format_formatOnSave</code> - to format when you save your file.</li>
 <li><code>editor.formatOnType</code> - to format as you type (triggered on the <span class="keybinding">;</span> character).</li>
 </ul>
-<p>By default, the clang-format style is set to “file” which means it looks for a <code>.clang-format</code> file inside your workspace. If the <code>.clang-format</code> file is found, formatting is applied according the settings specified in the file. If no <code>.clang-format</code> file is found in your workspace, formatting is applied according to a default style specified in the <code>C_Cpp.clang_format_fallbackStyle</code> <a href="/docs/customization/userandworkspace">setting</a> instead. Currently, the default formatting style is “Visual Studio”. Using “Visual Studio” formatting ensures that source code formatting will be compatible in both VS Code and Visual Studio Community.</p>
+<p>By default, the clang-format style is set to “file” which means it looks for a <code>.clang-format</code> file inside your workspace. If the <code>.clang-format</code> file is found, formatting is applied according the settings specified in the file. If no <code>.clang-format</code> file is found in your workspace, formatting is applied according to a default style specified in the <code>C_Cpp.clang_format_fallbackStyle</code> <a href="/docs/customization/userandworkspace.html">setting</a> instead. Currently, the default formatting style is “Visual Studio”. Using “Visual Studio” formatting ensures that source code formatting will be compatible in both VS Code and Visual Studio Community.</p>
 <p>The “Visual Studio” clang-format style is not yet an official OOTB clang-format style but it implies the following clang-format settings:</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">UseTab: (VS Code current setting)</div><div class="line">IndentWidth: (VS Code current setting)</div><div class="line">BreakBeforeBraces: AllMan</div><div class="line">AllowShortIfStatementsOnASingleLine: false</div><div class="line">IndentCaseLabels: false</div><div class="line">ColumnLimit: 0</div></pre></td></tr></table></figure>
-<p>If you’d like to use a different version of clang-format than the one that ships with the extension, you can use the <code>C_Cpp.clang_format_path</code> <a href="/docs/customization/userandworkspace">setting</a> and set its value to the path where the clang-format binary is installed.</p>
+<p>If you’d like to use a different version of clang-format than the one that ships with the extension, you can use the <code>C_Cpp.clang_format_path</code> <a href="/docs/customization/userandworkspace.html">setting</a> and set its value to the path where the clang-format binary is installed.</p>
 <p>For example on the Windows platform:</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">"C_Cpp.clang_format_path": "C:\\Program Files (x86)\\LLVM\\bin\\clang-format.exe"</div></pre></td></tr></table></figure>
 <h3 id="Fuzzy-Auto-Complete-preview" class="article-heading"><a href="#Fuzzy-Auto-Complete-preview" class="headerlink" title="Fuzzy Auto-Complete (preview)"></a>Fuzzy Auto-Complete (preview)<a class="article-anchor" href="#Fuzzy-Auto-Complete-preview" aria-hidden="true"></a></h3><p>Fuzzy auto-complete is powered by an enhanced tag-parser approach. Although suggestions are not based on semantic analysis of your code, this feature provides a wider selection of matches than the single-file IntelliSense experience provided today.</p>
@@ -176,7 +169,7 @@
 <li>Watch window</li>
 <li>Call stack</li>
 <li><p>Stepping</p>
-<p>For more information on debugging with VS Code, see this introduction to <a href="/docs/editor/debugging">debugging in VS Code</a>.</p>
+<p>For more information on debugging with VS Code, see this introduction to <a href="/docs/editor/debugging.html">debugging in VS Code</a>.</p>
 </li>
 </ul>
 <h2 id="Known-Limitations" class="article-heading"><a href="#Known-Limitations" class="headerlink" title="Known Limitations"></a>Known Limitations<a class="article-anchor" href="#Known-Limitations" aria-hidden="true"></a></h2><h3 id="Symbols-and-Code-Navigation" class="article-heading"><a href="#Symbols-and-Code-Navigation" class="headerlink" title="Symbols and Code Navigation"></a>Symbols and Code Navigation<a class="article-anchor" href="#Symbols-and-Code-Navigation" aria-hidden="true"></a></h3><p>All platforms:</p>
@@ -213,16 +206,16 @@
 </ul>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>Read on to find out about:</p>
 <ul>
-<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - find out more about advanced editing features</li>
-<li><a href="/docs/editor/tasks">Tasks</a> - use tasks to build your project and more</li>
-<li><a href="/docs/editor/debugging">Debugging</a> - find out how to use the debugger with your project</li>
+<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - find out more about advanced editing features</li>
+<li><a href="/docs/editor/tasks.html">Tasks</a> - use tasks to build your project and more</li>
+<li><a href="/docs/editor/debugging.html">Debugging</a> - find out how to use the debugger with your project</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: My project won’t load.</strong></p>
 <p><strong>A:</strong> VS Code doesn’t currently support C++ project files, instead it considers a directory of your choosing to be the workspace of your project. Source code files inside that directory and its sub-directories are part of the workspace.</p>
 <p><strong>Q: IntelliSense isn’t working.</strong></p>
 <p><strong>A:</strong> In this release, IntelliSense isn’t supported. We plan to enable this and other features in future releases.</p>
 <p><strong>Q: How do I build/run my project?</strong></p>
-<p><strong>A:</strong> VS Code supports tasks that you can configure to build your application, and natively understands the output of MSBuild, CSC, and XBuild. For more information, see the <a href="/docs/editor/tasks">Tasks</a> documentation.</p>
+<p><strong>A:</strong> VS Code supports tasks that you can configure to build your application, and natively understands the output of MSBuild, CSC, and XBuild. For more information, see the <a href="/docs/editor/tasks.html">Tasks</a> documentation.</p>
 <p><strong>Q: Why is there a .browse.VC.db file in my workspace?</strong></p>
 <p><strong>A:</strong> The C/C++ extension automatically creates a database of symbol information for your workspace and stores it in a <code>.browse.VC.db</code> file in your workspace’s <code>.vscode</code> folder. This improves the extension’s performance and this file should not be added to source control.</p>
 <p>If you have any other questions or run into any issues, please file an issue on <a href="https://github.com/Microsoft/vscode-cpptools/issues" target="_blank" rel="external">GitHub</a>.</p>

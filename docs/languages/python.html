@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/languages/python.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -60,7 +53,7 @@
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-03T07:14:16.363Z" itemprop="dateModified">Last updated: 2017-02-03</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <h1 id="Python-on-Visual-Studio-Code" class="article-heading"><a href="#Python-on-Visual-Studio-Code" class="headerlink" title="Python on Visual Studio Code"></a>Python on Visual Studio Code<a class="article-anchor" href="#Python-on-Visual-Studio-Code" aria-hidden="true"></a></h1><p>Python is fully supported in Visual Studio Code through <a href="/docs/editor/extension-gallery">extensions</a>. Popular extensions in the <a href="https://marketplace.visualstudio.com" target="_blank" rel="external">Marketplace</a> provide code completion, linting, debugging, code formatting, snippets, and more. </p>
+                <h1 id="Python-on-Visual-Studio-Code" class="article-heading"><a href="#Python-on-Visual-Studio-Code" class="headerlink" title="Python on Visual Studio Code"></a>Python on Visual Studio Code<a class="article-anchor" href="#Python-on-Visual-Studio-Code" aria-hidden="true"></a></h1><p>Python is fully supported in Visual Studio Code through <a href="/docs/editor/extension-gallery.html">extensions</a>. Popular extensions in the <a href="https://marketplace.visualstudio.com" target="_blank" rel="external">Marketplace</a> provide code completion, linting, debugging, code formatting, snippets, and more. </p>
 <blockquote>
 <p><a href="/download">Download VS Code</a> - If you haven’t downloaded VS Code yet, quickly install for your platform (Windows, Mac, Linux).</p>
 </blockquote>
@@ -75,7 +68,7 @@
 <p>Tip: The extensions shown above are dynamically queried. Click on an extension tile above to read the description and reviews to decide which extension is best for you. See more in the <a href="https://marketplace.visualstudio.com/vscode" target="_blank" rel="external">Marketplace</a>.</p>
 </blockquote>
 <p>The examples in this document will use Don Jayamanne’s popular and full featured <a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.python" target="_blank" rel="external">Python Extension</a>.</p>
-<h2 id="Code-Completion" class="article-heading"><a href="#Code-Completion" class="headerlink" title="Code Completion"></a>Code Completion<a class="article-anchor" href="#Code-Completion" aria-hidden="true"></a></h2><p>Python extensions support code completion and Intellisense. <a href="/docs/editor/intellisense">Intellisense</a> is a general term for a number of features, including intelligent code completion (in-context method and variable suggestions) across all your files and for built-in and thirty-party modules. </p>
+<h2 id="Code-Completion" class="article-heading"><a href="#Code-Completion" class="headerlink" title="Code Completion"></a>Code Completion<a class="article-anchor" href="#Code-Completion" aria-hidden="true"></a></h2><p>Python extensions support code completion and Intellisense. <a href="/docs/editor/intellisense.html">Intellisense</a> is a general term for a number of features, including intelligent code completion (in-context method and variable suggestions) across all your files and for built-in and thirty-party modules. </p>
 <p>Quickly see methods, class members, and documentation.</p>
 <video id="python-code-completion-video" src="https://az754404.vo.msecnd.net/public/python-intellisense.mp4" poster="/images/python_python-intellisense-placeholder.png" autoplay loop controls muted></video>
 
@@ -93,9 +86,9 @@
 
 <blockquote>
 <p>Tip: Follow the instructions in the <a href="https://github.com/DonJayamanne/pythonVSCode/wiki/Debugging" target="_blank" rel="external">wiki</a> for getting started with debugging, including setting up your <code>launch.json</code> debugging configuration and troubleshooting common issues. </p>
-<p>Tip: Read more about general information about debugging in Visual Studio Code in the <a href="/docs/editor/debugging">debugging document</a>. </p>
+<p>Tip: Read more about general information about debugging in Visual Studio Code in the <a href="/docs/editor/debugging.html">debugging document</a>. </p>
 </blockquote>
-<h2 id="Snippets" class="article-heading"><a href="#Snippets" class="headerlink" title="Snippets"></a>Snippets<a class="article-anchor" href="#Snippets" aria-hidden="true"></a></h2><p>Snippets will take productivity to the next level. You can configure <a href="/docs/customization/userdefinedsnippets">your own snippets</a> and use snippets provided by an extension. </p>
+<h2 id="Snippets" class="article-heading"><a href="#Snippets" class="headerlink" title="Snippets"></a>Snippets<a class="article-anchor" href="#Snippets" aria-hidden="true"></a></h2><p>Snippets will take productivity to the next level. You can configure <a href="/docs/customization/userdefinedsnippets.html">your own snippets</a> and use snippets provided by an extension. </p>
 <video id="python-snippets-video" src="https://az754404.vo.msecnd.net/public/python-snippets.mp4" poster="/images/python_python-snippets-placeholder.png" autoplay loop controls muted></video>
 
 <blockquote>
@@ -103,8 +96,8 @@
 </blockquote>
 <h2 id="Configuration" class="article-heading"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration<a class="article-anchor" href="#Configuration" aria-hidden="true"></a></h2><p>You will need an <a href="/docs/languages/python.md#install-python-extension">extension</a> and <a href="https://www.python.org/downloads/" target="_blank" rel="external">Python</a> installed. Other dependencies are optional and depend on the features you want to use. Read through the requirements on the <a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.python#requirements" target="_blank" rel="external">extension’s README</a>. </p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><ul>
-<li><a href="/docs/editor/extension-gallery">Install an Extension</a> - Python extension are available in the <a href="https://marketplace.visualstudio.com/vscode" target="_blank" rel="external">Marketplace</a>.</li>
-<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - Become a power user by mastering tips and tricks.</li>
+<li><a href="/docs/editor/extension-gallery.html">Install an Extension</a> - Python extension are available in the <a href="https://marketplace.visualstudio.com/vscode" target="_blank" rel="external">Marketplace</a>.</li>
+<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - Become a power user by mastering tips and tricks.</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: Why won’t linting work for me?</strong></p>
 <p><strong>A:</strong> First make sure you have installed an extension. Next, many extensions have a dependency on an external package. Install the <a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.python#requirements" target="_blank" rel="external">required packages</a> using a Python package manager like <a href="https://pypi.python.org/pypi/pip" target="_blank" rel="external">pip</a> or <a href="http://peak.telecommunity.com/DevCenter/EasyInstall" target="_blank" rel="external">easy_install</a>. You can read more about troubleshooting linting issues <a href="https://github.com/DonJayamanne/pythonVSCode/wiki/Autocomplete-Intellisense" target="_blank" rel="external">here</a>. </p>

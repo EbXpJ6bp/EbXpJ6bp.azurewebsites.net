@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Editing Evolved | Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/editor/editingevolved.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -61,20 +54,20 @@
               </header>
               <div class="article-content" itemprop="articleBody">
                 <p>Visual Studio Code has a high productivity code editor which, when combined with programming language services, gives you the power of an IDE and the speed of a text editor. In this topic, we’ll first describe VS Code’s language intelligence features (suggestions, parameter hints, smart code navigation) and then show the power of the core text editor.</p>
-<h2 id="Editing-Smart" class="article-heading"><a href="#Editing-Smart" class="headerlink" title="Editing - Smart"></a>Editing - Smart<a class="article-anchor" href="#Editing-Smart" aria-hidden="true"></a></h2><p>VS Code comes with a built-in JavaScript/TypeScript language service so you get JavaScript and TypeScript code intelligence out-of-the-box. For other languages, like Go, Python, and C#, you will need to install an extension for deep language service integration. Language services provide the code understanding necessary for features like IntelliSense (suggestions) and smart code navigation (Go to Definition, Find All References, Rename Symbol).  Different language extensions provide different levels of support for VS Code’s language features but rest assured the community is very active adding new languages and great functionality. Learn more about installing VS Code extensions in our <a href="/docs/editor/extension-gallery">Extensions Marketplace</a> topic and visit the <a href="https://marketplace.visualstudio.com/VSCode" target="_blank" rel="external">Marketplace</a> to see what’s available for your favorite programming languages.</p>
+<h2 id="Editing-Smart" class="article-heading"><a href="#Editing-Smart" class="headerlink" title="Editing - Smart"></a>Editing - Smart<a class="article-anchor" href="#Editing-Smart" aria-hidden="true"></a></h2><p>VS Code comes with a built-in JavaScript/TypeScript language service so you get JavaScript and TypeScript code intelligence out-of-the-box. For other languages, like Go, Python, and C#, you will need to install an extension for deep language service integration. Language services provide the code understanding necessary for features like IntelliSense (suggestions) and smart code navigation (Go to Definition, Find All References, Rename Symbol).  Different language extensions provide different levels of support for VS Code’s language features but rest assured the community is very active adding new languages and great functionality. Learn more about installing VS Code extensions in our <a href="/docs/editor/extension-gallery.html">Extensions Marketplace</a> topic and visit the <a href="https://marketplace.visualstudio.com/VSCode" target="_blank" rel="external">Marketplace</a> to see what’s available for your favorite programming languages.</p>
 <p><img src="images/editingevolved/javascript-intellisense.png" alt="IntelliSense"></p>
-<h2 id="IntelliSense" class="article-heading"><a href="#IntelliSense" class="headerlink" title="IntelliSense"></a>IntelliSense<a class="article-anchor" href="#IntelliSense" aria-hidden="true"></a></h2><p>We’ll always offer word completion, but for the rich <a href="/docs/languages/overview">languages</a>, such as JavaScript, JSON, HTML, CSS, Less, Sass, C# and TypeScript, we offer a true IntelliSense experience. If a language service knows possible completions, the IntelliSense suggestions will pop up as you type. You can always manually trigger it with <span class="dynamic-keybinding" data-osx="⌃Space" data-win="Ctrl+Space" data-linux="Ctrl+Space"><span class="keybinding">⌃Space</span> (Windows, Linux <span class="keybinding">Ctrl+Space</span>)</span>.  By default, <span class="keybinding">Tab</span> or <span class="keybinding">Enter</span> are the accept keyboard triggers but you can also <a href="/docs/customization/keybindings">customize these key bindings</a>.</p>
+<h2 id="IntelliSense" class="article-heading"><a href="#IntelliSense" class="headerlink" title="IntelliSense"></a>IntelliSense<a class="article-anchor" href="#IntelliSense" aria-hidden="true"></a></h2><p>We’ll always offer word completion, but for the rich <a href="/docs/languages/overview.html">languages</a>, such as JavaScript, JSON, HTML, CSS, Less, Sass, C# and TypeScript, we offer a true IntelliSense experience. If a language service knows possible completions, the IntelliSense suggestions will pop up as you type. You can always manually trigger it with <span class="dynamic-keybinding" data-osx="⌃Space" data-win="Ctrl+Space" data-linux="Ctrl+Space"><span class="keybinding">⌃Space</span> (Windows, Linux <span class="keybinding">Ctrl+Space</span>)</span>.  By default, <span class="keybinding">Tab</span> or <span class="keybinding">Enter</span> are the accept keyboard triggers but you can also <a href="/docs/customization/keybindings.html">customize these key bindings</a>.</p>
 <blockquote>
 <p><strong>Tip:</strong> The suggestions filtering supports CamelCase so you can type the letters which are upper cased in a method name to limit the suggestions. For example, “cra” will quickly bring up “createApplication”.</p>
-<p><strong>Tip:</strong> IntelliSense suggestions can be configured via the <code>editor.quickSuggestions</code> and <code>editor.suggestOnTriggerCharacters</code> <a href="/docs/customization/userandworkspace">settings</a>.</p>
+<p><strong>Tip:</strong> IntelliSense suggestions can be configured via the <code>editor.quickSuggestions</code> and <code>editor.suggestOnTriggerCharacters</code> <a href="/docs/customization/userandworkspace.html">settings</a>.</p>
 </blockquote>
 <p>JavaScript and TypeScript developers can take advantage of the <a href="https://github.com/DefinitelyTyped/DefinitelyTyped" target="_blank" rel="external">DefinitelyTyped</a> type definition (typings) file repository to get IntelliSense for common JavaScript libraries (Node.js, React, Angular). You can find a good explanation on using <code>typings</code> files in the <a href="/docs/languages/javascript#_intellisense">JavaScript language</a> topic and the <a href="/docs/runtimes/nodejs#_intellisense-and-typings">Node.js</a> walkthrough.</p>
-<p>Learn more in the <a href="/docs/editor/intellisense">IntelliSense document</a>.</p>
+<p>Learn more in the <a href="/docs/editor/intellisense.html">IntelliSense document</a>.</p>
 <h2 id="Parameter-Hints" class="article-heading"><a href="#Parameter-Hints" class="headerlink" title="Parameter Hints"></a>Parameter Hints<a class="article-anchor" href="#Parameter-Hints" aria-hidden="true"></a></h2><p>In JavaScript, TypeScript or C#, parameter hints will pop up as you’re typing a method invocation. You can navigate between different overloads with <span class="keybinding">Up</span> and <span class="keybinding">Down</span> and the best overload will be presented based on the arguments you pass in.</p>
 <p><img src="images/editingevolved/parameterhints.png" alt="Parameter Hints"></p>
 <h2 id="Hover" class="article-heading"><a href="#Hover" class="headerlink" title="Hover"></a>Hover<a class="article-anchor" href="#Hover" aria-hidden="true"></a></h2><p>For languages that support it, the hover will show useful information, such as types of symbols, or, in the case of CSS below, the shape of the HTML that would match a certain CSS rule:</p>
 <p><img src="images/editingevolved/hover.png" alt="Hover"></p>
-<h2 id="Go-to-Definition" class="article-heading"><a href="#Go-to-Definition" class="headerlink" title="Go to Definition"></a>Go to Definition<a class="article-anchor" href="#Go-to-Definition" aria-hidden="true"></a></h2><p>If a <a href="/docs/languages/overview">language</a> supports it, you can go to the definition of a symbol by pressing <span class="dynamic-keybinding" data-osx="F12" data-win="F12" data-linux="F12"><span class="keybinding">F12</span></span>.</p>
+<h2 id="Go-to-Definition" class="article-heading"><a href="#Go-to-Definition" class="headerlink" title="Go to Definition"></a>Go to Definition<a class="article-anchor" href="#Go-to-Definition" aria-hidden="true"></a></h2><p>If a <a href="/docs/languages/overview.html">language</a> supports it, you can go to the definition of a symbol by pressing <span class="dynamic-keybinding" data-osx="F12" data-win="F12" data-linux="F12"><span class="keybinding">F12</span></span>.</p>
 <p>If you press <span class="keybinding">Ctrl</span> and hover over a symbol, a preview of the declaration will appear:</p>
 <p><img src="images/editingevolved/ctrlhover.png" alt="Ctrl Hover"></p>
 <blockquote>
@@ -88,7 +81,7 @@
 <p><img src="images/editingevolved/references.png" alt="Find All References"></p>
 <p>You can navigate between different references in the peeked editor and make quick edits right there. Clicking on the peeked editor filename or double-clicking in the result list will open the reference in the outer editor.</p>
 <blockquote>
-<p><strong>Tip:</strong> Additionally, the peek window is closed if you press <span class="keybinding">Escape</span> or double-click in the peek editor region. You can disable this behavior with the <code>editor.stablePeek</code> <a href="/docs/customization/userandworkspace">setting</a>.</p>
+<p><strong>Tip:</strong> Additionally, the peek window is closed if you press <span class="keybinding">Escape</span> or double-click in the peek editor region. You can disable this behavior with the <code>editor.stablePeek</code> <a href="/docs/customization/userandworkspace.html">setting</a>.</p>
 </blockquote>
 <h2 id="Bracket-matching" class="article-heading"><a href="#Bracket-matching" class="headerlink" title="Bracket matching"></a>Bracket matching<a class="article-anchor" href="#Bracket-matching" aria-hidden="true"></a></h2><p>Matching brackets will be highlighted as soon as the cursor is near one of them.</p>
 <p><img src="images/editingevolved/brackets.png" alt="Bracket Matching"></p>
@@ -103,7 +96,7 @@
 </blockquote>
 <h2 id="Rename-symbol" class="article-heading"><a href="#Rename-symbol" class="headerlink" title="Rename symbol"></a>Rename symbol<a class="article-anchor" href="#Rename-symbol" aria-hidden="true"></a></h2><p>Some languages support rename symbol across files. Simply press <span class="dynamic-keybinding" data-osx="F2" data-win="F2" data-linux="F2"><span class="keybinding">F2</span></span> and then type the new desired name and press <span class="keybinding">Enter</span>. All usages of the symbol will be renamed, across files.</p>
 <p><img src="images/editingevolved/rename.png" alt="Rename"></p>
-<h2 id="Errors-amp-Warnings" class="article-heading"><a href="#Errors-amp-Warnings" class="headerlink" title="Errors &amp; Warnings"></a>Errors &amp; Warnings<a class="article-anchor" href="#Errors-amp-Warnings" aria-hidden="true"></a></h2><p>Warnings or Errors can be generated either via <a href="/docs/editor/tasks">configured tasks</a>, by rich language services, or by linters, that constantly analyze your code in the background. Since we love bug-free code, warnings and errors show up in multiple places:</p>
+<h2 id="Errors-amp-Warnings" class="article-heading"><a href="#Errors-amp-Warnings" class="headerlink" title="Errors &amp; Warnings"></a>Errors &amp; Warnings<a class="article-anchor" href="#Errors-amp-Warnings" aria-hidden="true"></a></h2><p>Warnings or Errors can be generated either via <a href="/docs/editor/tasks.html">configured tasks</a>, by rich language services, or by linters, that constantly analyze your code in the background. Since we love bug-free code, warnings and errors show up in multiple places:</p>
 <ul>
 <li>In the status bar, there is a summary of all errors and warnings counts.</li>
 <li>You can click on the summary or press <span class="dynamic-keybinding" data-osx="⇧⌘M" data-win="Ctrl+Shift+M" data-linux="Ctrl+Shift+M"><span class="keybinding">⇧⌘M</span> (Windows, Linux <span class="keybinding">Ctrl+Shift+M</span>)</span> to display the <strong>PROBLEMS</strong> panel with a list of all current errors.</li>
@@ -126,11 +119,11 @@
 <p><img src="images/editingevolved/folding.png" alt="Folding"></p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>Now that you know how the editor works, time to try a few other things…</p>
 <ul>
-<li><a href="/docs/introvideos/codeediting">Intro Video - Code Editing</a> - Watch an introductory video on code editing features.</li>
-<li><a href="/docs/editor/codebasics">The Basics</a> - In case you missed a basic orientation around VS Code.</li>
-<li><a href="/docs/customization/overview">Customization</a> - Configure VS Code the way you want - Themes, Settings, Display Language</li>
-<li><a href="/docs/customization/keybindings">Key Bindings</a> - Learn how to modify key bindings to your preference.</li>
-<li><a href="/docs/editor/debugging">Debugging</a> - This is where VS Code really shines.</li>
+<li><a href="/docs/introvideos/codeediting.html">Intro Video - Code Editing</a> - Watch an introductory video on code editing features.</li>
+<li><a href="/docs/editor/codebasics.html">The Basics</a> - In case you missed a basic orientation around VS Code.</li>
+<li><a href="/docs/customization/overview.html">Customization</a> - Configure VS Code the way you want - Themes, Settings, Display Language</li>
+<li><a href="/docs/customization/keybindings.html">Key Bindings</a> - Learn how to modify key bindings to your preference.</li>
+<li><a href="/docs/editor/debugging.html">Debugging</a> - This is where VS Code really shines.</li>
 </ul>
 
               </div>

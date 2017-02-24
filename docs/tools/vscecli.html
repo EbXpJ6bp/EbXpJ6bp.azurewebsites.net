@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/tools/vscecli.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -60,7 +53,7 @@
                 <h2><time class="article-updated" data-position="header" datetime="2017-02-03T07:14:16.429Z" itemprop="dateModified">Last updated: 2017-02-03</time></h2>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <h1 id="vsce-Publishing-Tool-Reference" class="article-heading"><a href="#vsce-Publishing-Tool-Reference" class="headerlink" title="vsce - Publishing Tool Reference"></a>vsce - Publishing Tool Reference<a class="article-anchor" href="#vsce-Publishing-Tool-Reference" aria-hidden="true"></a></h1><p><a href="https://github.com/Microsoft/vsce" target="_blank" rel="external">vsce</a> is the command line tool you’ll use to publish extensions to the <a href="/docs/editor/extension-gallery">Extension Marketplace</a>.  You can also load extensions locally and share them via email or a UNC drive.</p>
+                <h1 id="vsce-Publishing-Tool-Reference" class="article-heading"><a href="#vsce-Publishing-Tool-Reference" class="headerlink" title="vsce - Publishing Tool Reference"></a>vsce - Publishing Tool Reference<a class="article-anchor" href="#vsce-Publishing-Tool-Reference" aria-hidden="true"></a></h1><p><a href="https://github.com/Microsoft/vsce" target="_blank" rel="external">vsce</a> is the command line tool you’ll use to publish extensions to the <a href="/docs/editor/extension-gallery.html">Extension Marketplace</a>.  You can also load extensions locally and share them via email or a UNC drive.</p>
 <h2 id="Installation" class="article-heading"><a href="#Installation" class="headerlink" title="Installation"></a>Installation<a class="article-anchor" href="#Installation" aria-hidden="true"></a></h2><p>Make sure you have <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a> installed. Then simply run:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">npm install -g vsce</div></pre></td></tr></table></figure>
 <h2 id="Usage" class="article-heading"><a href="#Usage" class="headerlink" title="Usage"></a>Usage<a class="article-anchor" href="#Usage" aria-hidden="true"></a></h2><p>You’ll use the <code>vsce</code> command directly from the command line. For example, here’s how you can quickly publish an extension:</p>
@@ -76,7 +69,7 @@
 <p>Give the Personal Access Token a nice description, optionally extend its expiration date to 1 year, make it access every account and set the authorization to <strong>all scopes</strong>:</p>
 <p><img src="images/vscecli/publishers3.png" alt="Personal access token details"></p>
 <p>The next screen will display your newly created Personal Access Token. <strong>Copy</strong> it, you’ll need it to create a publisher.</p>
-<h3 id="Create-a-Publisher" class="article-heading"><a href="#Create-a-Publisher" class="headerlink" title="Create a Publisher"></a>Create a Publisher<a class="article-anchor" href="#Create-a-Publisher" aria-hidden="true"></a></h3><p>A <strong>publisher</strong> is an identity who can publish extensions to the Visual Studio Code Marketplace. Every extension needs to include a <code>publisher</code> name in its <a href="/docs/extensionAPI/extension-manifest"><code>package.json</code> file</a>.</p>
+<h3 id="Create-a-Publisher" class="article-heading"><a href="#Create-a-Publisher" class="headerlink" title="Create a Publisher"></a>Create a Publisher<a class="article-anchor" href="#Create-a-Publisher" aria-hidden="true"></a></h3><p>A <strong>publisher</strong> is an identity who can publish extensions to the Visual Studio Code Marketplace. Every extension needs to include a <code>publisher</code> name in its <a href="/docs/extensionAPI/extension-manifest.html"><code>package.json</code> file</a>.</p>
 <p>Once you have a <a href="/docs/tools/vscecli.md#get-a-personal-access-token">Personal Access Token</a>, you can create a new publisher using <code>vsce</code>:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">vsce create-publisher (publisher name)</div></pre></td></tr></table></figure>
 <p><code>vsce</code> will remember the provided Personal Access Token for future references to this publisher.</p>
@@ -94,7 +87,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">vsce publish 2.0.1</div></pre></td></tr></table></figure>
 <h2 id="Packaging-Extensions" class="article-heading"><a href="#Packaging-Extensions" class="headerlink" title="Packaging Extensions"></a>Packaging Extensions<a class="article-anchor" href="#Packaging-Extensions" aria-hidden="true"></a></h2><p>You may want to simply package extensions without publishing them to the store. Extensions will always be packaged into a <code>.vsix</code> file. Here’s how:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">vsce package</div></pre></td></tr></table></figure>
-<p>This will package your extension into a <code>.vsix</code> file and place it in the current directory. It’s possible to install <code>.vsix</code> files into Visual Studio Code. See <a href="/docs/extensions/install-extension">Installing Extensions</a> for more details.</p>
+<p>This will package your extension into a <code>.vsix</code> file and place it in the current directory. It’s possible to install <code>.vsix</code> files into Visual Studio Code. See <a href="/docs/extensions/install-extension.html">Installing Extensions</a> for more details.</p>
 <h2 id="Advanced-Usage" class="article-heading"><a href="#Advanced-Usage" class="headerlink" title="Advanced Usage"></a>Advanced Usage<a class="article-anchor" href="#Advanced-Usage" aria-hidden="true"></a></h2><h3 id="Marketplace-Integration" class="article-heading"><a href="#Marketplace-Integration" class="headerlink" title="Marketplace Integration"></a>Marketplace Integration<a class="article-anchor" href="#Marketplace-Integration" aria-hidden="true"></a></h3><p>You can customize how your extension looks in the Visual Studio Marketplace. See the <a href="https://marketplace.visualstudio.com/items/lukehoban.Go" target="_blank" rel="external">Go extension</a> for an example.</p>
 <p>Here are some tips for making your extension look great on the Marketplace:</p>
 <ul>
@@ -118,8 +111,8 @@
 <figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"name"</span>: <span class="string">"uuid"</span>,</div><div class="line">    <span class="attr">"version"</span>: <span class="string">"0.0.1"</span>,</div><div class="line">    <span class="attr">"publisher"</span>: <span class="string">"joaomoreno"</span>,</div><div class="line">    <span class="attr">"engines"</span>: &#123;</div><div class="line">        <span class="attr">"vscode"</span>: <span class="string">"0.10.x"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">"scripts"</span>: &#123;</div><div class="line">        <span class="attr">"vscode:prepublish"</span>: <span class="string">"tsc"</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>This will always invoke the <a href="http://www.typescriptlang.org/" target="_blank" rel="external">TypeScript</a> compiler whenever the extension is packaged.</p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><ul>
-<li><a href="/docs/editor/extension-gallery">Extension Marketplace</a> - Learn more about VS Code’s public extension Marketplace.</li>
-<li><a href="/docs/extensions/install-extension">Installing Extensions</a> - Learn about other options for installing and sharing extensions.</li>
+<li><a href="/docs/editor/extension-gallery.html">Extension Marketplace</a> - Learn more about VS Code’s public extension Marketplace.</li>
+<li><a href="/docs/extensions/install-extension.html">Installing Extensions</a> - Learn about other options for installing and sharing extensions.</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: I get 403 Forbidden (or 401 Unauthorized) error when I try to publish my extension?</strong></p>
 <p><strong>A:</strong> One easy mistake to make when creating the PAT (Personal Access Token) is to not select <code>all accessible accounts</code> in the Accounts field dropdown (instead selecting a specific account). You should also set the Authorized Scopes to <code>All scopes</code> for the publish to work.</p>

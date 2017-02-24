@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Adding Snippets to Visual Studio Code | Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/customization/userdefinedsnippets.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -65,7 +58,7 @@
 <p>The snippet syntax follows the <a href="https://manual.macromates.com/en/snippets" target="_blank" rel="external">TextMate snippet syntax</a> with the exception of ‘regular expression replacements’, ‘interpolated shell code’ and ‘transformations’, which are not supported.</p>
 <video id="snippets-showcase" src="https://az754404.vo.msecnd.net/public/snippets_showcase.mp4" placeholder="/images/userdefinedsnippets_snippets_placeholder.png" autoplay loop controls muted><br>    Sorry you’re browser doesn’t support HTML 5 video.<br></video>
 
-<h2 id="Add-Snippets-from-the-Marketplace" class="article-heading"><a href="#Add-Snippets-from-the-Marketplace" class="headerlink" title="Add Snippets from the Marketplace"></a>Add Snippets from the Marketplace<a class="article-anchor" href="#Add-Snippets-from-the-Marketplace" aria-hidden="true"></a></h2><p>Many <a href="/docs/editor/extension-gallery">extensions</a> on the VS Code <a href="https://marketplace.visualstudio.com/vscode" target="_blank" rel="external">Marketplace</a> include snippets.  If you find one you want to use, simply install it and restart VS Code and the new snippet will be available (see <a href="/docs/editor/extension-gallery#_browse-and-install-extensions-in-vs-code">here</a> for more instructions on installing an extension).</p>
+<h2 id="Add-Snippets-from-the-Marketplace" class="article-heading"><a href="#Add-Snippets-from-the-Marketplace" class="headerlink" title="Add Snippets from the Marketplace"></a>Add Snippets from the Marketplace<a class="article-anchor" href="#Add-Snippets-from-the-Marketplace" aria-hidden="true"></a></h2><p>Many <a href="/docs/editor/extension-gallery.html">extensions</a> on the VS Code <a href="https://marketplace.visualstudio.com/vscode" target="_blank" rel="external">Marketplace</a> include snippets.  If you find one you want to use, simply install it and restart VS Code and the new snippet will be available (see <a href="/docs/editor/extension-gallery#_browse-and-install-extensions-in-vs-code">here</a> for more instructions on installing an extension).</p>
 <p>Below are some popular extensions which include snippets in their language support:</p>
 <div class="marketplace-extensions-snippets"></div>
 
@@ -101,7 +94,7 @@
 </ul>
 <h3 id="Grammar" class="article-heading"><a href="#Grammar" class="headerlink" title="Grammar"></a>Grammar<a class="article-anchor" href="#Grammar" aria-hidden="true"></a></h3><p>Below is the EBNF for snippets. With <code>\</code> (backslash) you can escape <code>$</code>, <code>}</code> and <code>\</code>.</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">any         ::= tabstop | placeholder | variable | text</div><div class="line">tabstop     ::= &apos;$&apos; int | &apos;$&#123;&apos; int &apos;&#125;&apos;</div><div class="line">placeholder ::= &apos;$&#123;&apos; int &apos;:&apos; any &apos;&#125;&apos;</div><div class="line">variable    ::= &apos;$&apos; var | &apos;$&#123;&apos; var &#125;&apos; | &apos;$&#123;&apos; var &apos;:&apos; any &apos;&#125;&apos;</div><div class="line">var         ::= [_a-zA-Z] [_a-zA-Z0-9]*</div><div class="line">int         ::= [0-9]+</div><div class="line">text        ::= .*</div></pre></td></tr></table></figure>
-<h2 id="Using-TextMate-Snippets" class="article-heading"><a href="#Using-TextMate-Snippets" class="headerlink" title="Using TextMate Snippets"></a>Using TextMate Snippets<a class="article-anchor" href="#Using-TextMate-Snippets" aria-hidden="true"></a></h2><p>You can also add TextMate snippets (.tmSnippets) to your VS Code installation using the <a href="/docs/tools/yocode">yo code</a> extension generator. The generator has an option <code>New Code Snippets</code> which lets you point to a folder containing multiple .tmSnippets files and they will be packaged into a VS Code snippet extension.  The generator also supports Sublime snippets (.sublime-snippets).</p>
+<h2 id="Using-TextMate-Snippets" class="article-heading"><a href="#Using-TextMate-Snippets" class="headerlink" title="Using TextMate Snippets"></a>Using TextMate Snippets<a class="article-anchor" href="#Using-TextMate-Snippets" aria-hidden="true"></a></h2><p>You can also add TextMate snippets (.tmSnippets) to your VS Code installation using the <a href="/docs/tools/yocode.html">yo code</a> extension generator. The generator has an option <code>New Code Snippets</code> which lets you point to a folder containing multiple .tmSnippets files and they will be packaged into a VS Code snippet extension.  The generator also supports Sublime snippets (.sublime-snippets).</p>
 <p>The final generator output has two files: an extension manifest <code>package.json</code> which has metadata to integrate the snippets into VS Code and a <code>snippets.json</code> file which includes the snippets converted to the VS Code snippet format.</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">.</div><div class="line">├── snippets                    // VS Code integration</div><div class="line">│   └── snippets.json           // The JSON file w/ the snippets</div><div class="line">└── package.json                // extension<span class="string">'s manifest</span></div></pre></td></tr></table></figure>
 <p>Copy the generated snippets folder to a new folder under <a href="/docs/extensions/install-extension.md#your-extensions-folder">your <code>.vscode/extensions</code> folder</a> and restart VS Code.</p>
@@ -115,21 +108,21 @@
 <li><strong>Linux</strong> <code>$HOME/.config/Code/User/snippets/(language).json</code></li>
 </ul>
 <p>where <code>(language).json</code> depends on the targeted language of the snippets (e.g. <code>markdown.json</code> for Markdown snippets).  Create a new folder for your extension and copy your snippet file to a <code>snippets</code> subdirectory.</p>
-<p>Now add an extension manifest package.json file to the extension folder.  The snippet extension manifest follows the structure defined in the <a href="/docs/extensionAPI/extension-manifest">Extension Manifest</a> reference and provides a <a href="/docs/extensionAPI/extension-points.md#contributessnippets"><code>snippets</code> contribution</a>.</p>
+<p>Now add an extension manifest package.json file to the extension folder.  The snippet extension manifest follows the structure defined in the <a href="/docs/extensionAPI/extension-manifest.html">Extension Manifest</a> reference and provides a <a href="/docs/extensionAPI/extension-points.md#contributessnippets"><code>snippets</code> contribution</a>.</p>
 <p>Below is an example manifest for Markdown snippets:</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"name"</span>: <span class="string">"DM-Markdown"</span>,</div><div class="line">    <span class="attr">"publisher"</span>: <span class="string">"mscott"</span>,</div><div class="line">    <span class="attr">"description"</span>: <span class="string">"Dunder Mifflin Markdown snippets"</span>,</div><div class="line">    <span class="attr">"version"</span>: <span class="string">"0.1.0"</span>,</div><div class="line">    <span class="attr">"engines"</span>: &#123; <span class="attr">"vscode"</span>: <span class="string">"0.10.x"</span> &#125;,</div><div class="line">    <span class="attr">"categories"</span>: [<span class="string">"Snippets"</span>],</div><div class="line">    <span class="attr">"contributes"</span>: &#123;</div><div class="line">        <span class="attr">"snippets"</span>: [</div><div class="line">            &#123;</div><div class="line">                <span class="attr">"language"</span>: <span class="string">"markdown"</span>,</div><div class="line">                <span class="attr">"path"</span>: <span class="string">"./snippets/markdown.json"</span></div><div class="line">            &#125;</div><div class="line">        ]</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>Note that snippets need to be associated with a <code>language</code> identifier.  This can be a <a href="/docs/languages/overview">language supported</a> directly by VS Code or a language provided by an extension.  Make sure the <code>language</code> identifier is correct.</p>
-<p>You then use the <a href="/docs/tools/vscecli">vsce publishing tool</a> to publish the snippet extension to the <a href="/docs/editor/extension-gallery">VS Code Extension Marketplace</a>.</p>
+<p>Note that snippets need to be associated with a <code>language</code> identifier.  This can be a <a href="/docs/languages/overview.html">language supported</a> directly by VS Code or a language provided by an extension.  Make sure the <code>language</code> identifier is correct.</p>
+<p>You then use the <a href="/docs/tools/vscecli.html">vsce publishing tool</a> to publish the snippet extension to the <a href="/docs/editor/extension-gallery.html">VS Code Extension Marketplace</a>.</p>
 <blockquote>
 <p><strong>Tip:</strong> To make it easy for users to find your snippet, include the word “snippet” in the extension description and set the <code>Category</code> to <code>Snippets</code> in your <code>package.json</code>.</p>
 </blockquote>
 <p>We also have recommendations on how to make your extension look great on the VS Code Marketplace, see <a href="/docs/extensionAPI/extension-manifest.md#marketplace-presentation-tips">Marketplace Presentation Tips</a>.</p>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>Snippets are just one way to extend VS Code. If you’d like to learn more about VS Code extensibility, try these topics:</p>
 <ul>
-<li><a href="/docs/customization/colorizer">Colorizers and Bracket Matchers</a> - Learn how to import TextMate colorizers</li>
-<li><a href="/docs/customization/themes">Custom themes</a> - Learn how to import existing TextMate themes.</li>
-<li><a href="/docs/extensions/overview">Extending Visual Studio Code</a> - Learn about other ways to extend VS Code</li>
-<li><a href="/docs/editor/editingevolved">Editing Evolved</a> - Learn more about the VS Code editor’s capabilities</li>
+<li><a href="/docs/customization/colorizer.html">Colorizers and Bracket Matchers</a> - Learn how to import TextMate colorizers</li>
+<li><a href="/docs/customization/themes.html">Custom themes</a> - Learn how to import existing TextMate themes.</li>
+<li><a href="/docs/extensions/overview.html">Extending Visual Studio Code</a> - Learn about other ways to extend VS Code</li>
+<li><a href="/docs/editor/editingevolved.html">Editing Evolved</a> - Learn more about the VS Code editor’s capabilities</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: I created a snippets extension but they aren’t showing up in the VS Code editor?</strong></p>
 <p><strong>A:</strong> Be sure you have correctly specified the <code>language</code> identifier for your snippet (e.g. <code>markdown</code> for Markdown .md files, <code>plaintext</code> for Plain Text .txt files).  Also verify that the relative path to the snippets json file is correct.</p>

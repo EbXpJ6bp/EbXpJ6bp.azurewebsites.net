@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/languages/json.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -73,7 +66,7 @@
 <h2 id="Formatting" class="article-heading"><a href="#Formatting" class="headerlink" title="Formatting"></a>Formatting<a class="article-anchor" href="#Formatting" aria-hidden="true"></a></h2><p>You can format your JSON document using <span class="dynamic-keybinding" data-osx="⇧⌥F" data-win="Shift+Alt+F" data-linux="Ctrl+Shift+I"><span class="keybinding">⇧⌥F</span> (Windows <span class="keybinding">Shift+Alt+F</span>, Linux <span class="keybinding">Ctrl+Shift+I</span>)</span> or <strong>Format Document</strong> from the context menu.</p>
 <h2 id="JSON-Schemas-amp-Settings" class="article-heading"><a href="#JSON-Schemas-amp-Settings" class="headerlink" title="JSON Schemas &amp; Settings"></a>JSON Schemas &amp; Settings<a class="article-anchor" href="#JSON-Schemas-amp-Settings" aria-hidden="true"></a></h2><p>To understand the structure of JSON files, we use <a href="http://spacetelescope.github.io/understanding-json-schema/" target="_blank" rel="external">JSON schemas</a>. JSON schemas describe the shape of the JSON file, as well as value sets, default values, and descriptions.</p>
 <p>Servers like <a href="http://schemastore.org" target="_blank" rel="external">JSON Schema Store</a> provide schemas for most of the common JSON based configuration files. However, schemas can also be defined in a file in the VS Code workspace, as well as the VS Code settings files.</p>
-<p>The association of a JSON file to a schema can be done either in the JSON file itself using the <code>$schema</code> attribute, or in the User or Workspace <a href="/docs/customization/userandworkspace">Settings</a> (<strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>User Settings</strong> or <strong>Workspace Settings</strong>) under the property <code>json.schemas</code>.</p>
+<p>The association of a JSON file to a schema can be done either in the JSON file itself using the <code>$schema</code> attribute, or in the User or Workspace <a href="/docs/customization/userandworkspace.html">Settings</a> (<strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>User Settings</strong> or <strong>Workspace Settings</strong>) under the property <code>json.schemas</code>.</p>
 <p>VS Code extensions can also define schemas and schema mapping. That’s why VS Code already knows about the schema of some well known JSON files such as <code>package.json</code>, <code>bower.json</code> and <code>tsconfig.json</code>.</p>
 <h3 id="Mapping-in-the-JSON" class="article-heading"><a href="#Mapping-in-the-JSON" class="headerlink" title="Mapping in the JSON"></a>Mapping in the JSON<a class="article-anchor" href="#Mapping-in-the-JSON" aria-hidden="true"></a></h3><p>In the following example, the JSON file specifies that its contents follow the <a href="http://www.coffeelint.org/" target="_blank" rel="external">CoffeeLint</a> schema.</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">   <span class="attr">"$schema"</span>: <span class="string">"http://json.schemastore.org/coffeelint"</span>,</div><div class="line">   <span class="attr">"line_endings"</span>: <span class="string">"unix"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -81,7 +74,7 @@
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">"json.schemas": [</div><div class="line">    &#123;</div><div class="line">        "fileMatch": [</div><div class="line">            "/.babelrc"</div><div class="line">        ],</div><div class="line">        "url": "http://json.schemastore.org/babelrc"</div><div class="line">    &#125;,</div></pre></td></tr></table></figure>
 <blockquote>
 <p><strong>Tip:</strong> Additionally to defining a schema for <code>.babelrc</code>, also make sure that <code>.babelrc</code> is associated to the JSON language mode. This is also done in the settings using the <code>files.association</code> array setting.</p>
-<p><strong>Tip:</strong> For an overview on settings, see <a href="/docs/customization/userandworkspace">User and Workspace Settings</a>.</p>
+<p><strong>Tip:</strong> For an overview on settings, see <a href="/docs/customization/userandworkspace.html">User and Workspace Settings</a>.</p>
 </blockquote>
 <h3 id="Mapping-to-a-Schema-in-the-Workspace" class="article-heading"><a href="#Mapping-to-a-Schema-in-the-Workspace" class="headerlink" title="Mapping to a Schema in the Workspace"></a>Mapping to a Schema in the Workspace<a class="article-anchor" href="#Mapping-to-a-Schema-in-the-Workspace" aria-hidden="true"></a></h3><p>To map a schema that is located in the workspace, use a relative path. In this example, a file in the workspace root called <code>myschema.json</code> will be used as the schema for all files ending with <code>.foo.json</code>.</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">"json.schemas": [</div><div class="line">    &#123;</div><div class="line">        "fileMatch": [</div><div class="line">            "/*.foo.json"</div><div class="line">        ],</div><div class="line">        "url": "./myschema.json"</div><div class="line">    &#125;,</div></pre></td></tr></table></figure>
@@ -104,7 +97,7 @@
 </blockquote>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><p>Read on to find out about:</p>
 <ul>
-<li><a href="/docs/customization/overview">Customization</a> - Customize VS Code to work the way you want</li>
+<li><a href="/docs/customization/overview.html">Customization</a> - Customize VS Code to work the way you want</li>
 </ul>
 
               </div>

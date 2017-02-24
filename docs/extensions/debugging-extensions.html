@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns#">
+<head>
   <meta charset="utf-8">
   <title>Visual Studio Code</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
   <link rel="canonical" href="http://ebxpj6bp.azurewebsites.net/docs/extensions/debugging-extensions.html">
-  <!-- Alternative links -->
   
     
   
-  <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
   <link rel="stylesheet" href="/css/navy.css">
-  <!-- endbuild -->
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Visual Studio Code">
-  <!-- Google Analytics -->
   
 </head>
 
@@ -68,7 +61,7 @@
 <li>Running and debugging an extension</li>
 <li>Publishing an extension</li>
 </ul>
-<h2 id="Creating-an-Extension" class="article-heading"><a href="#Creating-an-Extension" class="headerlink" title="Creating an Extension"></a>Creating an Extension<a class="article-anchor" href="#Creating-an-Extension" aria-hidden="true"></a></h2><p>We suggest you start your extension by scaffolding out the basic files. You can use the <code>yo code</code> Yeoman generator to do this and we cover the details in the <a href="/docs/tools/yocode">Yo Code document</a>.  The generator will ensure everything is set up so you have a great development experience.</p>
+<h2 id="Creating-an-Extension" class="article-heading"><a href="#Creating-an-Extension" class="headerlink" title="Creating an Extension"></a>Creating an Extension<a class="article-anchor" href="#Creating-an-Extension" aria-hidden="true"></a></h2><p>We suggest you start your extension by scaffolding out the basic files. You can use the <code>yo code</code> Yeoman generator to do this and we cover the details in the <a href="/docs/tools/yocode.html">Yo Code document</a>.  The generator will ensure everything is set up so you have a great development experience.</p>
 <h2 id="Running-and-Debugging-your-Extension" class="article-heading"><a href="#Running-and-Debugging-your-Extension" class="headerlink" title="Running and Debugging your Extension"></a>Running and Debugging your Extension<a class="article-anchor" href="#Running-and-Debugging-your-Extension" aria-hidden="true"></a></h2><p>You can easily run your extension under the debugger by pressing <code>F5</code>. This opens a new VS Code window with your extension loaded. Output from your extension shows up in the <code>Debug Console</code>. You can set break points, step through your code, and inspect variables either in the <code>Debug</code> view or the <code>Debug Console</code>.</p>
 <p><img src="images/debugging-extensions/debug.png" alt="Debugging extensions"></p>
 <p>Let’s peek at what is going on behind the scenes. If you are writing your extension in TypeScript then your code must first be compiled to JavaScript.</p>
@@ -103,10 +96,10 @@
 <li>Press <span class="keybinding">Ctrl+R</span> (Mac: <span class="keybinding">Cmd+R</span>) in the Extension Development Host window.</li>
 </ul>
 <h2 id="Next-Steps" class="article-heading"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps<a class="article-anchor" href="#Next-Steps" aria-hidden="true"></a></h2><ul>
-<li><a href="/docs/extensions/testing-extensions">Testing your Extension</a> - Learn how to write unit and integration tests for your extension</li>
-<li><a href="/docs/tools/vscecli">Publishing Tool</a> - Publish your extension with the vsce command line tool.</li>
-<li><a href="/docs/extensionAPI/extension-manifest">Extension Manifest file</a> - VS Code extension manifest file reference</li>
-<li><a href="/docs/extensionAPI/overview">Extension API</a> - Learn about the VS Code extensibility APIs</li>
+<li><a href="/docs/extensions/testing-extensions.html">Testing your Extension</a> - Learn how to write unit and integration tests for your extension</li>
+<li><a href="/docs/tools/vscecli.html">Publishing Tool</a> - Publish your extension with the vsce command line tool.</li>
+<li><a href="/docs/extensionAPI/extension-manifest.html">Extension Manifest file</a> - VS Code extension manifest file reference</li>
+<li><a href="/docs/extensionAPI/overview.html">Extension API</a> - Learn about the VS Code extensibility APIs</li>
 </ul>
 <h2 id="Common-Questions" class="article-heading"><a href="#Common-Questions" class="headerlink" title="Common Questions"></a>Common Questions<a class="article-anchor" href="#Common-Questions" aria-hidden="true"></a></h2><p><strong>Q: How can I use API from my extension that was introduced in a newer release of VS Code?</strong></p>
 <p><strong>A:</strong> If your extension is using an API that was introduced in a newer release of VS Code, you have to declare this dependency in the<br><code>engines</code> field of the <code>package.json</code> file of the extension. </p>
