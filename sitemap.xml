@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/keyboard-shortcuts.html</loc>
+    
+    <lastmod>2017-02-25T06:05:29.044Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/index.html</loc>
+    
+    <lastmod>2017-02-25T03:50:33.675Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/userandworkspace.html</loc>
+    
+    <lastmod>2017-02-25T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/index.html</loc>
     
     <lastmod>2017-02-24T12:59:45.160Z</lastmod>
@@ -100,13 +121,6 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/userandworkspace.html</loc>
-    
-    <lastmod>2017-02-23T11:44:02.820Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/languages/overview.html</loc>
     
     <lastmod>2017-02-23T00:00:00.000Z</lastmod>
@@ -177,14 +191,14 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/overview.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/locales.html</loc>
     
     <lastmod>2017-02-21T00:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/locales.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/overview.html</loc>
     
     <lastmod>2017-02-21T00:00:00.000Z</lastmod>
     
@@ -219,7 +233,7 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/updates/index.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/additional-components.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
@@ -233,13 +247,6 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/setup-overview.html</loc>
-    
-    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/requirements.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
@@ -247,7 +254,14 @@
   </url>
   
   <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/index.html</loc>
+    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/setup-overview.html</loc>
+    
+    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ebxpj6bp.azurewebsites.net/updates/index.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
@@ -255,13 +269,6 @@
   
   <url>
     <loc>http://ebxpj6bp.azurewebsites.net/docs/supporting/errors.html</loc>
-    
-    <lastmod>2017-02-20T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/setup/additional-components.html</loc>
     
     <lastmod>2017-02-20T00:00:00.000Z</lastmod>
     
@@ -614,13 +621,6 @@
     <loc>http://ebxpj6bp.azurewebsites.net/docs/extensionAPI/vscode-api.html</loc>
     
     <lastmod>2016-12-20T11:44:03.647Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ebxpj6bp.azurewebsites.net/docs/customization/keyboard-shortcuts.html</loc>
-    
-    <lastmod>2016-12-20T11:44:03.023Z</lastmod>
     
   </url>
   
